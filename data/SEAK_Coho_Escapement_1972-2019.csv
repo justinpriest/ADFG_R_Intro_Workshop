@@ -1,0 +1,625 @@
+Year,River,Species,Escapement_Count,Count_Type
+1972,Auke Creek,Coho Salmon,NA,NA
+1973,Auke Creek,Coho Salmon,NA,NA
+1974,Auke Creek,Coho Salmon,NA,NA
+1975,Auke Creek,Coho Salmon,NA,NA
+1976,Auke Creek,Coho Salmon,NA,NA
+1977,Auke Creek,Coho Salmon,NA,NA
+1978,Auke Creek,Coho Salmon,NA,NA
+1979,Auke Creek,Coho Salmon,NA,NA
+1980,Auke Creek,Coho Salmon,698,Weir
+1981,Auke Creek,Coho Salmon,646,Weir
+1982,Auke Creek,Coho Salmon,447,Weir
+1983,Auke Creek,Coho Salmon,694,Weir
+1984,Auke Creek,Coho Salmon,651,Weir
+1985,Auke Creek,Coho Salmon,942,Weir
+1986,Auke Creek,Coho Salmon,454,Weir
+1987,Auke Creek,Coho Salmon,668,Weir
+1988,Auke Creek,Coho Salmon,756,Weir
+1989,Auke Creek,Coho Salmon,502,Weir
+1990,Auke Creek,Coho Salmon,697,Weir
+1991,Auke Creek,Coho Salmon,808,Weir
+1992,Auke Creek,Coho Salmon,1020,Weir
+1993,Auke Creek,Coho Salmon,859,Weir
+1994,Auke Creek,Coho Salmon,1437,Weir
+1995,Auke Creek,Coho Salmon,460,Weir
+1996,Auke Creek,Coho Salmon,515,Weir
+1997,Auke Creek,Coho Salmon,609,Weir
+1998,Auke Creek,Coho Salmon,862,Weir
+1999,Auke Creek,Coho Salmon,845,Weir
+2000,Auke Creek,Coho Salmon,683,Weir
+2001,Auke Creek,Coho Salmon,865,Weir
+2002,Auke Creek,Coho Salmon,1176,Weir
+2003,Auke Creek,Coho Salmon,585,Weir
+2004,Auke Creek,Coho Salmon,416,Weir
+2005,Auke Creek,Coho Salmon,450,Weir
+2006,Auke Creek,Coho Salmon,581,Weir
+2007,Auke Creek,Coho Salmon,352,Weir
+2008,Auke Creek,Coho Salmon,600,Weir
+2009,Auke Creek,Coho Salmon,360,Weir
+2010,Auke Creek,Coho Salmon,417,Weir
+2011,Auke Creek,Coho Salmon,517,Weir
+2012,Auke Creek,Coho Salmon,837,Weir
+2013,Auke Creek,Coho Salmon,736,Weir
+2014,Auke Creek,Coho Salmon,1533,Weir
+2015,Auke Creek,Coho Salmon,517,Weir
+2016,Auke Creek,Coho Salmon,204,Weir
+2017,Auke Creek,Coho Salmon,283,Weir
+2018,Auke Creek,Coho Salmon,146,Weir
+2019,Auke Creek,Coho Salmon,345,Weir
+1972,Montana Creek,Coho Salmon,NA,NA
+1973,Montana Creek,Coho Salmon,NA,NA
+1974,Montana Creek,Coho Salmon,NA,NA
+1975,Montana Creek,Coho Salmon,NA,NA
+1976,Montana Creek,Coho Salmon,NA,NA
+1977,Montana Creek,Coho Salmon,NA,NA
+1978,Montana Creek,Coho Salmon,NA,NA
+1979,Montana Creek,Coho Salmon,NA,NA
+1980,Montana Creek,Coho Salmon,NA,NA
+1981,Montana Creek,Coho Salmon,227,Survey
+1982,Montana Creek,Coho Salmon,545,Survey
+1983,Montana Creek,Coho Salmon,636,Survey
+1984,Montana Creek,Coho Salmon,581,Survey
+1985,Montana Creek,Coho Salmon,810,Survey
+1986,Montana Creek,Coho Salmon,60,Survey
+1987,Montana Creek,Coho Salmon,314,Survey
+1988,Montana Creek,Coho Salmon,164,Survey
+1989,Montana Creek,Coho Salmon,566,Survey
+1990,Montana Creek,Coho Salmon,1711,Survey
+1991,Montana Creek,Coho Salmon,1415,Survey
+1992,Montana Creek,Coho Salmon,2512,Survey
+1993,Montana Creek,Coho Salmon,1352,Survey
+1994,Montana Creek,Coho Salmon,1829,Survey
+1995,Montana Creek,Coho Salmon,600,Survey
+1996,Montana Creek,Coho Salmon,798,Survey
+1997,Montana Creek,Coho Salmon,1018,Survey
+1998,Montana Creek,Coho Salmon,1160,Survey
+1999,Montana Creek,Coho Salmon,1000,Survey
+2000,Montana Creek,Coho Salmon,961,Survey
+2001,Montana Creek,Coho Salmon,1119,Survey
+2002,Montana Creek,Coho Salmon,2448,Survey
+2003,Montana Creek,Coho Salmon,808,Survey
+2004,Montana Creek,Coho Salmon,364,Survey
+2005,Montana Creek,Coho Salmon,351,Survey
+2006,Montana Creek,Coho Salmon,1110,Survey
+2007,Montana Creek,Coho Salmon,324,Survey
+2008,Montana Creek,Coho Salmon,405,Survey
+2009,Montana Creek,Coho Salmon,698,Survey
+2010,Montana Creek,Coho Salmon,630,Survey
+2011,Montana Creek,Coho Salmon,709,Survey
+2012,Montana Creek,Coho Salmon,394,Survey
+2013,Montana Creek,Coho Salmon,367,Survey
+2014,Montana Creek,Coho Salmon,911,Survey
+2015,Montana Creek,Coho Salmon,1204,Survey
+2016,Montana Creek,Coho Salmon,717,Survey
+2017,Montana Creek,Coho Salmon,634,Survey
+2018,Montana Creek,Coho Salmon,1160,Survey
+2019,Montana Creek,Coho Salmon,203,Survey
+1972,Peterson Creek,Coho Salmon,NA,NA
+1973,Peterson Creek,Coho Salmon,NA,NA
+1974,Peterson Creek,Coho Salmon,NA,NA
+1975,Peterson Creek,Coho Salmon,NA,NA
+1976,Peterson Creek,Coho Salmon,NA,NA
+1977,Peterson Creek,Coho Salmon,NA,NA
+1978,Peterson Creek,Coho Salmon,NA,NA
+1979,Peterson Creek,Coho Salmon,NA,NA
+1980,Peterson Creek,Coho Salmon,NA,NA
+1981,Peterson Creek,Coho Salmon,219,Survey
+1982,Peterson Creek,Coho Salmon,320,Survey
+1983,Peterson Creek,Coho Salmon,219,Survey
+1984,Peterson Creek,Coho Salmon,189,Survey
+1985,Peterson Creek,Coho Salmon,276,Survey
+1986,Peterson Creek,Coho Salmon,363,Survey
+1987,Peterson Creek,Coho Salmon,204,Survey
+1988,Peterson Creek,Coho Salmon,542,Survey
+1989,Peterson Creek,Coho Salmon,242,Survey
+1990,Peterson Creek,Coho Salmon,324,Survey
+1991,Peterson Creek,Coho Salmon,410,Survey
+1992,Peterson Creek,Coho Salmon,403,Survey
+1993,Peterson Creek,Coho Salmon,112,Survey
+1994,Peterson Creek,Coho Salmon,318,Survey
+1995,Peterson Creek,Coho Salmon,277,Survey
+1996,Peterson Creek,Coho Salmon,263,Survey
+1997,Peterson Creek,Coho Salmon,186,Survey
+1998,Peterson Creek,Coho Salmon,102,Survey
+1999,Peterson Creek,Coho Salmon,272,Survey
+2000,Peterson Creek,Coho Salmon,202,Survey
+2001,Peterson Creek,Coho Salmon,106,Survey
+2002,Peterson Creek,Coho Salmon,195,Survey
+2003,Peterson Creek,Coho Salmon,203,Survey
+2004,Peterson Creek,Coho Salmon,284,Survey
+2005,Peterson Creek,Coho Salmon,139,Survey
+2006,Peterson Creek,Coho Salmon,439,Survey
+2007,Peterson Creek,Coho Salmon,226,Survey
+2008,Peterson Creek,Coho Salmon,660,Survey
+2009,Peterson Creek,Coho Salmon,123,Survey
+2010,Peterson Creek,Coho Salmon,467,Survey
+2011,Peterson Creek,Coho Salmon,138,Survey
+2012,Peterson Creek,Coho Salmon,190,Survey
+2013,Peterson Creek,Coho Salmon,126,Survey
+2014,Peterson Creek,Coho Salmon,284,Survey
+2015,Peterson Creek,Coho Salmon,202,Survey
+2016,Peterson Creek,Coho Salmon,52,Survey
+2017,Peterson Creek,Coho Salmon,20,Survey
+2018,Peterson Creek,Coho Salmon,110,Survey
+2019,Peterson Creek,Coho Salmon,NA,Survey
+1972,Berners River,Coho Salmon,NA,NA
+1973,Berners River,Coho Salmon,NA,NA
+1974,Berners River,Coho Salmon,NA,NA
+1975,Berners River,Coho Salmon,NA,NA
+1976,Berners River,Coho Salmon,NA,NA
+1977,Berners River,Coho Salmon,NA,NA
+1978,Berners River,Coho Salmon,NA,NA
+1979,Berners River,Coho Salmon,NA,NA
+1980,Berners River,Coho Salmon,NA,NA
+1981,Berners River,Coho Salmon,NA,NA
+1982,Berners River,Coho Salmon,7505,Survey
+1983,Berners River,Coho Salmon,9840,Survey
+1984,Berners River,Coho Salmon,2825,Survey
+1985,Berners River,Coho Salmon,6169,Survey
+1986,Berners River,Coho Salmon,1752,Survey
+1987,Berners River,Coho Salmon,3260,Survey
+1988,Berners River,Coho Salmon,2724,Survey
+1989,Berners River,Coho Salmon,7509,Survey
+1990,Berners River,Coho Salmon,11050,Survey
+1991,Berners River,Coho Salmon,11530,Survey
+1992,Berners River,Coho Salmon,15300,Survey
+1993,Berners River,Coho Salmon,15670,Survey
+1994,Berners River,Coho Salmon,15920,Survey
+1995,Berners River,Coho Salmon,4945,Survey
+1996,Berners River,Coho Salmon,6050,Survey
+1997,Berners River,Coho Salmon,10050,Survey
+1998,Berners River,Coho Salmon,6802,Survey
+1999,Berners River,Coho Salmon,9920,Survey
+2000,Berners River,Coho Salmon,10650,Survey
+2001,Berners River,Coho Salmon,19290,Survey
+2002,Berners River,Coho Salmon,27700,Survey
+2003,Berners River,Coho Salmon,10110,Survey
+2004,Berners River,Coho Salmon,14450,Survey
+2005,Berners River,Coho Salmon,5220,Survey
+2006,Berners River,Coho Salmon,5470,Survey
+2007,Berners River,Coho Salmon,3915,Survey
+2008,Berners River,Coho Salmon,6870,Survey
+2009,Berners River,Coho Salmon,4230,Survey
+2010,Berners River,Coho Salmon,7520,Survey
+2011,Berners River,Coho Salmon,6050,Survey
+2012,Berners River,Coho Salmon,5480,Survey
+2013,Berners River,Coho Salmon,6280,Survey
+2014,Berners River,Coho Salmon,15480,Survey
+2015,Berners River,Coho Salmon,9940,Survey
+2016,Berners River,Coho Salmon,6733,Survey
+2017,Berners River,Coho Salmon,7040,Survey
+2018,Berners River,Coho Salmon,3550,Survey
+2019,Berners River,Coho Salmon,9405,Survey
+1972,Chilkat River,Coho Salmon,NA,NA
+1973,Chilkat River,Coho Salmon,NA,NA
+1974,Chilkat River,Coho Salmon,NA,NA
+1975,Chilkat River,Coho Salmon,NA,NA
+1976,Chilkat River,Coho Salmon,NA,NA
+1977,Chilkat River,Coho Salmon,NA,NA
+1978,Chilkat River,Coho Salmon,NA,NA
+1979,Chilkat River,Coho Salmon,NA,NA
+1980,Chilkat River,Coho Salmon,NA,NA
+1981,Chilkat River,Coho Salmon,NA,NA
+1982,Chilkat River,Coho Salmon,NA,NA
+1983,Chilkat River,Coho Salmon,NA,NA
+1984,Chilkat River,Coho Salmon,NA,NA
+1985,Chilkat River,Coho Salmon,NA,NA
+1986,Chilkat River,Coho Salmon,NA,NA
+1987,Chilkat River,Coho Salmon,37432,Mark Recapture / Survey?
+1988,Chilkat River,Coho Salmon,29495,Mark Recapture / Survey?
+1989,Chilkat River,Coho Salmon,48833,Mark Recapture / Survey?
+1990,Chilkat River,Coho Salmon,79807,Mark Recapture / Survey?
+1991,Chilkat River,Coho Salmon,84517,Mark Recapture / Survey?
+1992,Chilkat River,Coho Salmon,77588,Mark Recapture / Survey?
+1993,Chilkat River,Coho Salmon,58217,Mark Recapture / Survey?
+1994,Chilkat River,Coho Salmon,194425,Mark Recapture / Survey?
+1995,Chilkat River,Coho Salmon,56737,Mark Recapture / Survey?
+1996,Chilkat River,Coho Salmon,37331,Mark Recapture / Survey?
+1997,Chilkat River,Coho Salmon,43519,Mark Recapture / Survey?
+1998,Chilkat River,Coho Salmon,50758,Mark Recapture / Survey?
+1999,Chilkat River,Coho Salmon,57140,Mark Recapture / Survey?
+2000,Chilkat River,Coho Salmon,84843,Mark Recapture / Survey?
+2001,Chilkat River,Coho Salmon,107697,Mark Recapture / Survey?
+2002,Chilkat River,Coho Salmon,204925,Mark Recapture / Survey?
+2003,Chilkat River,Coho Salmon,133109,Mark Recapture / Survey?
+2004,Chilkat River,Coho Salmon,67053,Mark Recapture / Survey?
+2005,Chilkat River,Coho Salmon,34575,Mark Recapture / Survey?
+2006,Chilkat River,Coho Salmon,79050,Mark Recapture / Survey?
+2007,Chilkat River,Coho Salmon,24770,Mark Recapture / Survey?
+2008,Chilkat River,Coho Salmon,56369,Mark Recapture / Survey?
+2009,Chilkat River,Coho Salmon,47911,Mark Recapture / Survey?
+2010,Chilkat River,Coho Salmon,84909,Mark Recapture / Survey?
+2011,Chilkat River,Coho Salmon,61099,Mark Recapture / Survey?
+2012,Chilkat River,Coho Salmon,36961,Mark Recapture / Survey?
+2013,Chilkat River,Coho Salmon,51324,Mark Recapture / Survey?
+2014,Chilkat River,Coho Salmon,130200,Mark Recapture / Survey?
+2015,Chilkat River,Coho Salmon,47372,Mark Recapture / Survey?
+2016,Chilkat River,Coho Salmon,26280,Mark Recapture / Survey?
+2017,Chilkat River,Coho Salmon,34482,Mark Recapture / Survey?
+2018,Chilkat River,Coho Salmon,66085,Mark Recapture / Survey?
+2019,Chilkat River,Coho Salmon,34779,Mark Recapture / Survey?
+1972,Taku River,Coho Salmon,NA,NA
+1973,Taku River,Coho Salmon,NA,NA
+1974,Taku River,Coho Salmon,NA,NA
+1975,Taku River,Coho Salmon,NA,NA
+1976,Taku River,Coho Salmon,NA,NA
+1977,Taku River,Coho Salmon,NA,NA
+1978,Taku River,Coho Salmon,NA,NA
+1979,Taku River,Coho Salmon,NA,NA
+1980,Taku River,Coho Salmon,NA,NA
+1981,Taku River,Coho Salmon,NA,NA
+1982,Taku River,Coho Salmon,NA,NA
+1983,Taku River,Coho Salmon,NA,NA
+1984,Taku River,Coho Salmon,NA,NA
+1985,Taku River,Coho Salmon,NA,NA
+1986,Taku River,Coho Salmon,NA,NA
+1987,Taku River,Coho Salmon,55457,Mark-Recapture
+1988,Taku River,Coho Salmon,39450,Mark-Recapture
+1989,Taku River,Coho Salmon,56808,Mark-Recapture
+1990,Taku River,Coho Salmon,72196,Mark-Recapture
+1991,Taku River,Coho Salmon,127484,Mark-Recapture
+1992,Taku River,Coho Salmon,83729,Mark-Recapture
+1993,Taku River,Coho Salmon,119330,Mark-Recapture
+1994,Taku River,Coho Salmon,96343,Mark-Recapture
+1995,Taku River,Coho Salmon,55710,Mark-Recapture
+1996,Taku River,Coho Salmon,44635,Mark-Recapture
+1997,Taku River,Coho Salmon,32345,Mark-Recapture
+1998,Taku River,Coho Salmon,61382,Mark-Recapture
+1999,Taku River,Coho Salmon,60768,Mark-Recapture
+2000,Taku River,Coho Salmon,64700,Mark-Recapture
+2001,Taku River,Coho Salmon,104394,Mark-Recapture
+2002,Taku River,Coho Salmon,219360,Mark-Recapture
+2003,Taku River,Coho Salmon,183112,Mark-Recapture
+2004,Taku River,Coho Salmon,129327,Mark-Recapture
+2005,Taku River,Coho Salmon,135558,Mark-Recapture
+2006,Taku River,Coho Salmon,122384,Mark-Recapture
+2007,Taku River,Coho Salmon,74246,Mark-Recapture
+2008,Taku River,Coho Salmon,95226,Mark-Recapture
+2009,Taku River,Coho Salmon,103950,Mark-Recapture
+2010,Taku River,Coho Salmon,126830,Mark-Recapture
+2011,Taku River,Coho Salmon,70871,Mark-Recapture
+2012,Taku River,Coho Salmon,70775,Mark-Recapture
+2013,Taku River,Coho Salmon,68117,Mark-Recapture
+2014,Taku River,Coho Salmon,124171,Mark-Recapture
+2015,Taku River,Coho Salmon,60178,Mark-Recapture
+2016,Taku River,Coho Salmon,87704,Mark-Recapture
+2017,Taku River,Coho Salmon,57868,Mark-Recapture
+2018,Taku River,Coho Salmon,"51,173",Mark-Recapture
+2019,Taku River,Coho Salmon,"82,759",Mark-Recapture
+1972,Ford Arm Lake,Coho Salmon,NA,NA
+1973,Ford Arm Lake,Coho Salmon,NA,NA
+1974,Ford Arm Lake,Coho Salmon,NA,NA
+1975,Ford Arm Lake,Coho Salmon,NA,NA
+1976,Ford Arm Lake,Coho Salmon,NA,NA
+1977,Ford Arm Lake,Coho Salmon,NA,NA
+1978,Ford Arm Lake,Coho Salmon,NA,NA
+1979,Ford Arm Lake,Coho Salmon,NA,NA
+1980,Ford Arm Lake,Coho Salmon,NA,NA
+1981,Ford Arm Lake,Coho Salmon,NA,NA
+1982,Ford Arm Lake,Coho Salmon,2655,Weir/Mark-Recapture
+1983,Ford Arm Lake,Coho Salmon,1931,Weir/Mark-Recapture
+1984,Ford Arm Lake,Coho Salmon,NA,NA
+1985,Ford Arm Lake,Coho Salmon,2324,Weir/Mark-Recapture
+1986,Ford Arm Lake,Coho Salmon,1552,Weir/Mark-Recapture
+1987,Ford Arm Lake,Coho Salmon,1694,Weir/Mark-Recapture
+1988,Ford Arm Lake,Coho Salmon,3119,Weir/Mark-Recapture
+1989,Ford Arm Lake,Coho Salmon,2176,Weir/Mark-Recapture
+1990,Ford Arm Lake,Coho Salmon,2192,Weir/Mark-Recapture
+1991,Ford Arm Lake,Coho Salmon,2761,Weir/Mark-Recapture
+1992,Ford Arm Lake,Coho Salmon,3866,Weir/Mark-Recapture
+1993,Ford Arm Lake,Coho Salmon,4202,Weir/Mark-Recapture
+1994,Ford Arm Lake,Coho Salmon,3227,Weir/Mark-Recapture
+1995,Ford Arm Lake,Coho Salmon,2446,Weir/Mark-Recapture
+1996,Ford Arm Lake,Coho Salmon,2500,Weir/Mark-Recapture
+1997,Ford Arm Lake,Coho Salmon,4718,Weir/Mark-Recapture
+1998,Ford Arm Lake,Coho Salmon,7049,Weir/Mark-Recapture
+1999,Ford Arm Lake,Coho Salmon,3800,Weir/Mark-Recapture
+2000,Ford Arm Lake,Coho Salmon,2304,Weir/Mark-Recapture
+2001,Ford Arm Lake,Coho Salmon,2209,Weir/Mark-Recapture
+2002,Ford Arm Lake,Coho Salmon,7109,Weir/Mark-Recapture
+2003,Ford Arm Lake,Coho Salmon,6789,Weir/Mark-Recapture
+2004,Ford Arm Lake,Coho Salmon,3539,Weir/Mark-Recapture
+2005,Ford Arm Lake,Coho Salmon,4257,Weir/Mark-Recapture
+2006,Ford Arm Lake,Coho Salmon,4737,Weir/Mark-Recapture
+2007,Ford Arm Lake,Coho Salmon,2567,Weir/Mark-Recapture
+2008,Ford Arm Lake,Coho Salmon,5173,Weir/Mark-Recapture
+2009,Ford Arm Lake,Coho Salmon,2181,Weir/Mark-Recapture
+2010,Ford Arm Lake,Coho Salmon,1610,Weir/Mark-Recapture
+2011,Ford Arm Lake,Coho Salmon,1908,Weir/Mark-Recapture
+2012,Ford Arm Lake,Coho Salmon,2282,Weir/Mark-Recapture
+2013,Ford Arm Lake,Coho Salmon,1573,Weir/Mark-Recapture
+2014,Ford Arm Lake,Coho Salmon,3025,Weir/Mark-Recapture
+2015,Ford Arm Lake,Coho Salmon,3281,Weir/Mark-Recapture
+2016,Ford Arm Lake,Coho Salmon,NA,NA
+2017,Ford Arm Lake,Coho Salmon,NA,NA
+2018,Ford Arm Lake,Coho Salmon,NA,NA
+2019,Ford Arm Lake,Coho Salmon,NA,NA
+1972,Sitka Survey Index,Coho Salmon,NA,NA
+1973,Sitka Survey Index,Coho Salmon,NA,NA
+1974,Sitka Survey Index,Coho Salmon,NA,NA
+1975,Sitka Survey Index,Coho Salmon,NA,NA
+1976,Sitka Survey Index,Coho Salmon,NA,NA
+1977,Sitka Survey Index,Coho Salmon,NA,NA
+1978,Sitka Survey Index,Coho Salmon,NA,NA
+1979,Sitka Survey Index,Coho Salmon,NA,NA
+1980,Sitka Survey Index,Coho Salmon,NA,NA
+1981,Sitka Survey Index,Coho Salmon,NA,NA
+1982,Sitka Survey Index,Coho Salmon,1545,Survey
+1983,Sitka Survey Index,Coho Salmon,457,Survey
+1984,Sitka Survey Index,Coho Salmon,2063,Survey
+1985,Sitka Survey Index,Coho Salmon,1246,Survey
+1986,Sitka Survey Index,Coho Salmon,702,Survey
+1987,Sitka Survey Index,Coho Salmon,293,Survey
+1988,Sitka Survey Index,Coho Salmon,403,Survey
+1989,Sitka Survey Index,Coho Salmon,576,Survey
+1990,Sitka Survey Index,Coho Salmon,566,Survey
+1991,Sitka Survey Index,Coho Salmon,1510,Survey
+1992,Sitka Survey Index,Coho Salmon,1899,Survey
+1993,Sitka Survey Index,Coho Salmon,1716,Survey
+1994,Sitka Survey Index,Coho Salmon,1965,Survey
+1995,Sitka Survey Index,Coho Salmon,1487,Survey
+1996,Sitka Survey Index,Coho Salmon,1451,Survey
+1997,Sitka Survey Index,Coho Salmon,809,Survey
+1998,Sitka Survey Index,Coho Salmon,1242,Survey
+1999,Sitka Survey Index,Coho Salmon,776,Survey
+2000,Sitka Survey Index,Coho Salmon,803,Survey
+2001,Sitka Survey Index,Coho Salmon,1515,Survey
+2002,Sitka Survey Index,Coho Salmon,1868,Survey
+2003,Sitka Survey Index,Coho Salmon,1101,Survey
+2004,Sitka Survey Index,Coho Salmon,1124,Survey
+2005,Sitka Survey Index,Coho Salmon,1668,Survey
+2006,Sitka Survey Index,Coho Salmon,2647,Survey
+2007,Sitka Survey Index,Coho Salmon,1066,Survey
+2008,Sitka Survey Index,Coho Salmon,1117,Survey
+2009,Sitka Survey Index,Coho Salmon,1156,Survey
+2010,Sitka Survey Index,Coho Salmon,1273,Survey
+2011,Sitka Survey Index,Coho Salmon,2222,Survey
+2012,Sitka Survey Index,Coho Salmon,1157,Survey
+2013,Sitka Survey Index,Coho Salmon,1414,Survey
+2014,Sitka Survey Index,Coho Salmon,2161,Survey
+2015,Sitka Survey Index,Coho Salmon,2244,Survey
+2016,Sitka Survey Index,Coho Salmon,2943,Survey
+2017,Sitka Survey Index,Coho Salmon,1280,Survey
+2018,Sitka Survey Index,Coho Salmon,1502,Survey
+2019,Sitka Survey Index,Coho Salmon,1480,Survey
+1972,Hugh Smith Lake,Coho Salmon,NA,NA
+1973,Hugh Smith Lake,Coho Salmon,NA,NA
+1974,Hugh Smith Lake,Coho Salmon,NA,NA
+1975,Hugh Smith Lake,Coho Salmon,NA,NA
+1976,Hugh Smith Lake,Coho Salmon,NA,NA
+1977,Hugh Smith Lake,Coho Salmon,NA,NA
+1978,Hugh Smith Lake,Coho Salmon,NA,NA
+1979,Hugh Smith Lake,Coho Salmon,NA,NA
+1980,Hugh Smith Lake,Coho Salmon,NA,NA
+1981,Hugh Smith Lake,Coho Salmon,NA,NA
+1982,Hugh Smith Lake,Coho Salmon,2144,Weir
+1983,Hugh Smith Lake,Coho Salmon,1487,Weir
+1984,Hugh Smith Lake,Coho Salmon,1407,Weir
+1985,Hugh Smith Lake,Coho Salmon,903,Weir
+1986,Hugh Smith Lake,Coho Salmon,1782,Weir
+1987,Hugh Smith Lake,Coho Salmon,1117,Weir
+1988,Hugh Smith Lake,Coho Salmon,513,Weir
+1989,Hugh Smith Lake,Coho Salmon,433,Weir
+1990,Hugh Smith Lake,Coho Salmon,870,Weir
+1991,Hugh Smith Lake,Coho Salmon,1836,Weir
+1992,Hugh Smith Lake,Coho Salmon,1426,Weir
+1993,Hugh Smith Lake,Coho Salmon,832,Weir
+1994,Hugh Smith Lake,Coho Salmon,1753,Weir
+1995,Hugh Smith Lake,Coho Salmon,1781,Weir
+1996,Hugh Smith Lake,Coho Salmon,950,Weir
+1997,Hugh Smith Lake,Coho Salmon,732,Weir
+1998,Hugh Smith Lake,Coho Salmon,983,Weir
+1999,Hugh Smith Lake,Coho Salmon,1246,Weir
+2000,Hugh Smith Lake,Coho Salmon,600,Weir
+2001,Hugh Smith Lake,Coho Salmon,1580,Weir
+2002,Hugh Smith Lake,Coho Salmon,3291,Weir
+2003,Hugh Smith Lake,Coho Salmon,1510,Weir
+2004,Hugh Smith Lake,Coho Salmon,840,Weir
+2005,Hugh Smith Lake,Coho Salmon,1732,Weir
+2006,Hugh Smith Lake,Coho Salmon,891,Weir
+2007,Hugh Smith Lake,Coho Salmon,1244,Weir
+2008,Hugh Smith Lake,Coho Salmon,1741,Weir
+2009,Hugh Smith Lake,Coho Salmon,2281,Weir
+2010,Hugh Smith Lake,Coho Salmon,2878,Weir
+2011,Hugh Smith Lake,Coho Salmon,2137,Weir
+2012,Hugh Smith Lake,Coho Salmon,1908,Weir
+2013,Hugh Smith Lake,Coho Salmon,3048,Weir
+2014,Hugh Smith Lake,Coho Salmon,4110,Weir
+2015,Hugh Smith Lake,Coho Salmon,956,Weir
+2016,Hugh Smith Lake,Coho Salmon,948,Weir
+2017,Hugh Smith Lake,Coho Salmon,1266,Weir
+2018,Hugh Smith Lake,Coho Salmon,619,Weir
+2019,Hugh Smith Lake,Coho Salmon,1235,Weir
+1972,Ketchikan Survey Index,Coho Salmon,NA,NA
+1973,Ketchikan Survey Index,Coho Salmon,NA,NA
+1974,Ketchikan Survey Index,Coho Salmon,NA,NA
+1975,Ketchikan Survey Index,Coho Salmon,NA,NA
+1976,Ketchikan Survey Index,Coho Salmon,NA,NA
+1977,Ketchikan Survey Index,Coho Salmon,NA,NA
+1978,Ketchikan Survey Index,Coho Salmon,NA,NA
+1979,Ketchikan Survey Index,Coho Salmon,NA,NA
+1980,Ketchikan Survey Index,Coho Salmon,NA,NA
+1981,Ketchikan Survey Index,Coho Salmon,NA,NA
+1982,Ketchikan Survey Index,Coho Salmon,NA,NA
+1983,Ketchikan Survey Index,Coho Salmon,NA,NA
+1984,Ketchikan Survey Index,Coho Salmon,NA,NA
+1985,Ketchikan Survey Index,Coho Salmon,NA,NA
+1986,Ketchikan Survey Index,Coho Salmon,NA,NA
+1987,Ketchikan Survey Index,Coho Salmon,4792,Survey (Aerial)
+1988,Ketchikan Survey Index,Coho Salmon,5007,Survey (Aerial)
+1989,Ketchikan Survey Index,Coho Salmon,6761,Survey (Aerial)
+1990,Ketchikan Survey Index,Coho Salmon,3444,Survey (Aerial)
+1991,Ketchikan Survey Index,Coho Salmon,5721,Survey (Aerial)
+1992,Ketchikan Survey Index,Coho Salmon,7017,Survey (Aerial)
+1993,Ketchikan Survey Index,Coho Salmon,7270,Survey (Aerial)
+1994,Ketchikan Survey Index,Coho Salmon,8690,Survey (Aerial)
+1995,Ketchikan Survey Index,Coho Salmon,8627,Survey (Aerial)
+1996,Ketchikan Survey Index,Coho Salmon,8831,Survey (Aerial)
+1997,Ketchikan Survey Index,Coho Salmon,5025,Survey (Aerial)
+1998,Ketchikan Survey Index,Coho Salmon,7095,Survey (Aerial)
+1999,Ketchikan Survey Index,Coho Salmon,8038,Survey (Aerial)
+2000,Ketchikan Survey Index,Coho Salmon,8634,Survey (Aerial)
+2001,Ketchikan Survey Index,Coho Salmon,11267,Survey (Aerial)
+2002,Ketchikan Survey Index,Coho Salmon,12223,Survey (Aerial)
+2003,Ketchikan Survey Index,Coho Salmon,11899,Survey (Aerial)
+2004,Ketchikan Survey Index,Coho Salmon,9904,Survey (Aerial)
+2005,Ketchikan Survey Index,Coho Salmon,14840,Survey (Aerial)
+2006,Ketchikan Survey Index,Coho Salmon,6901,Survey (Aerial)
+2007,Ketchikan Survey Index,Coho Salmon,4316,Survey (Aerial)
+2008,Ketchikan Survey Index,Coho Salmon,16752,Survey (Aerial)
+2009,Ketchikan Survey Index,Coho Salmon,8710,Survey (Aerial)
+2010,Ketchikan Survey Index,Coho Salmon,4563,Survey (Aerial)
+2011,Ketchikan Survey Index,Coho Salmon,5098,Survey (Aerial)
+2012,Ketchikan Survey Index,Coho Salmon,11960,Survey (Aerial)
+2013,Ketchikan Survey Index,Coho Salmon,11295,Survey (Aerial)
+2014,Ketchikan Survey Index,Coho Salmon,16675,Survey (Aerial)
+2015,Ketchikan Survey Index,Coho Salmon,10128,Survey (Aerial)
+2016,Ketchikan Survey Index,Coho Salmon,13420,Survey (Aerial)
+2017,Ketchikan Survey Index,Coho Salmon,11557,Survey (Aerial)
+2018,Ketchikan Survey Index,Coho Salmon,13764,Survey (Aerial)
+2019,Ketchikan Survey Index,Coho Salmon,7916,Survey (Aerial)
+1972,Tawah Creek,Coho Salmon,3000,Survey
+1973,Tawah Creek,Coho Salmon,1978,Survey
+1974,Tawah Creek,Coho Salmon,2500,Survey
+1975,Tawah Creek,Coho Salmon,800,Survey
+1976,Tawah Creek,Coho Salmon,1200,Survey
+1977,Tawah Creek,Coho Salmon,3000,Survey
+1978,Tawah Creek,Coho Salmon,2200,Survey
+1979,Tawah Creek,Coho Salmon,3250,Survey
+1980,Tawah Creek,Coho Salmon,3200,Survey
+1981,Tawah Creek,Coho Salmon,5793,Survey
+1982,Tawah Creek,Coho Salmon,7100,Survey
+1983,Tawah Creek,Coho Salmon,5950,Survey
+1984,Tawah Creek,Coho Salmon,4200,Survey
+1985,Tawah Creek,Coho Salmon,3300,Survey
+1986,Tawah Creek,Coho Salmon,3300,Survey
+1987,Tawah Creek,Coho Salmon,5000,Survey
+1988,Tawah Creek,Coho Salmon,1600,Survey
+1989,Tawah Creek,Coho Salmon,1490,Survey
+1990,Tawah Creek,Coho Salmon,9460,Survey
+1991,Tawah Creek,Coho Salmon,975,Survey
+1992,Tawah Creek,Coho Salmon,4235,Survey
+1993,Tawah Creek,Coho Salmon,5436,Survey
+1994,Tawah Creek,Coho Salmon,6000,Survey
+1995,Tawah Creek,Coho Salmon,2642,Survey
+1996,Tawah Creek,Coho Salmon,4030,Survey
+1997,Tawah Creek,Coho Salmon,2550,Survey
+1998,Tawah Creek,Coho Salmon,NA,NA
+1999,Tawah Creek,Coho Salmon,NA,NA
+2000,Tawah Creek,Coho Salmon,1572,Survey
+2001,Tawah Creek,Coho Salmon,3190,Survey
+2002,Tawah Creek,Coho Salmon,8093,Survey
+2003,Tawah Creek,Coho Salmon,5907,Survey
+2004,Tawah Creek,Coho Salmon,2214,Survey
+2005,Tawah Creek,Coho Salmon,1241,Survey
+2006,Tawah Creek,Coho Salmon,1156,Survey
+2007,Tawah Creek,Coho Salmon,1751,Survey
+2008,Tawah Creek,Coho Salmon,NA,NA
+2009,Tawah Creek,Coho Salmon,3581,Survey
+2010,Tawah Creek,Coho Salmon,2393,Survey
+2011,Tawah Creek,Coho Salmon,1221,Survey
+2012,Tawah Creek,Coho Salmon,NA,NA
+2013,Tawah Creek,Coho Salmon,2593,Survey
+2014,Tawah Creek,Coho Salmon,3555,Survey
+2015,Tawah Creek,Coho Salmon,2015,Survey
+2016,Tawah Creek,Coho Salmon,746,Survey
+2017,Tawah Creek,Coho Salmon,1455,Survey
+2018,Tawah Creek,Coho Salmon,2211,Survey
+2019,Tawah Creek,Coho Salmon,1866,Survey
+1972,Situk River,Coho Salmon,5100,Survey
+1973,Situk River,Coho Salmon,1719,Survey
+1974,Situk River,Coho Salmon,4260,Survey
+1975,Situk River,Coho Salmon,4500,Survey
+1976,Situk River,Coho Salmon,3280,Survey
+1977,Situk River,Coho Salmon,3750,Survey
+1978,Situk River,Coho Salmon,3850,Survey
+1979,Situk River,Coho Salmon,7000,Survey
+1980,Situk River,Coho Salmon,8100,Survey
+1981,Situk River,Coho Salmon,8430,Survey
+1982,Situk River,Coho Salmon,9180,Survey
+1983,Situk River,Coho Salmon,5300,Survey
+1984,Situk River,Coho Salmon,14000,Survey
+1985,Situk River,Coho Salmon,6490,Survey
+1986,Situk River,Coho Salmon,3162,Survey
+1987,Situk River,Coho Salmon,2000,Survey
+1988,Situk River,Coho Salmon,11000,Survey
+1989,Situk River,Coho Salmon,3900,Survey
+1990,Situk River,Coho Salmon,1630,Survey
+1991,Situk River,Coho Salmon,NA,NA
+1992,Situk River,Coho Salmon,13820,Survey
+1993,Situk River,Coho Salmon,10703,Survey
+1994,Situk River,Coho Salmon,21960,Survey
+1995,Situk River,Coho Salmon,NA,NA
+1996,Situk River,Coho Salmon,NA,NA
+1997,Situk River,Coho Salmon,9780,Survey
+1998,Situk River,Coho Salmon,NA,NA
+1999,Situk River,Coho Salmon,NA,NA
+2000,Situk River,Coho Salmon,NA,NA
+2001,Situk River,Coho Salmon,5030,Survey
+2002,Situk River,Coho Salmon,40000,Survey
+2003,Situk River,Coho Salmon,6009,Survey
+2004,Situk River,Coho Salmon,10284,Survey
+2005,Situk River,Coho Salmon,2514,Survey
+2006,Situk River,Coho Salmon,7950,Survey
+2007,Situk River,Coho Salmon,5763,Survey
+2008,Situk River,Coho Salmon,NA,NA
+2009,Situk River,Coho Salmon,5814,Survey
+2010,Situk River,Coho Salmon,11195,Survey
+2011,Situk River,Coho Salmon,3652,Survey
+2012,Situk River,Coho Salmon,3007,Survey
+2013,Situk River,Coho Salmon,14853,Survey
+2014,Situk River,Coho Salmon,8226,Survey
+2015,Situk River,Coho Salmon,7062,Survey
+2016,Situk River,Coho Salmon,6177,Survey
+2017,Situk River,Coho Salmon,4122,Survey
+2018,Situk River,Coho Salmon,6198,Survey
+2019,Situk River,Coho Salmon,10381,Survey
+1972,Tsiu River,Coho Salmon,NA,NA
+1973,Tsiu River,Coho Salmon,30000,Survey
+1974,Tsiu River,Coho Salmon,15000,Survey
+1975,Tsiu River,Coho Salmon,8150,Survey
+1976,Tsiu River,Coho Salmon,30000,Survey
+1977,Tsiu River,Coho Salmon,25000,Survey
+1978,Tsiu River,Coho Salmon,40000,Survey
+1979,Tsiu River,Coho Salmon,25000,Survey
+1980,Tsiu River,Coho Salmon,18000,Survey
+1981,Tsiu River,Coho Salmon,20000,Survey
+1982,Tsiu River,Coho Salmon,40000,Survey
+1983,Tsiu River,Coho Salmon,16500,Survey
+1984,Tsiu River,Coho Salmon,30000,Survey
+1985,Tsiu River,Coho Salmon,52350,Survey
+1986,Tsiu River,Coho Salmon,14100,Survey
+1987,Tsiu River,Coho Salmon,8500,Survey
+1988,Tsiu River,Coho Salmon,16000,Survey
+1989,Tsiu River,Coho Salmon,38000,Survey
+1990,Tsiu River,Coho Salmon,16800,Survey
+1991,Tsiu River,Coho Salmon,16600,Survey
+1992,Tsiu River,Coho Salmon,30800,Survey
+1993,Tsiu River,Coho Salmon,18500,Survey
+1994,Tsiu River,Coho Salmon,55000,Survey
+1995,Tsiu River,Coho Salmon,30000,Survey
+1996,Tsiu River,Coho Salmon,19000,Survey
+1997,Tsiu River,Coho Salmon,22000,Survey
+1998,Tsiu River,Coho Salmon,12000,Survey
+1999,Tsiu River,Coho Salmon,NA,NA
+2000,Tsiu River,Coho Salmon,12000,Survey
+2001,Tsiu River,Coho Salmon,17000,Survey
+2002,Tsiu River,Coho Salmon,31000,Survey
+2003,Tsiu River,Coho Salmon,35850,Survey
+2004,Tsiu River,Coho Salmon,NA,NA
+2005,Tsiu River,Coho Salmon,16600,Survey
+2006,Tsiu River,Coho Salmon,14500,Survey
+2007,Tsiu River,Coho Salmon,14000,Survey
+2008,Tsiu River,Coho Salmon,25200,Survey
+2009,Tsiu River,Coho Salmon,28000,Survey
+2010,Tsiu River,Coho Salmon,11000,Survey
+2011,Tsiu River,Coho Salmon,21000,Survey
+2012,Tsiu River,Coho Salmon,10500,Survey
+2013,Tsiu River,Coho Salmon,47000,Survey
+2014,Tsiu River,Coho Salmon,27000,Survey
+2015,Tsiu River,Coho Salmon,19500,Survey
+2016,Tsiu River,Coho Salmon,31000,Survey
+2017,Tsiu River,Coho Salmon,38000,Survey
+2018,Tsiu River,Coho Salmon,24336,Survey
+2019,Tsiu River,Coho Salmon,NA,NA
