@@ -18,14 +18,18 @@
 # If you have the default setup, below this is the "console"
 # This whole document in the editor is a "script" and can be edited and saved
 
+# You can edit scripts and "run" them line by line. 
+# "Running" code just means telling the computer to perform what is written, 
+#  as opposed to writing it. In each line we write "functions". 
+
 
 # R works by running functions which are a specific evaluation of data
-# A package is just a group of new functions that you can load in
+# A package is a group of new functions that you load to access more features 
 # You can evaluate your function to save it as an "object", most commonly a variable
 
 
-# Let's try that now! Evaluate the following lines by clicking "Run" to upper right
-# Or you can type ctrl+Enter 
+# Let's try that now! Evaluate the following lines by clicking your cursor in 
+# the line, then clicking "Run" in the upper right. Or you can type Ctrl+Enter 
 myvariable = 1 
 myvariable
 # Note that this printed to your console AND it's saved in your "Environment" 

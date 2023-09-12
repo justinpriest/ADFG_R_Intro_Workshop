@@ -56,6 +56,10 @@ str(myfirstdf)
 # Type a question mark before the function or search in 'Help' in the right bottom pane
 ?seq()
 
+# An "argument" is a way for us to specify certain criteria of the R function: 
+#  below, we will give arguments for where to start ("from"), where to end ("to"),
+#  and how often to increment. 
+
 seq(from = 10, to = 40, by = 3)
 
 
