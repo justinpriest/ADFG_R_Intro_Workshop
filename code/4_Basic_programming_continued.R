@@ -7,17 +7,24 @@
 #####         SCRIPT 4           #####
 ##### PROGRAMMING BASICS, PART 2 #####
 
+### NOTE!! This script is mostly the old version of what JTP did.
+#          Below is what we agreed should be in here. 
+#          Lines 30+ are the old version, poach and re-arrange! 
+
+
+
 # Things to cover in this script:
 
-# RStudio autocomplete, 
-# console output, 
-# case sensitivity, 
-# quotes, 
-# NAs, 
-# vectors vs factors vs lists, 
-# numeric vs character vs logical, 
-# dataframes, 
-# ==, !=, %in%, data.frame(), factor(), str(), 
+# RStudio autocomplete
+# console output
+# case sensitivity
+# quotes (single vs double quotes)
+# NAs
+# vectors vs factors vs lists
+# numeric vs character vs logical
+# dataframes, data.frame(),
+# ==, !=, %in%, 
+# factor(), str()
 # Packages, install.packages(), library()
 
 
