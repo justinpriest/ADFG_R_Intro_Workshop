@@ -1,0 +1,257 @@
+---
+title: "Tutorial 3 - Working With Your Data"
+tutorial:
+  id: "com.example.tutorials.WorkingWithData"
+  version: 1.0.0
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+description: >
+  Learn how to import and modify data.
+---
+
+
+```{r setup, include=FALSE}
+#rmarkdown::shiny_prerendered_clean('code/Tutorial_3_WorkingWithData/Tutorial_3_WorkingWithData.Rmd')
+
+library(learnr)
+library(tidyverse) 
+library(lubridate)
+tutorial_options(exercise.timelimit = 60) # prevent overly complex code from running
+knitr::opts_chunk$set(echo = FALSE)
+
+
+# knitr::opts_chunk$set(cache.extra = list(
+#   R.version, sessionInfo(), format(Sys.Date(), '%Y-%m')
+# ))
+
+```
+
+```{r loaddata, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE}
+exampledf <- data.frame(sex = c("Male", "Male", "Female", "Male", "Female", "Female", "Male", "Male", "Female", "Male", "Female", "Male", "Female"), 
+                        length = c(110, 112, 90, 89, 107, 104, 98, 102, 92, 88, 102, 109, 99), 
+                        weight = c(3, 3.4, 2.4, 2.5, 3.0, 2.9, 2.8, 2.8, 2.3, 2.3, 2.7, 3.1, 2.7),
+                        age = c(2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2),
+                        statarea = c(115, 115, 101, 115, 115, 101, 115, 115, 101, 101, 115, 101, 101))
+
+```
+
+# learnr Tutorial 3 - Working With _Your_ Data
+
+## Directories
+### Directories - Exercise 1
+
+*Knowing what folder that R is looking in is essential to importing data.*
+
+Write the R code required to show your working directory:
+
+```{r show-dir, exercise=TRUE, exercise.lines = 5, cache=FALSE}
+
+```
+
+```{r show-dir-solution}
+getwd()
+```
+
+
+### Directories - Exercise 2
+*Although we can't change our working directory in R while we're in this "learnr" environment, we can simulate it a bit.*
+
+Now write the R function to change your working directory. Note that it will show you an error message. 
+```{r set-dir, exercise=TRUE, exercise.lines = 5, cache=FALSE}
+
+```
+
+```{r set-dir-solution}
+setwd()
+```
+
+
+### Directories - Review
+It is *very* common to have "file not found" errors! Make sure to read the errors closely. A wrong directory or misspelled file name error would probably read similar to:
+"Warning message:
+In file(file, "rt") : cannot open file 'groundfishdata_2020.csv': No such file or directory"
+
+
+
+## Packages
+### Packages - Exercise 1
+
+*To extend the useability of R, we can load other packages. This will let us use other functions that aren't present in base R. Let's practice loading new packages.*
+
+Load the library "dplyr"
+
+```{r load-library, exercise=TRUE, exercise.lines = 5}
+
+```
+
+```{r load-library-solution}
+library(dplyr)
+
+```
+
+
+### Packages - Exercise 1 - Note
+*Quick side note about using libraries: quotes are optional. Running* `library(dplyr)` *is the most common way but putting it in quotes (* `library("dplyr")` *) does the same thing.*   
+*If you are installing a library for the first time (e.g., *`install.packages("dplyr")` *), you MUST use quotes.*  
+
+
+### Packages - Exercise 2
+*OK great, we've loaded a package! Now that we have a package loaded we can use it. *
+
+Use the function `filter()` from the library "dplyr" to filter the dataframe `exampledf` to only keep the rows from fish that where `sex=="Female"`. 
+```{r use-dplyr, exercise=TRUE, exercise.eval=TRUE, exercise.lines = 5, cache=FALSE}
+library(dplyr)
+exampledf
+```
+
+```{r use-dplyr-solution}
+library(dplyr)
+filter(exampledf, sex=="Female")
+```
+
+
+### Packages - Exercise 2 - Review
+We can only use a function from a package after we've loaded it. For this reason, by convention we usually load all the packages needed for a script at the top of a file. 
+
+
+
+
+## Data Import & Cleanup 
+
+What is tidy data?
+
+### Data - Exercise 1
+
+*You'll also need to periodically view the structure and layout of your data. While these checks aren't typically kept in a final script document, they're important steps to perform along the way, especially if you have errors.*
+
+View the structure of the following dataframe:
+
+```{r check-structure, exercise=TRUE, exercise.eval=FALSE}
+exampledf
+
+```
+
+```{r check-structure-solution}
+str(exampledf)
+
+```
+
+### Data - Exercise 2
+*Now that you've checked the structure, you noticed that some columns were of type "character". If you do any plotting or analysis, you'll want to make sure that these columns are a categorical variable.*
+
+Fill in the blanks within the function `as.factor()` to make columns `sex` and `statarea` both factors. Once completed, the `str()` functions should both show that `sex` and `statarea` are factors!
+```{r make-factor, exercise=TRUE, exercise.eval=FALSE}
+exampledf$sex <-as.factor()
+exampledf$statarea <- as.factor()
+
+str(exampledf$sex)
+str(exampledf$statarea)
+
+```
+
+```{r make-factor-solution}
+exampledf$sex <- as.factor(exampledf$sex)
+exampledf$statarea <- as.factor(exampledf$statarea)
+
+str(exampledf$sex)
+str(exampledf$statarea)
+```
+
+
+### Data - Exercise 3
+*Now that you've loaded the data, viewed it, and fixed any structural issues, it is helpful to do some quick plotting.*
+
+Using `plot()`, create a boxplot of `sex` by `length`. 
+Next, create a histogram of the lengths using `hist()`. 
+
+```{r basic-plot, exercise=TRUE, exercise.eval=FALSE}
+exampledf$sex <- as.factor(exampledf$sex)
+exampledf$statarea <- as.factor(exampledf$statarea)
+exampledf
+plot()
+hist()
+
+```
+
+```{r basic-plot-solution}
+exampledf$sex <- as.factor(exampledf$sex)
+exampledf$statarea <- as.factor(exampledf$statarea)
+plot(exampledf$sex, exampledf$length)
+hist(exampledf$length)
+
+```
+
+
+### Data - Exercise 4
+*In this learnr tutorial environment, the code to import a .csv file is a little convoluted so we won't do that here. But it's necessary to know how to do this. So, the following code will NOT run but we'll practice anyways.*
+
+Pretend that there is a file named "managementsurveys_2019.csv" in the folder `data` under your working directory. Write the code that would import this file. 
+```{r import-data, exercise=TRUE}
+
+```
+
+```{r import-data-solution}
+read.csv("data/managementsurveys_2019.csv")
+
+#Alternate Solution
+library(dplyr)
+read_csv("data/managementsurveys_2019.csv")
+```
+
+
+## Quiz
+
+*Now check your knowledge to help solidify what we've learned. This is only self-scored.*
+Answer the following:
+
+```{r quiz-data}
+quiz(
+  question("What are the commands to check and set the R working directory?",
+    answer("checkwd() & setwd()"),
+    answer("getdir() & setdir()"),
+    answer("checkdir() & setdir()"),
+    answer("getwd() & setwd()", correct = TRUE)
+  ),
+  question("What is the function used to load the package 'dplyr'?",
+    answer("load('dplyr')"),
+    answer("load(dplyr)"),
+    answer("library(dplyr)", correct = TRUE),
+    answer("library('dplyr')", correct = TRUE)
+  ),
+  question("Which of the following describes tidy data?",
+    answer("Each column has only one value"),
+    answer("There are no errors in the database after QA/QC"),
+    answer("Each row refers to only one observation", correct = TRUE),
+    answer("The column names are short and very tidy")
+  ),
+  question("What is the function to check a dataframe's structure?",
+    answer("order()"),
+    answer("str()", correct = TRUE),
+    answer("check()")
+  ),
+  question("Which two functions can load and read .csv data into R?",
+    answer("read.csv() & read_csv()", correct = TRUE),       
+    answer("read.data() & read_data()"),
+    answer("load() & import()"),
+    answer("grabmydata() & install()")
+  ),
+    question("Let's say that we have a dataframe named 'newdataframe' with a column 'sex' of values 'male' or 'female'. How do you only keep rows where sex is equal to female?",
+    answer("filter(newdataframe, sex == 'female')", correct = TRUE),
+    answer("filter(newdataframe, sex == female)"),
+    answer("filter(newdataframe, sex = female)"),
+    answer("filter('newdataframe', sex == 'female')"),
+    answer("newdataframe[newdataframe$sex=='female',]", correct = TRUE)
+  ),
+  question("Which of the following would read in a .csv file named pinkharvest2020 from subfolder data",
+    answer("read_csv('data/OceanAK_PinkSalmonRatio_2000-2020.csv')", correct = TRUE),       
+    answer("read_csv(data/OceanAK_PinkSalmonRatio_2000-2020.csv, readfile=TRUE)"),
+    #answer("read_csv(data\OceanAK_PinkSalmonRatio_2000-2020.csv, readfile=TRUE)"),
+    #answer("read_csv('data\\OceanAK_PinkSalmonRatio_2000-2020.csv')", correct = TRUE), #double // doesn't work
+    answer("read_csv(file = 'data/OceanAK_PinkSalmonRatio_2000-2020.csv')", correct = TRUE)
+  )
+)
+```
+
