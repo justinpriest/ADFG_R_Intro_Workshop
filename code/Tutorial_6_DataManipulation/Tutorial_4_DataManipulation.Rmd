@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 4 - Basic Data Manipulation"
+title: "Tutorial 6 - Basic Data Manipulation"
 tutorial:
   id: "com.example.tutorials.datamanipulation"
   version: 1.0.0
@@ -130,7 +130,7 @@ pinksalmonratio %>% filter(District == "101", !is.na(weight_lbs))
 
 
 ### Filter - Exercise 3 - Review
-Did you 154 rows? Great job!  
+Did you get 154 rows? Great job!  
 Notice how you needed to put 101 in quotes?? This is because it isn't a number anymore, it's a factor! 
 
 
