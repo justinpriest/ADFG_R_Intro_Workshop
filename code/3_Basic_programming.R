@@ -31,6 +31,129 @@ mean()
 
 
 
+## from my ppt3
+# math, sqrt, case sensitivity
+# variables
+# numeric vectors
+# c, :, seq
+# vector math
+# help
+# classes: logical, numeric, character, factor
+# comments
+# errors don't mean your computer a splode
+
+
+# Welcome back to R!
+
+# It can feel reassuring to know that everything works as expected.  
+# The Console, most likely the pane in the lower left, is where code gets
+# evaluated and output gets printed.  Click inside the Console, type 1 + 1
+# (or something equally exciting), and hit Enter.  
+
+# There's nothing stopping you from running code directly in the Console, 
+# but I recommend running it from the code pane (this one) instead.
+# This is because:
+# - you have a record of everything you did
+# - it's MUCH easier to fix mistakes
+# - you can easily leave notes using the # character
+# - you can save it in a .R file, like this one!
+
+# Click on the line below, and hit Ctrl+Enter (or "Run" in the upper right of this pane)
+# Note that the code and output still appear in the Console.
+2 * 3
+
+
+# You can store numbers, results, etc. using "<-"
+a <- 10
+b <- 20
+theAnswer <- a + b
+
+# R didn't print anything to the Console, but if you click on the Environment
+# tab, you will see some familiar names!
+# Calling a variable name by itself will tell R to print the contents.
+theAnswer
+
+
+# An ordered set of numbers, etc. is referred to as a vector.  You can use the
+# c() function to concatenate (stick) multiple elements together.
+fibonacci <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+# Mathematical operations will operate vector-wise, that is, on the whole vector.
+fibonacci
+fibonacci + 1
+
+
+# Most mathematical functions will use vector input
+x1 <- c(4, 6, 7, 9, 1, 4, 6)
+sqrt(x1)
+log(x1)
+exp(x1)
+
+# Some only make sense with vector input!
+mean(x1)
+median(x1)
+sd(x1)
+var(x1)
+sd(x1)^2
+sum(x1)
+prod(x1)
+length(x1)
+summary(x1)
+
+
+# Check out what happens if you do math with multiple vectors!
+vector1 <- c(1, 2, 3, 4, 5)
+vector2 <- c(10, 20, 30, 40, 50)
+vector1 * vector2
+
+
+# The : character can be used to create a regular sequence
+x <- 1:10
+x
+y <- x^2  # vector math again
+y
+plot(x, y)  # preview of coming attractions!
+
+
+# The seq() function can be used to create custom sequences
+seq(from=10, to=100, by=10)
+seq(from=234, to= 3485, length.out=17)
+
+
+# You've probably noticed that the Console keeps printing numbers in square
+# brackets [1] on the left of output.  
+# You can also use square brackets to return subsets of output!
+# We will discuss this more later.
+fibonacci
+fibonacci[4]
+fibonacci[1:4]
+
+fibonacci[1] <- 999  # can also use square brackets [ ] to assign values
+
+
+# You can store text as well as numbers.
+maturity_char <- c("Adult", "Juvenile", "Adult", "Adult", "Juvenile")
+
+# Differences between character and factor?
+maturity_factor <- as.factor(maturity_char)
+maturity_char
+maturity_factor
+
+# Notice that summary() behaves differently depending on input
+summary(maturity_char)
+summary(maturity_factor)
+
+maturity_char[5] <- "Geezer"       # R will do this
+maturity_factor[5] <- "Geezer"     # R will NOT do this!
+
+
+
+# What happens when we 
+
+
+length <- c(10, 3, 12, 8, 4)
+
+# --------------------------
 
 
 
