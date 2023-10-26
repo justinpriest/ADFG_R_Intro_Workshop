@@ -127,6 +127,22 @@ cbind(a, b)  # by column
 c(a, b)      # lengthwise
 
 
+
+# Installing packages!
+install.packages("recapr")   # installing a very simple package to your computer
+help(vChapman)               # accessing the contents doesn't work yet ...
+library("recapr")       # you have to load the package first
+help(vChapman)          # ... now it works!
+
+# This might take a few minutes, but we highly recommend this collection
+# of packages...
+install.packages("tidyverse")
+
+# we'll start working with them soon!
+
+
+
+
 ## ---------------------------
 
 
