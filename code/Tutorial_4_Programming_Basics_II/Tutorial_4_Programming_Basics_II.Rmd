@@ -1,0 +1,181 @@
+---
+title: "Tutorial 4 - Programming Basics 2"
+tutorial:
+  id: "com.example.tutorials.basics2"
+  version: 1.0.0
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+description: >
+  Learn how to break things and put them back together
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+tutorial_options(exercise.timelimit = 60) # prevent overly complex code from running
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Programming Basics, Part II
+
+## Working with indices 
+
+### Exercise 1 {data-allow-skip=TRUE}
+
+*Use this space to work through code to understand the concepts we've gone over. Go slow and try to get the correct answers. This is not graded and is not a race, use this space to familiarize yourself with how R works. Once you are finished, just close out of this before opening a new tutorial.*
+*This mini-console is running R, however clicking "Run Code" evaluates everything written in there; in RStudio, we run through it line-by-line.*
+
+Use square brackets `[ ]` to select the third element of `x` below.
+
+```{r x1, exercise=TRUE, exercise.lines = 5}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+x
+```
+
+```{r x1-solution}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+x[3]
+```
+
+### Exercise 2 {data-allow-skip=TRUE}
+
+*What happens when there are multiple indices used?*
+
+Use square brackets `[ ]` to select the third, fourth, and fifth element of `x` below.
+
+```{r x2, exercise=TRUE, exercise.lines = 5}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+x
+```
+
+<div id="x2-hint">
+**Hint:** Construct a vector _inside_ the square brackets with `c(...)` or `:`
+</div>
+
+```{r x2-solution}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+x[c(3, 4, 5)]
+```
+
+### Exercise 3 {data-allow-skip=TRUE}
+
+*Storing numbers to a subset?  You can do that??*
+
+Use the `<-` operator to store `999` to the third element of `x` below.
+
+```{r x3, exercise=TRUE, exercise.lines = 5}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+x[3]
+
+x
+```
+
+```{r x3-solution}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+x[3] <- 999
+
+x
+```
+
+### Exercise 4 {data-allow-skip=TRUE}
+
+*What happens when there are multiple indices used?*
+
+Use the `<-` operator to store `999` to the third, fourth, and fifth element of `x` below.
+
+```{r x4, exercise=TRUE, exercise.lines = 5}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+x[c(3, 4, 5)] 
+
+x
+```
+
+```{r x4-solution}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+x[c(3, 4, 5)] <- 999
+
+x
+```
+
+
+## Sticking things together
+
+### Exercise 5 {data-allow-skip=TRUE}
+
+*Row-wise*
+
+Use `rbind()` to stick vectors `a` and `b` together as multiple rows.
+
+```{r x5, exercise=TRUE, exercise.lines = 5}
+a <- 1:5
+b <- 6:10
+```
+
+```{r x5-solution}
+a <- 1:5
+b <- 6:10
+rbind(a, b)
+```
+
+### Exercise 6 {data-allow-skip=TRUE}
+
+*Column-wise*
+
+Now, use `cbind()` to stick vectors `a` and `b` together as multiple columns!
+
+```{r x6, exercise=TRUE, exercise.lines = 5}
+a <- 1:5
+b <- 6:10
+```
+
+```{r x6-solution}
+a <- 1:5
+b <- 6:10
+cbind(a, b)
+```
+
+### Exercise 7 {data-allow-skip=TRUE}
+
+*Length-wise*
+
+What happens when we put vectors in the `c()` function
+
+```{r x7, exercise=TRUE, exercise.lines = 5}
+a <- 1:5
+b <- 6:10
+```
+
+```{r x7-solution}
+a <- 1:5
+b <- 6:10
+c(a, b)
+```
+
+
+## Working with indices in two dimensions!
+
+
+str with a data.frame
+
+$ with a data.frame
+
+summary with a vector
+summary with a data.frame
+turn something in to a factor, then summary again
+
+str with a list
+
+$ with a list
+
+
+logicals
+
+logicals to subset stuff
+
+is.na, !is.na, ifelse
