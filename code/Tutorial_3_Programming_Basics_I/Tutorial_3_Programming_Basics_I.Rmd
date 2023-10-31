@@ -42,7 +42,7 @@ myvector
 
 *Vector math, part I*
 
-Modify the second line of the code below to multiply all elements by 10.
+Modify the second line of the code below to multiply all elements of `myvector` by 10.
 
 ```{r vector1, exercise=TRUE, exercise.lines = 5}
 myvector <- c(1, 2, 3, 4, 5)
@@ -68,8 +68,8 @@ hours <- c(1.5, 6.7, 5, 8.2, 10)
 
 
 ```{r vector2-solution}
-catch <- c(33, 78, 12, 45, 89)
-hours <- c(1.5, 6.7, 5, 8.2, 10)
+catch <- c(33, 80, 12, 45, 89)
+hours <- c(1, 4, 5, 8.2, 10)
 
 CPUE <- catch / hours
 CPUE
@@ -83,7 +83,7 @@ CPUE
 
 You can use the `:` character to create a regular sequence, such as `1:10`.  Most mathematical operators (such as `sqrt()`, or square root) will accept a vector input.
 
-Modify the code below to compute the square root of all whole numbers from 1 to 50.  
+Modify the code below to compute the square root of all whole numbers from 1 to 50.  Does element 49 have a value of 7.000?
 
 ```{r vector3, exercise=TRUE, exercise.lines = 5}
 sqrt()
@@ -155,7 +155,7 @@ sd(x)
 
 This one is tricky!  Run the code below.  Does it give the answer you would expect?  
 
-Modify it to give the _actual_ arithmetic mean of the vector of numbers.
+Modify it to give the _actual_ arithmetic mean of the vector of numbers (6.75).
 
 Hint: `mean()` is expecting a vector input...
 
@@ -196,7 +196,7 @@ median(x, na.rm=TRUE)
 
 
 
-## Quiz 1 
+## Quiz 
 
 *Let's review some of the concepts we've gone over.*
 
@@ -265,7 +265,7 @@ quiz(
 
 ###   
 
-### Quiz 1 Review
+### Quiz Review
 How did you do?!  If you've gotten this far, you're doing quite well! Here are some notes about _why_ those were the correct answers:   
  - Knowing when to use quotations feels quite odd at first. There is indeed a method to the madness: items within quotes are usually "text".  
  - If you see the plus sign (+) in the console, R is waiting for you and you probably forgot a closing parenthesis.  

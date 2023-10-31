@@ -63,14 +63,12 @@ x[c(3, 4, 5)]
 
 *Storing numbers to a subset?  You can do that??*
 
-Use the `<-` operator to store `999` to the third element of `x` below.
+Use the `<-` operator to store `999` to the third element of `x` below.  Add another line below, printing `x` to see what happened to its contents.
 
 ```{r x3, exercise=TRUE, exercise.lines = 5}
 x <- c(1, 1, 2, 3, 5, 8, 13, 21)
 
 x[3]
-
-x
 ```
 
 ```{r x3-solution}
@@ -85,14 +83,12 @@ x
 
 *What happens when there are multiple indices used?*
 
-Use the `<-` operator to store `999` to the third, fourth, and fifth element of `x` below.
+Use the `<-` operator to store `999` to the third, fourth, and fifth element of `x` below.  Add another line below, printing `x` to see what happened to its contents.
 
 ```{r x4, exercise=TRUE, exercise.lines = 5}
 x <- c(1, 1, 2, 3, 5, 8, 13, 21)
 
 x[c(3, 4, 5)] 
-
-x
 ```
 
 ```{r x4-solution}
@@ -144,7 +140,7 @@ cbind(a, b)
 
 *Length-wise*
 
-What happens when we put vectors in the `c()` function
+What happens when use `a` and `b` as inputs in the `c()` function?
 
 ```{r x7, exercise=TRUE, exercise.lines = 5}
 a <- 1:5
@@ -158,24 +154,287 @@ c(a, b)
 ```
 
 
-## Working with indices in two dimensions!
+## Working with two dimensions!
+
+### Exercise 8 {data-allow-skip=TRUE}
+
+```{r loaddata, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE}
+exampledf <- data.frame(sex = c("Male", "Male", "Female", "Male", "Female", "Female", "Male", "Male", "Female", "Male", "Female", "Male", "Female"), 
+                        length = c(110, 112, 90, 89, 107, 104, 98, 102, 92, 88, 102, 109, 99), 
+                        weight = c(3, 3.4, 2.4, 2.5, 3.0, 2.9, 2.8, 2.8, 2.3, 2.3, 2.7, 3.1, 2.7),
+                        age = c(2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 2, 2, 2),
+                        statarea = c(115, 115, 101, 115, 115, 101, 115, 115, 101, 101, 115, 101, 101))
+
+```
+
+*Here comes a data.frame...*
+
+A data.frame has been loaded to the environment, and the first few rows are printed below.  The `head()` function can be handy for getting a quick look at a data.frame, without printing the whole thing!  Change the argument `n=` to show the first ten rows instead.
+
+```{r x8, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+head(exampledf, n=5)
+```
+
+```{r x8-solution}
+head(exampledf, n=10)
+```
+
+### Exercise 9 {data-allow-skip=TRUE}
+
+*Another way of looking at the structure of our data.frame*
+
+The `str()` function is a bit more flexible with regard to input, and prints the structure of an object.  Change `head` to `str` in the code below and see what it does.
+
+```{r x9, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+head(exampledf)
+```
+
+```{r x9-solution}
+str(exampledf)
+```
+
+### Exercise 10 {data-allow-skip=TRUE}
+
+*Extracting columns - one way*
+
+Notice that when we called `str()`, the columns names were preceded by the `$` character.  That means we can use `$` to grab a column at a time!  Add a line to the code below to extract the `length` column.
+
+```{r x10, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+str(exampledf)
+```
+
+<div id="x10-hint">
+**Hint:** `exampledf$`
+</div>
+
+```{r x10-solution}
+exampledf$length
+```
+
+### Exercise 11 {data-allow-skip=TRUE}
+
+*Extracting columns - another way!*
+
+We can also use row or column indices inside square brackets `[]`.  Change the second line below to extract length, which is the second column of the data.frame.
+
+```{r x11, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+exampledf$length
+
+exampledf[]
+```
+
+<div id="x11-hint">
+**Hint:** `exampledf[,]`
+</div>
+
+```{r x11-solution}
+exampledf$length
+
+exampledf[, 2]
+```
+
+### Exercise 12 {data-allow-skip=TRUE}
+
+*Extracting rows*
+
+Modify the code below to extract the third row of the data.frame.
+
+```{r x12, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+exampledf[]
+```
+
+```{r x12-solution}
+exampledf[3, ]
+```
+
+### Exercise 13 {data-allow-skip=TRUE}
+
+*Extracting multiple rows??*
+
+Modify the code below to use a vector input to extract _rows three through five_ of the data.frame.  How do you think you would do this?
+
+```{r x13, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+exampledf[3, ]
+```
+
+<div id="x11-hint">
+**Hint:** `c()` or maybe `:` ...
+</div>
+
+```{r x13-solution}
+exampledf[3:5, ]
+```
+
+### Exercise 14 {data-allow-skip=TRUE}
+*Summarizing a data.frame*
+
+The `summary()` function can be a useful tool for summarizing many kinds of objects.  The `$length` column is summarized below.  Add a line below it to summarize the whole data.frame at once.
+
+```{r x14, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+summary(exampledf$length)
+```
+
+```{r x14-solution}
+summary(exampledf$length)
+
+summary(exampledf)
+```
+
+### Exercise 15 {data-allow-skip=TRUE}
+*When summarizing a data.frame shows off its problems!*
+
+Uh oh - it looks like stat area is formatted as a number!  That's probably not what we want!  Good thing we can fix it.  Turn it into a factor with `as.factor(exampledf$statarea)`, and store it to `exampledf$statarea`.  Add a line below it to re-run `summary()` and see what changed.
+
+Note: for completeness, we should probably do the same thing to sex, which is currently formatted as character.
+
+```{r x15, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
+summary(exampledf)
+```
+
+```{r x15-solution}
+summary(exampledf)
+
+exampledf$statarea <- as.factor(exampledf$statarea)
+
+summary(exampledf)
+```
+
+### Exercise 16 {data-allow-skip=TRUE}
+*Extracting pieces of a list*
+
+Your colleague ran a two-sample t-test to compare the mean lengths from stat areas 101 and 115, and saved the results in an object called `t_test_results`.  Run the line below to see how R will print the results of a two sample t-test.
+
+You'd actually like to pull the 95% confidence interval of the difference in means so you can use it own code, without a lot of copy-pasting!  First, add a line that calls `str()` to look at the structure of the test results.
+
+Then, add another line to extract the CI.
+
+Bonus: How would you extract just the _lower bound_ of the CI?
+
+```{r testresults, exercise.setup="loaddata"}
+testresults <- with(exampledf, t.test(length[statarea=="101"], length[statarea=="115"]))
+```
+
+```{r x16, exercise=TRUE, exercise.lines = 5, exercise.setup="testresults"}
+testresults
+```
+
+<div id="x16-hint">
+**Hint:** `testresults$` 
+</div>
+
+```{r x16-solution}
+str(testresults)
+
+testresults$conf.int
+
+testresults$conf.int[1]
+```
+
+## Fun with logicals
+
+### Exercise 17 {data-allow-skip=TRUE}
+
+*Subsetting a data.frame*
+
+Modify the code below to print _only_ observations where `sex` is equal to `"Female"`.
+
+```{r loaddata2, exercise.setup="loaddata"}
+exampledf$statarea <- as.factor(exampledf$statarea)
+exampledf$sex <- as.factor(exampledf$sex)
+```
+
+```{r x17, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata2"}
+exampledf[exampledf$sex=="", ]
+```
+
+```{r x17-solution}
+exampledf[exampledf$sex=="Female", ]
+```
+
+### Exercise 18 {data-allow-skip=TRUE}
+
+*Subsetting a data.frame*
+
+Modify the code below to print _only_ observations where `sex` is equal to `"Female"` _and_ `age` is equal to `2`.
+
+Note that the `&` character means "and", and the `|` character means "or".
+
+```{r x18, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata2"}
+exampledf[, ]
+```
+
+<div id="x18-hint">
+**Hint:** Did you use `exampledf$` ?
+</div>
+
+```{r x18-solution}
+exampledf[exampledf$sex=="Female" & exampledf$age==2, ]
+```
+
+### Exercise 19 {data-allow-skip=TRUE}
+
+*Same same, but different*
+
+Modify the code below to print observations where `sex` is equal to `"Female"` _or_ `statarea` is equal to `"115"`.
+
+Note that the `&` character means "and", and the `|` character means "or".
+
+```{r x19, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata2"}
+exampledf[, ]
+```
+
+```{r x19-solution}
+exampledf[exampledf$sex=="Female" | exampledf$statarea=="115", ]
+```
+
+### Exercise 20 {data-allow-skip=TRUE}
+
+*Making a new column and using ifelse()*
+
+You can create a new column to our example data.frame, simply by assigning a new vector of data to a new column name of your choice.
+
+Create a new column, and populate it with `"Small"` if `exampledf$length < 100`, and with `"Big"` otherwise, using the `ifelse()` function.
+
+Feel free to consult `?ifelse` if you'd like!
+
+```{r x20, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata2"}
+exampledf$size <- 
+  
+exampledf
+```
+
+```{r x20-solution}
+exampledf$size <- ifelse(exampledf$length < 100, "Small", "Big")
+  
+exampledf
+```
+
+### Exercise 21 {data-allow-skip=TRUE}
+
+*Final challenge: dealing with NA values*
+
+```{r loaddata3, exercise.setup="loaddata2"}
+exampledf$sex[c(1, 4, 9)] <- NA
+```
+
+Oops!  It turns out there was something wrong with some of the samples, and some of the entries for sex needed to be redacted.  Create a new column that says `"Good sample"` if `!is.na(exampledf$sex)` and `"Bad sample"` otherwise.
+
+```{r x21, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata3"}
+exampledf$goodsample <- 
+  
+exampledf
+```
+
+<div id="x21-hint">
+**Hint:** Did you use `ifelse()` ?
+</div>
+
+```{r x21-solution}
+exampledf$goodsample <- ifelse(!is.na(exampledf$sex), "Good sample", "Bad sample")
+  
+exampledf
+```
 
 
-str with a data.frame
-
-$ with a data.frame
-
-summary with a vector
-summary with a data.frame
-turn something in to a factor, then summary again
-
-str with a list
-
-$ with a list
-
-
-logicals
-
-logicals to subset stuff
-
-is.na, !is.na, ifelse
+### COMPLETE
+Whew!  That section was a monster.  Great work!

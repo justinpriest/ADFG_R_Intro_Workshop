@@ -148,10 +148,48 @@ maturity_factor[5] <- "Geezer"     # R will NOT do this!
 
 
 
-# What happens when we 
+# There are two ways to get help on a function via code, and they do the same thing.
+help("rep")
+?rep
+
+# Note that you can also search for a function name in the search bar in the help 
+# pane, with the same result.
 
 
-length <- c(10, 3, 12, 8, 4)
+
+
+
+## SAFETY TOOLS ##
+# You should know how to stop things. 
+# Two common issues are incomplete code, or very long-running code.
+
+
+# Incomplete code
+# Look at the below line. It's missing the closing parenthesis. 
+# If you click run, it will try to run but fail. Note the "+" in the console.
+# This is telling you that it's waiting for you to finish typing a line.
+# To escape this, click in the console, then press escape
+
+c(1, 2, 3
+
+  
+  
+# Long-running code
+
+# Don't worry about the details of this code.
+# - Actually, if you're curious, it starts x out with a value of 1 and then keeps
+#   adding 1 to it until it's less than zero.  This will keep running unless we 
+#   stop it! 
+# Look for a tiny stop sign at the top right of the console.  Esc might work too.
+x <- 1
+while(x > 0) {
+  x <- x+1
+  print(x)
+}
+  
+  
+
+
 
 # --------------------------
 
@@ -321,6 +359,12 @@ data.frame(variable1 = c(1, 2, 3, 4, 5),
 for(i in 1:10000){
   .z <- rnorm(5, i, 2)
   print(summary(lm(.z ~1)))
+}
+
+x <- 1
+while(x > 0) {
+  x <- x+1
+  print(x)
 }
 
 # Incomplete code

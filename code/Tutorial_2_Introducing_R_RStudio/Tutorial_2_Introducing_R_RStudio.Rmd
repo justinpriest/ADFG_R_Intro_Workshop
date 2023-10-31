@@ -96,3 +96,55 @@ How do you think you can tell R to ignore this line altogether?
 ```{r comments-solution}
 # 1 + 2 - 3 * 4 / 5   # here is an amazing comment
 ```
+
+## Quiz 
+
+*Let's review some of the concepts we've gone over.*
+
+```{r data-manip-quiz1}
+quiz(
+  question("Why should you do data manipulation in R rather than Excel?",
+    answer("You have a record of what changes were implemented", correct = TRUE),
+    answer("Can be easily repeated every time you output from a database / data is updated", correct = TRUE),
+    answer("You can leave notes & documentation in the same order as the manipulation steps", correct = TRUE),
+    answer("Easier & faster for many tasks", correct = TRUE),
+    answer("Because Justin & Matt said to")
+  ),
+  question("What is the difference between R (R Project) and RStudio?",
+    answer("You can customize the layout & appearance of R Project, but not RStudio"),
+    answer("No difference in language: RStudio runs R in the background, and provides an organized interface", correct = TRUE),
+    answer("RStudio provides easy access to some extra tools", correct = TRUE)
+  ),
+  question("The best ways to learn R programming are (probably)",
+    answer("Try stuff and see what works and what doesn't! (and try to figure out why)", correct = TRUE),
+    answer("Read THE R BOOK cover-to-cover before trying ANYTHING"),
+    answer("Slip Brian Ripley a $20 and hope he gives you the cheat codes"),
+    answer("Start using R for your own work (and be patient at first)", correct = TRUE),
+    answer("Connect with other R users", correct = TRUE)
+  ),
+    question("What happens to variables saved in the Environment when we close R?",
+    answer("They're stored to the hard drive"),
+    answer("They go away.  Re-run your code to get them back.", correct = TRUE),
+    answer("They're gone forever")
+  ),
+    question("TERMINOLOGY: R Code is evaluated in the ___ pane, but we recommend writing your scripts in the ___ pane so you have a record of what you did",
+    answer("Console / Editor", correct = TRUE),
+    answer("Editor / Console"),
+    answer("Help / Plots"),
+    answer("Packages / Workspace")
+  ),
+  question("What happens if a line of your R code causes an error?",
+    answer("Computer explodes. Solution: buy new computer."),
+    answer("You will get a message that might give insight as to what went wrong", correct = TRUE),
+    answer("You might learn something new about R in diagnosing the problem", correct = TRUE),
+    answer("You might find some great resources or helpful people in the R community while troubleshooting", correct = TRUE),
+    answer("Hadley Wickham will blacklist you from the tidyverse"),
+    answer("Nothing that doesn't happen to Justin & Matt several times a day!", correct = TRUE)
+  )
+)
+```
+
+###
+
+### COMPLETE
+Great work! You've successfully completed this lesson!

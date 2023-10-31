@@ -315,7 +315,7 @@ quiz(
     answer("You have a record of what changes were implemented", correct = TRUE),
     answer("Can be easily repeated every time you output from a database / data is updated", correct = TRUE),
     answer("Easier & faster for many tasks", correct = TRUE),
-    answer("Because Justin said to")
+    answer("Because Justin & Matt said to")
   ),
   question("How would you filter dataframe 'pinksalmonratio' to only include values from 2018 in column 'Year'?",
     answer("pinksalmonratio %>% filter(Year == 2018)", correct = TRUE),
