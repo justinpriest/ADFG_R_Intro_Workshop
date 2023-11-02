@@ -129,9 +129,16 @@ View(groundfish)
 ## REPLACE A VALUE ##
 # Commonly, we'll need to replace a character value with something else
 
+#### recode now says "lifecycle superseded"
+# groundfish %>% 
+#   mutate(biggie_smalls = recode(biggie_smalls, "Small fish" = "small and medium sized"))
 groundfish %>% 
-  mutate(biggie_smalls = recode(biggie_smalls, "Small fish" = "small and medium sized"))
-groundfish %>% mutate(Sex = recode(Sex, "Female" = "F", "Male" = "M"))
+  mutate(biggie_smalls = case_match(biggie_smalls, "Small fish" ~ "small and medium sized",
+                                    .default=biggie_smalls))
+groundfish %>% 
+  mutate(biggie_smalls = ifelse(biggie_smalls == "Small fish", "small and medium sized", biggie_smalls))
+# groundfish %>% mutate(Sex = recode(Sex, "Female" = "F", "Male" = "M"))
+groundfish %>% mutate(Sex = case_match(Sex, "Female" ~ "F", "Male" ~ "M", .default=Sex))
 groundfish
 
 # Less commonly, previous biologists might have been slackers and used a blank to mean a zero

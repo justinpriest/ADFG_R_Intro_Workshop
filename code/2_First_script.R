@@ -39,14 +39,15 @@
 #  as opposed to writing it. In each line we write "functions". 
 
 
-# R works by running functions which are a specific evaluation of data
-# A package is a group of new functions that you load to access more features 
-# You can evaluate your function to save it as an "object", most commonly a variable
+# R works by running functions which are a specific evaluation of data.
+# A package is a group of new functions that you load to access more features. 
+# You can evaluate lines of code to save the result as an "object", most 
+# commonly a variable.
 
 
 # Let's try that now! Evaluate the following lines by clicking your cursor in 
 # the line, then clicking "Run" in the upper right. Or you can type Ctrl+Enter 
-myvariable = 1 
+myvariable <- 1 
 myvariable
 # Note that this printed to your console AND it's saved in your "Environment" 
 # Look at the pane in the upper right and you'll see "myvariable" there
@@ -58,7 +59,7 @@ myvariable
 # There are also more complicated objects. Let's make a vector by using the function c()
 # Everything that we put inside the brackets will be separated by commas
 # c is the concatenate function in R and squishes everything together
-myvector = c(1, 3, 5, 7, 9)
+myvector <- c(1, 3, 5, 7, 9)
 myvector
 c(2, 4, 6)   # Note that this prints to the console but doesn't save
 

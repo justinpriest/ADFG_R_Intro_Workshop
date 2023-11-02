@@ -1,0 +1,278 @@
+---
+title: "Tutorial 3 - Programming Basics 1"
+tutorial:
+  id: "com.example.tutorials.basics1"
+  version: 1.0.0
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+description: >
+  Learn how to math in R.
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+tutorial_options(exercise.timelimit = 60) # prevent overly complex code from running
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Programming Basics, Part I  
+## Vectors and vector math 
+
+### Exercise 1 {data-allow-skip=TRUE}
+
+*Use this space to work through code to understand the concepts we've gone over. Go slow and try to get the correct answers. This is not graded and is not a race, use this space to familiarize yourself with how R works. Once you are finished, just close out of this before opening a new tutorial.*
+*This mini-console is running R, however clicking "Run Code" evaluates everything written in there; in RStudio, we run through it line-by-line.*
+
+Modify the code below to create a vector of numbers from 1 to 5, then hit "Run Code" (or ctrl+enter):
+
+```{r myvector, exercise=TRUE, exercise.lines = 5}
+myvector <- c(, , , , )
+myvector
+```
+
+```{r myvector-solution}
+myvector <- c(1, 2, 3, 4, 5)
+myvector
+```
+
+### Exercise 2
+
+*Vector math, part I*
+
+Modify the second line of the code below to multiply all elements of `myvector` by 10.
+
+```{r vector1, exercise=TRUE, exercise.lines = 5}
+myvector <- c(1, 2, 3, 4, 5)
+myvector
+```
+
+
+```{r vector1-solution}
+myvector <- c(1, 2, 3, 4, 5)
+myvector * 10
+```
+
+### Exercise 3
+
+*Vector math, part II: this time it's personal*
+
+Create a new variable called `CPUE` (catch per unit effort), defined by `catch` divided by `hours`.  Print the result to the console!
+
+```{r vector2, exercise=TRUE, exercise.lines = 5}
+catch <- c(33, 78, 12, 45, 89)
+hours <- c(1.5, 6.7, 5, 8.2, 10)
+```
+
+
+```{r vector2-solution}
+catch <- c(33, 80, 12, 45, 89)
+hours <- c(1, 4, 5, 8.2, 10)
+
+CPUE <- catch / hours
+CPUE
+```
+
+## More vectors!
+
+### Exercise 4
+
+*Regular sequences*
+
+You can use the `:` character to create a regular sequence, such as `1:10`.  Most mathematical operators (such as `sqrt()`, or square root) will accept a vector input.
+
+Modify the code below to compute the square root of all whole numbers from 1 to 50.  Does element 49 have a value of 7.000?
+
+```{r vector3, exercise=TRUE, exercise.lines = 5}
+sqrt()
+```
+
+```{r vector3-solution}
+sqrt(1:50)
+```
+
+### Exercise 5
+
+*Regular sequences, customized!*
+
+The `seq()` function can be used to generate sequences using optional `from=`, `to=`, `by=`, and `length.out=` arguments.
+
+Replace the `99` in each line below so that all lines have the same output!  
+
+```{r vector4, exercise=TRUE, exercise.lines = 10}
+c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+
+seq(from=0, to=100, by=99)
+
+seq(from=0, to=100, length.out=99)
+
+(0:10)*99  # bonus!
+```
+
+```{r vector4-solution}
+c(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+
+seq(from=0, to=100, by=10)
+
+seq(from=0, to=100, length.out=11)
+
+(0:10)*10  # bonus!
+```
+
+## Functions that expect vectors
+
+### Exercise 6
+
+*Summary statistics*
+
+Modify the code below to compute the mean, median, and standard deviation of `x`.  
+
+```{r vector5, exercise=TRUE, exercise.lines = 10}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+mean()
+
+median()
+
+sd()
+```
+
+```{r vector5-solution}
+x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+
+mean(x)
+
+median(x)
+
+sd(x)
+```
+
+### Exercise 7
+
+*Bug hunter!*
+
+This one is tricky!  Run the code below.  Does it give the answer you would expect?  
+
+Modify it to give the _actual_ arithmetic mean of the vector of numbers (6.75).
+
+Hint: `mean()` is expecting a vector input...
+
+```{r vector7, exercise=TRUE, exercise.lines = 10}
+mean(1, 1, 2, 3, 5, 8, 13, 21)
+```
+
+<div id="vector7-hint">
+**Hint:** `c(...)`
+</div>
+
+```{r vector7-solution}
+mean(c(1, 1, 2, 3, 5, 8, 13, 21))
+```
+
+### Exercise 8
+
+*Dealing with NA*
+
+Evaluate the code below.  What happens?
+
+Investigate the `median()` function using `?median`.  How would you compute the sample median without including the `NA` value?
+
+```{r vector6, exercise=TRUE, exercise.lines = 10}
+x <- c(1, 1, 2, 3, 5, 8, NA, 21)
+median(x)
+```
+
+<div id="vector6-hint">
+**Hint:** `na.rm=`
+</div>
+
+```{r vector6-solution}
+x <- c(1, 1, 2, 3, 5, 8, NA, 21)
+median(x, na.rm=TRUE)
+```
+
+
+
+
+## Quiz 
+
+*Let's review some of the concepts we've gone over.*
+
+Some questions to verify that you understand the purposes of various base and recommended R packages:
+
+```{r quiz-basics1}
+quiz(
+  question("Which function would you use for taking the mean / average?",
+    answer("average()"),
+    answer("tools"),
+    answer("mean()", correct = TRUE),
+    answer("codetools")
+  ),
+  question("How would you set variable 'fishcolor' to be equal to red, blue, and green?",
+    answer("fishcolor <- red, blue, green "),
+    answer("fishcolor <- c('red', 'blue', 'green')", correct = TRUE),
+    answer("fishcolor <- c(red, blue, green)"),
+    answer("'fishcolor' <- c('red, blue, green')")
+  ),
+  question("How would you get help and learn more about a function named cbind()?",
+    answer("help(cbind)", correct = TRUE),
+    answer("Search cbind in help panel on bottom-right of RStudio", correct = TRUE),
+    answer("Google search 'r cbind()'", correct = TRUE),
+    answer("Call 867-5309 and ask for cbind"),
+    answer("?cbind", correct = TRUE)
+  ),
+  question("Select the only line that does NOT have an issue",
+    answer("mean(c(3, 4, 5, 6)"),
+    answer("mean(2, 3, 4, 5)"),
+    answer("mean(c(3, 4, 5, 6))", correct = TRUE),
+    answer("mean(x"),
+    answer("mean((x)")
+  ),
+  question("What is the expected outcome of this code: mean(c(2, 2, 4, 6, 6, NA, 2, 6, 5, 3, 4))",
+    answer("NA", correct = TRUE),
+    answer("4")
+  ),
+  question("Which of the following creates a vector of numbers?",
+    answer("makelist(1, 2, 3)"),
+    answer("str(1, 2, 3)"),
+    answer("listed(1, 2, 3)"),
+    answer("c(1, 2, 3)", correct = TRUE)
+  ),
+  question("While taking the mean, your answer is returned as NA. What argument should you add inside the function mean()?",
+    answer("completecase = FALSE"),
+    answer("na.rm = TRUE", correct = TRUE),
+    answer("pleaseremoveNAs")
+  ),
+  question("Oh no! Your console shows a '+' and appears to be waiting for you. What caused this and how to you get it back to normal?",
+    answer("Cause: Code is running. Solution: Wait. Wait some more. Wait again?"),
+    answer("Cause: Incorrect voodoo chant. Solution: Burn computer"),
+    answer("Cause: Wrong function name. Solution: Never make a mistake ever again"),
+    answer("Cause: Incomplete code ending. Solution: Press Escape", correct = TRUE)
+  ),
+  question("Which of these is a good variable name",
+    answer("x"),
+    answer("sablefishcatch2019", correct = TRUE),
+    answer("mean"),
+    answer("vector"),
+    answer("dat"),
+    answer("1sablefish")
+  )
+
+)
+```
+
+###   
+
+### Quiz Review
+How did you do?!  If you've gotten this far, you're doing quite well! Here are some notes about _why_ those were the correct answers:   
+ - Knowing when to use quotations feels quite odd at first. There is indeed a method to the madness: items within quotes are usually "text".  
+ - If you see the plus sign (+) in the console, R is waiting for you and you probably forgot a closing parenthesis.  
+ - Proper variable naming is often a personal choice but the ones shown here were all bad. Don't use variable names that are extremely vague, have the same wording as a common function, or start with a number.   
+
+
+
+
+### COMPLETE
+Great work! You've successfully completed this lesson!

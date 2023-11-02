@@ -26,8 +26,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r loadpkg, echo=FALSE, message=FALSE, warning=FALSE}
 
 # Now load in some data that we'll use later
-#tannercrab <- read_csv(here::here("data/OceanAK_CrabSurvey_2018-2020_Specimens.csv")) %>%
-tannercrab <- read_csv("https://raw.githubusercontent.com/justinpriest/R_Intro_AFS/main/data/OceanAK_CrabSurvey_2018-2020_Specimens.csv") %>% 
+# tannercrab <- read_csv(here::here("data/OceanAK_CrabSurvey_2018-2020_Specimens.csv")) %>%
+tannercrab <- read_csv("https://raw.githubusercontent.com/justinpriest/R_Intro_AFS/main/data/OceanAK_CrabSurvey_2018-2020_Specimens.csv") %>%
 # tannercrab <- read_csv("../../data/OceanAK_CrabSurvey_2018-2020_Specimens.csv") %>%
   rename("Count" = "Number Of Specimens",
          "Width" = "Width Millimeters",
@@ -63,7 +63,7 @@ Write the R code required to add two plus two:
 Complete the code to concatenate numbers 1 through 5 together to make a vector called "myvector" then print "myvector" to the screen. 
 
 ```{r make-vector, exercise=TRUE, exercise.lines = 5}
-myvector <- (, , , , )
+myvector <- (, , , , ) 
 ```
 
 
@@ -89,7 +89,7 @@ Woohoo! You can see that the code `myvector <- c(1, 2, 3, 4, 5)` set myvector to
 
 Modify the following code to show only the top 10 rows:
 
-```{r print-limit, exercise = TRUE, exercise.eval=TRUE, exercise.lines = 5}
+```{r print-limit, exercise = TRUE, exercise.eval=TRUE, exercise.lines = 5, exercise.setup="loadpkg"}
 tannercrab
 ```
 
@@ -108,7 +108,7 @@ head(tannercrab, n=10)
   
 Using the `$` operator, select from the `tannercrab` dataframe just the column named "Width"  
 
-```{r columnWidth, exercise = TRUE, exercise.lines = 5}
+```{r columnWidth, exercise = TRUE, exercise.lines = 5, exercise.setup="loadpkg"}
 
 ```
 
@@ -128,7 +128,7 @@ tannercrab$Width
 
 What is the mean width of all tanner crab?
 
-```{r meanwidth, exercise = TRUE, exercise.lines = 5}
+```{r meanwidth, exercise = TRUE, exercise.lines = 5, exercise.setup="loadpkg"}
 mean()
 ```
 
@@ -150,7 +150,7 @@ Did you get 126.9? GREAT JOB!
   
 Take the mean of column "Chela". (NOTE! There are many NAs in here, what can you add to this code to remove them?)
 
-```{r chelamean, exercise = TRUE, exercise.lines = 5}
+```{r chelamean, exercise = TRUE, exercise.lines = 5, exercise.setup="loadpkg"}
 mean(tannercrab$Chela)
 ```
 
@@ -176,7 +176,7 @@ mean(tannercrab$Chela, na.rm = TRUE)
   
 Whoops! Looks like someone made some errors in their code. Fix this to run.
 
-```{r bug-tanner, exercise = TRUE, exercise.lines = 5}
+```{r bug-tanner, exercise = TRUE, exercise.lines = 5, exercise.setup="loadpkg"}
 Mean(Tannercrab$chela, Na.rm = TRUE)
 ```
 
@@ -238,7 +238,7 @@ Some questions to verify that you understand the purposes of various base and re
 
 ```{r quiz-basics1}
 quiz(
-  question("Which function would you use for taking the mean /average?",
+  question("Which function would you use for taking the mean / average?",
     answer("average()"),
     answer("tools"),
     answer("mean()", correct = TRUE),
