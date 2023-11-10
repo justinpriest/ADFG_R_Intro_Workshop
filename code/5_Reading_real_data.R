@@ -102,13 +102,3 @@ read.csv("data/whiterussians.csv") # cannot open file 'data/whiterussians.csv': 
 
 
 
-## BONUS: FUNCTIONS ##
-# To understand packages, it might be helpful to see how to set your own function. 
-# The below function is something we make and we call it "addtwonumbers"
-# A package is just a collection of new functions to give us new usability
-addtwonumbers <- function(x1, x2){
-  x1 + x2
-}
-addtwonumbers(5, 12)
-addtwonumbers(10, 7)
-addtwonumbers(3, 9)
