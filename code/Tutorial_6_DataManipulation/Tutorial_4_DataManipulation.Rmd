@@ -109,7 +109,7 @@ pinksalmonratio %>% filter(Year == 2019, statweek > 30)
 
 *Often values of NAs are of interest, either to highlight missing data or to remove NAs from further analysis*
 
-Filter the data to only show our `NA` values from `weight_lbs`:
+Filter the data to only show rows where there is an `NA` value in `weight_lbs`:
 ```{r filter-weightnas, exercise=TRUE, exercise.lines = 5, exercise.setup="data-import"}
 pinksalmonratio %>% filter(is.na())
 ```
@@ -119,7 +119,7 @@ pinksalmonratio %>% filter(is.na(weight_lbs))
 ```
 
 
-Filter the data to the subset where District is 101 and that excludes `weight_lbs` values that are `NA`:
+Filter the data to the subset of rows where District is 101 and that excludes `weight_lbs` values that are `NA`:
 ```{r filter-weight_notnas, exercise=TRUE, exercise.lines = 5, exercise.setup="data-import"}
 pinksalmonratio %>% filter(District == "", !is.na())
 ```
@@ -283,13 +283,16 @@ pinksalmonratio %>% mutate(Year = as.factor(Year))
 *Review the results of the first line. Because District was a factor, each factor was simply one of 16 "levels", one for each district. To return it to a number, first convert it to a character,* __then__ *to a number.* 
 
 Turn column District into a numeric value based on its District value. 
-<!-- # ```{r mutate-factorreturn, exercise=TRUE, exercise.lines = 5, exercise.eval=FALSE, exercise.setup="data-import"} -->
-pinksalmonratio %>% mutate(District = as.numeric(District))
+```{r mutate-factorreturn, exercise=TRUE, exercise.lines = 5, exercise.eval=FALSE, exercise.setup="data-import"} 
+pinksalmonratio %>% mutate(District = )
 
-#pinksalmonratio %>% mutate( = as.numeric(as.character()))
+
 
 
 ```
+<div id="mutate-factorreturn-hint">
+**Hint:** `pinksalmonratio %>% mutate( = as.numeric(as.character()))` 
+</div>
 
 ```{r mutate-factorreturn-solution}
 pinksalmonratio %>% mutate(District = as.numeric(as.character(District)))
@@ -379,6 +382,13 @@ quiz(
         answer("pinksalmonratio %>% mutate(highlowpercent = ifelse(percentmale >80, 'High Percent Males', 'Low'))", correct = TRUE),
     answer("pinksalmonratio %>% mutate(ifelse(percentmale >80, 'High Percent Males', 'Low'))"),
     answer("pinksalmonratio %>% mutate(highlowpercent = ifelse(percentmale, 80, 'High', 'Low'))")
+  ),
+  question("You type a command in RStudio, and suddenly you can't do anything!  You notice a red stop sign in the upper right corner of the Terminal pane.  Which of the following _might_ be true? ",
+
+    answer("Computer Over.  Virus = Very Yes."),
+        answer("You totally did NOT mean to do that.  Solution: no solution.  You're doomed to wait until R finishes with whatever the heck it's doing."),
+    answer("You totally did NOT mean to do that.  Solution: click the red stop sign to get your life back.", correct = TRUE),
+    answer("You totally DID mean to do that!  Solution: go play outside while R finishes thinking.", correct = TRUE)
   )
 )
 ```

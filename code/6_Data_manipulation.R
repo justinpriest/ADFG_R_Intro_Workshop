@@ -30,14 +30,19 @@ library(tidyverse)
 # This sounds complicated but makes code much more readable, and less repetitive
 
 # Here's our code from before, in Base R
-groundfish <- read_csv("data/OceanAK_GroundfishSpecimens_2000-2020.csv") # Read in file from folder "data"
+
+# groundfish <- read_csv("data/OceanAK_GroundfishSpecimens_2000-2020.csv") # Read in file from folder "data"
+groundfish <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/OceanAK_GroundfishSpecimens_2000-2020.csv") # Read in file from folder "data"
+
 groundfish <- rename(groundfish,"length_mm" = "Length Millimeters", 
                      "weight_kg" = "Weight Kilograms") 
 groundfish <- dplyr::select(groundfish, Year, Species, Sex, Age, length_mm, weight_kg) 
 groundfish <- filter(groundfish, Species == "Sablefish")
 
 # Here's the same results but with the pipe
-groundfish <- read_csv("data/OceanAK_GroundfishSpecimens_2000-2020.csv") %>% # Read in file from folder "data"
+# groundfish <- read_csv("data/OceanAK_GroundfishSpecimens_2000-2020.csv") %>% # Read in file from folder "data"
+groundfish <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/OceanAK_GroundfishSpecimens_2000-2020.csv") %>% # Read in file from folder "data"
+
   rename("length_mm" = "Length Millimeters", 
          "weight_kg" = "Weight Kilograms") %>%
   dplyr::select(Year, Species, Sex, Age, length_mm, weight_kg) %>%

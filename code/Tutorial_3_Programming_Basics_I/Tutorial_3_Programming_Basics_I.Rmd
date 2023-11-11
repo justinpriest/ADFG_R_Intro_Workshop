@@ -66,6 +66,10 @@ catch <- c(33, 78, 12, 45, 89)
 hours <- c(1.5, 6.7, 5, 8.2, 10)
 ```
 
+<div id="vector2-hint">
+**Hint:** `CPUE <- `
+</div>
+
 
 ```{r vector2-solution}
 catch <- c(33, 80, 12, 45, 89)
@@ -127,10 +131,10 @@ seq(from=0, to=100, length.out=11)
 
 *Summary statistics*
 
-Modify the code below to compute the mean, median, and standard deviation of `x`.  
+Modify the code below to compute the mean, median, and standard deviation of `y`.  
 
 ```{r vector5, exercise=TRUE, exercise.lines = 10}
-x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+y <- c(1, 1, 2, 3, 5, 8, 13, 21)
 
 mean()
 
@@ -140,13 +144,13 @@ sd()
 ```
 
 ```{r vector5-solution}
-x <- c(1, 1, 2, 3, 5, 8, 13, 21)
+y <- c(1, 1, 2, 3, 5, 8, 13, 21)
 
-mean(x)
+mean(y)
 
-median(x)
+median(y)
 
-sd(x)
+sd(y)
 ```
 
 ### Exercise 7

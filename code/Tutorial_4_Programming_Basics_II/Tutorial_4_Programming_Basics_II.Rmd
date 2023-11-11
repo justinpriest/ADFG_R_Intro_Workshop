@@ -257,7 +257,7 @@ Modify the code below to use a vector input to extract _rows three through five_
 exampledf[3, ]
 ```
 
-<div id="x11-hint">
+<div id="x13-hint">
 **Hint:** `c()` or maybe `:` ...
 </div>
 
@@ -268,11 +268,15 @@ exampledf[3:5, ]
 ### Exercise 14 {data-allow-skip=TRUE}
 *Summarizing a data.frame*
 
-The `summary()` function can be a useful tool for summarizing many kinds of objects.  The `$length` column is summarized below.  Add a line below it to summarize the whole data.frame at once.
+The `summary()` function can be a useful tool for summarizing many kinds of objects.  Run the code below to show a summary of the `$length` column.  Then, add a line below it to summarize the whole data.frame at once.
 
 ```{r x14, exercise=TRUE, exercise.lines = 5, exercise.setup="loaddata"}
 summary(exampledf$length)
 ```
+
+<div id="x14-hint">
+**Hint:** You can pass almost anything to the `summary()` function - including data.frames!
+</div>
 
 ```{r x14-solution}
 summary(exampledf$length)
@@ -291,6 +295,10 @@ Note: for completeness, we should probably do the same thing to sex, which is cu
 summary(exampledf)
 ```
 
+<div id="x15-hint">
+**Hint:** exampledf$statarea <- 
+</div>
+
 ```{r x15-solution}
 summary(exampledf)
 
@@ -304,7 +312,7 @@ summary(exampledf)
 
 Your colleague ran a two-sample t-test to compare the mean lengths from stat areas 101 and 115, and saved the results in an object called `t_test_results`.  Run the line below to see how R will print the results of a two sample t-test.
 
-You'd actually like to pull the 95% confidence interval of the difference in means so you can use it own code, without a lot of copy-pasting!  First, add a line that calls `str()` to look at the structure of the test results.
+You'd actually like to pull the 95% confidence interval of the difference in means so you can use it own code, without a lot of copy-pasting!  First, add a line that calls `str()` to look at the structure of the test results, and re-run your code.
 
 Then, add another line to extract the CI.
 
@@ -391,9 +399,9 @@ exampledf[exampledf$sex=="Female" | exampledf$statarea=="115", ]
 
 *Making a new column and using ifelse()*
 
-You can create a new column to our example data.frame, simply by assigning a new vector of data to a new column name of your choice.
+One way to create a new column in our example data.frame is by assigning a new vector of data to a new column name of your choice.
 
-Create a new column, and populate it with `"Small"` if `exampledf$length < 100`, and with `"Big"` otherwise, using the `ifelse()` function.
+Create a new column called "size", and populate it with `"Small"` if `exampledf$length < 100`, and with `"Big"` otherwise, using the `ifelse()` function.
 
 Feel free to consult `?ifelse` if you'd like!
 

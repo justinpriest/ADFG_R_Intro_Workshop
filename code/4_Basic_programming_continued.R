@@ -24,6 +24,7 @@ x1[-4]
 # Indices with 2+ dimensions!
 # first defining a matrix
 matrix1 <- matrix(1:12, nrow=4, ncol=3)
+matrix1
 
 matrix1[1, ]  # row 1
 matrix1[, 1]  # column 1
@@ -31,6 +32,7 @@ matrix1[1, 3]  # row 1, column 3
 matrix1[c(1,3), ] # rows 1 and 3
 
 matrix1[1, 1] <- 999
+matrix1
 
 
 # you might need double brackets [[]] when dealing with lists
@@ -42,35 +44,43 @@ list1[[3]]
 str(list1)
 
 
+# or, if list elements have names, you can also use $ to extract things with names
+list1 <- list(amazingData=matrix1, 
+              meaningOfLife=42, 
+              myFavoriteThings=c("raindrops on roses", "whiskers on kittens"))
+list1
+list1$myFavoriteThings   # grabbing the last element by name
+list1[[3]]               # and also by index!
+
+# the str() function shows the structure of any object
+str(list1)
+
+
 
 # Most often, you'll be working with data.frames...
-day <- c(1,2,3,1,2,3)
-operator <- c("A","A","A","B","B","B")
-reading <- c(5,1,2,6,8,9)
+df1 <- data.frame(day = c(1, 2, 3, 1, 2, 3),
+                  operator = c("A", "A", "A", "B", "B", "B"),
+                  reading = c(5, 1, 2, 6, 999, 9))
 
-# creating a data.frame - note that data.frames can have columns of different types
-df1 <- data.frame(day, operator, reading)  
-df1
-
-summary(df1)
+summary(df1)  # summary() summarizes all columns using the appropriate methods!
 str(df1)  
-names(df1)
+names(df1)  # names() just prints names
 
 df1$day  # extracting the day column by name
 df1[, 1]  # can also extract by location, but this is less robust to changes
 
+
 # fun with logical statements!
-df1$day == 1   # we test equality with ==, not =
-df1$day != 1   # not equals
-!(df1$day == 1)  # ! by itself means "not"
-df1$day >= 2     # greater than or equal to
+df1$operator == "B"   # we test equality with ==, not =
+df1$operator != "B"   # not equals
+!(df1$operator == "B")  # ! means not
 
-df1$day == 2 & df1$operator == "B"  # & means "and"
-df1$day == 2 | df1$operator == "B"  # | means "or"
+df1[df1$day == 2, ]  # subsetting for day==2
+df1[df1$day != 2, ]  # subsetting for day NOT EQUALS 2
+df1[!(df1$day == 2), ]  # subsetting for day NOT EQUALS 2, a different way
 
-# using logical statements for subsetting!
-df1[df1$day != 1, ]
-df1[df1$day == 1 & df1$operator == "A", ]
+two_B <- df1[df1$day == 2 & df1$operator == "B", ]
+not_two_B <- df1[!(df1$day == 2 & df1$operator == "B"), ]
 
 # using logical statements for assignment!
 df1$operator[df1$operator == "A"] <- "Arthur" 
@@ -84,6 +94,24 @@ df1$day1 <- ifelse(df1$day == 1, "day 1", NA)   # adding a new column with $
 df1[is.na(df1$day1), ]    # cases where df is NA
 df1[!is.na(df1$day1), ]   # cases where df is not NA
 
+# Challenge: Beverly's machine was malfunctioning on day 2!! 
+# Recode the 999 as NA
+df1
+df1_fix1 <- df1 # so we keep the original intact
+df1_fix1[5, 3] <- NA
+
+df1_fix2 <- df1
+df1_fix2$reading[5] <- NA
+
+df1_fix3 <- df1
+df1_fix3[df1_fix3$operator=="Beverly" & df1_fix3$day==2, 3] <- NA
+
+df1_fix4 <- df1
+df1_fix4$reading[df1_fix4$operator=="Beverly" & df1_fix4$day==2] <- NA
+
+## discussion: all of these will work, but #4 is probably the best.  Why?
+## - most robust to reordering of the dataset
+## - guaranteed to be the right value (eliminates human error from mis-counting indices)
 
 
 # Other ways of sticking things together
