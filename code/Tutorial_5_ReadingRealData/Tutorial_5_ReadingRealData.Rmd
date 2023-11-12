@@ -1,8 +1,8 @@
 ---
-title: "Tutorial 3 - Working With Your Data"
+title: "Tutorial 5 - Working With Your Data"
 tutorial:
   id: "com.example.tutorials.WorkingWithData"
-  version: 1.0.0
+  version: 1.1.0
 output: 
   learnr::tutorial:
     progressive: true
@@ -38,7 +38,7 @@ exampledf <- data.frame(sex = c("Male", "Male", "Female", "Male", "Female", "Fem
 
 ```
 
-# learnr Tutorial 3 - Working With _Your_ Data
+# learnr Tutorial 5 - Working With _Your_ Data
 
 ## Directories
 ### Directories - Exercise 1

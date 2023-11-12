@@ -2,7 +2,7 @@
 title: "Tutorial 7 - Creating charts with ggplot2"
 tutorial:
   id: "com.example.tutorials.ggplot2charts"
-  version: 1.0.0
+  version: 1.1.0
 output: 
   learnr::tutorial:
     progressive: true

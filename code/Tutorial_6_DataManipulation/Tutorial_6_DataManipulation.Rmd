@@ -2,7 +2,7 @@
 title: "Tutorial 6 - Basic Data Manipulation"
 tutorial:
   id: "com.example.tutorials.datamanipulation"
-  version: 1.0.0
+  version: 1.1.0
 output: 
   learnr::tutorial:
     progressive: true
@@ -36,7 +36,7 @@ pinksalmonratio <- read_csv("https://raw.githubusercontent.com/justinpriest/R_In
   dplyr::select(-Harvest)
 
 ```
-# learnr Tutorial 4 - Data Manipulation
+# learnr Tutorial 6 - Data Manipulation
 
 ## The PIPE
 

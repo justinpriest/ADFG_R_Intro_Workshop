@@ -273,7 +273,7 @@ quiz(
 How did you do?!  If you've gotten this far, you're doing quite well! Here are some notes about _why_ those were the correct answers:   
  - Knowing when to use quotations feels quite odd at first. There is indeed a method to the madness: items within quotes are usually "text".  
  - If you see the plus sign (+) in the console, R is waiting for you and you probably forgot a closing parenthesis.  
- - Proper variable naming is often a personal choice but the ones shown here were all bad. Don't use variable names that are extremely vague, have the same wording as a common function, or start with a number.   
+ - Proper variable naming is often a personal choice but the bad ones shown here were all poor choices. Don't use variable names that are extremely vague, have the same wording as a common function, or start with a number.   
 
 
 
