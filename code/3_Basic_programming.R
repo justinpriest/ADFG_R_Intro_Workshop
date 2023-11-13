@@ -72,6 +72,11 @@ vector2 <- c(10, 20, 30, 40, 50)
 vector1 * vector2
 
 
+# what happens if vectors aren't the same length?
+c(1, 2, 3, 4) + c(10, 20, 30)   # when the longer length is not a multiple of the shorter
+c(1, 2, 3, 4, 5, 6) + c(10, 20, 30)   # when the longer length IS a multiple of the shorter
+
+
 # The : character can be used to create a regular sequence
 x <- 1:10
 x
@@ -82,7 +87,7 @@ plot(x, y)  # preview of coming attractions!
 
 # The seq() function can be used to create custom sequences
 seq(from=10, to=100, by=10)
-seq(from=234, to= 3485, length.out=17)
+seq(from=234, to= 3485, length.out=17)  # these are basically random numbers, but R does it!
 
 
 # You've probably noticed that the Console keeps printing numbers in square
