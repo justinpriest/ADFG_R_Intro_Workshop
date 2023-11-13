@@ -79,6 +79,7 @@ df1[df1$day == 2, ]  # subsetting for day==2
 df1[df1$day != 2, ]  # subsetting for day NOT EQUALS 2
 df1[!(df1$day == 2), ]  # subsetting for day NOT EQUALS 2, a different way
 
+# challenge: create a data.frame of the subset of data from day 2 and operator B
 two_B <- df1[df1$day == 2 & df1$operator == "B", ]
 not_two_B <- df1[!(df1$day == 2 & df1$operator == "B"), ]
 
@@ -95,7 +96,8 @@ df1[is.na(df1$day1), ]    # cases where df is NA
 df1[!is.na(df1$day1), ]   # cases where df is not NA
 
 # Challenge: Beverly's machine was malfunctioning on day 2!! 
-# Recode the 999 as NA
+# Task: Recode the 999 as NA
+# Multiple ways to do this!!
 df1
 df1_fix1 <- df1 # so we keep the original intact
 df1_fix1[5, 3] <- NA
@@ -108,6 +110,9 @@ df1_fix3[df1_fix3$operator=="Beverly" & df1_fix3$day==2, 3] <- NA
 
 df1_fix4 <- df1
 df1_fix4$reading[df1_fix4$operator=="Beverly" & df1_fix4$day==2] <- NA
+
+df1_fix5 <- df1
+df1_fix5$reading[df1_fix5$reading == 999] <- NA
 
 ## discussion: all of these will work, but #4 is probably the best.  Why?
 ## - most robust to reordering of the dataset
