@@ -1,5 +1,8 @@
 ---
 title: "Tutorial 1 - Demo"
+tutorial:
+  id: "com.example.tutorials.learnrdemo"
+  version: 1.1.0
 output: 
   learnr::tutorial:
     progressive: true
@@ -29,7 +32,7 @@ example_df <- data.frame(column1 = x, column2 = round(runif(10, 0, 100), 0))
 
 ### Welcome to learnr!
 
-*This is a simple "app" that I wrote to go through the exercises we'll cover. In each code chunk, you can evaluate the line in R by clicking "Run Code" or just like in RStudio, you can type "Ctrl+Enter". Note! clicking Run Code will evaluate everything in your box; Ctrl+Enter will evaluate only the current line.*  
+*This is a simple "app" that we wrote to go through the exercises we'll cover. In each code chunk, you can evaluate the line in R by clicking "Run Code" or just like in RStudio, you can type "Ctrl+Enter". Note! clicking Run Code will evaluate everything in your box; Ctrl+Enter will evaluate only the current line.*  
 
 *Go slow and try to get the correct answers. If you want to see the hints or solutions, check those. This is not graded and is not a race, use this space to familiarize yourself with how R works. Once you are finished, close out of this window before opening a new tutorial.*
 
@@ -38,8 +41,14 @@ example_df <- data.frame(column1 = x, column2 = round(runif(10, 0, 100), 0))
 
 <hr>  
 
-**UPDATE:**   
-_If you close out of a tutorial and want to work on it again later, you may encounter random errors in datasets not loading properly. To address this, you can do one of two things:_  
+**NOTE:**   
+_There are two ways to run this app. You are probably using the online version which is great! We have also included the code in the folder for this course; you can run it locally on your machine by opening the file, then clicking "Run Document". You will have to install one tiny thing first; ask your instructors!_
+
+<br>  
+
+_If you are working online, please click continue! If you are working locally, read below for a special note._
+
+_When closing out of a tutorial and returning to work again later, you may encounter random errors in datasets not loading properly. To address this, you can do one of two things:_  
  _- Next to "Run Document" click the dropdown menu and "Clear Prerendered Output"_  
  _- Modify the text of the RMD by adding a space somewhere or changing version number and clicking save_   
 _Then proceed as normal by clicking "Run Document"_  
@@ -63,6 +72,8 @@ Enter code below and evaluate it to see the results. Add any two numbers togethe
 ### Exercise 2
 
 *Some exercises will have code in them that won't run as is! Change the code to run and compare your answers to the solutions provided.*
+
+*Note also that if you're truly stuck, you can just click "Continue". Asking a neighbor for help is also a great option. For instance, the code below is something we haven't covered!*
 
 Select the 2nd column of the dataframe "example_df"
 
@@ -102,11 +113,12 @@ Some questions might have more than one correct answer:
 
 ```{r quiz-basics}
 quiz(
-  question("In which town was the AFS conference _supposed_ to be this year?",
-    answer("Homer"),
-    answer("Anchorage"),
-    answer("Juneau", correct = TRUE),
-    answer("Fairbanks")
+  question("Who are the instructors for this course?",
+    answer("Humperdink"),
+    answer("Turing"),
+    answer("Matt", correct = TRUE),
+    answer("Justin", correct = TRUE),
+    answer("TayTay")
   ),
   question("Select all of the following correct answers. ADF&G manages harvest on the following species:",
     answer("Chinook salmon", correct = TRUE),

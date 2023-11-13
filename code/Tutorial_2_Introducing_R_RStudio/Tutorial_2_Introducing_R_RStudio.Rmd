@@ -2,7 +2,7 @@
 title: "Tutorial 2 - Introducing R and RStudio"
 tutorial:
   id: "com.example.tutorials.introducingr"
-  version: 1.0.0
+  version: 1.1.0
 output: 
   learnr::tutorial:
     progressive: true

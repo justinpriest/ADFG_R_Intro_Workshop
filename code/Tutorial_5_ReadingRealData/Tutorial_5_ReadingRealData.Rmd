@@ -2,7 +2,7 @@
 title: "Tutorial 5 - Working With Your Data"
 tutorial:
   id: "com.example.tutorials.WorkingWithData"
-  version: 1.1.0
+  version: 1.2.4
 output: 
   learnr::tutorial:
     progressive: true
@@ -13,8 +13,8 @@ description: >
 ---
 
 
-```{r setup, include=FALSE}
-#rmarkdown::shiny_prerendered_clean('code/Tutorial_3_WorkingWithData/Tutorial_3_WorkingWithData.Rmd')
+```{r setup, include=FALSE, cache = FALSE}
+#rmarkdown::shiny_prerendered_clean('code/Tutorial_5_WorkingWithData/Tutorial_5_WorkingWithData.Rmd')
 
 library(learnr)
 library(tidyverse) 
@@ -29,7 +29,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-```{r loaddata, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE}
+
+
+```{r data-import, echo=FALSE, message=FALSE, warning=FALSE}
+# Note to future dumdums like me: if you import data in this chunk you must explicitly reference that in whatever following chunk you want to read it from e.g., {r chunkname, exercise.setup="data-import"}
+# Sincerely, the previous wasted 90 minutes
+
+
 exampledf <- data.frame(sex = c("Male", "Male", "Female", "Male", "Female", "Female", "Male", "Male", "Female", "Male", "Female", "Male", "Female"), 
                         length = c(110, 112, 90, 89, 107, 104, 98, 102, 92, 88, 102, 109, 99), 
                         weight = c(3, 3.4, 2.4, 2.5, 3.0, 2.9, 2.8, 2.8, 2.3, 2.3, 2.7, 3.1, 2.7),
@@ -37,8 +43,12 @@ exampledf <- data.frame(sex = c("Male", "Male", "Female", "Male", "Female", "Fem
                         statarea = c(115, 115, 101, 115, 115, 101, 115, 115, 101, 101, 115, 101, 101))
 
 ```
+  
+
+
 
 # learnr Tutorial 5 - Working With _Your_ Data
+
 
 ## Directories
 ### Directories - Exercise 1
@@ -101,10 +111,11 @@ library(dplyr)
 ### Packages - Exercise 2
 *OK great, we've loaded a package! Now that we have a package loaded we can use it. *
 
-Use the function `filter()` from the library "dplyr" to filter the dataframe `exampledf` to only keep the rows from fish that where `sex=="Female"`. 
-```{r use-dplyr, exercise=TRUE, exercise.eval=TRUE, exercise.lines = 5, cache=FALSE}
-library(dplyr)
-exampledf
+*The code below is written to use the function `filter()` from the library "dplyr" to filter the dataframe `exampledf` to only keep the rows from fish that where `sex=="Female"`.*  
+Add code to load the library "dplyr" so that the code below can run:
+```{r use-dplyr, exercise=TRUE, exercise.eval=TRUE, exercise.lines = 5, cache=FALSE, exercise.setup="data-import"}
+
+filter(exampledf, sex=="Female")
 ```
 
 ```{r use-dplyr-solution}
@@ -129,7 +140,7 @@ What is tidy data?
 
 View the structure of the following dataframe:
 
-```{r check-structure, exercise=TRUE, exercise.eval=FALSE}
+```{r check-structure, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 exampledf
 
 ```
@@ -143,7 +154,7 @@ str(exampledf)
 *Now that you've checked the structure, you noticed that some columns were of type "character". If you do any plotting or analysis, you'll want to make sure that these columns are a categorical variable.*
 
 Fill in the blanks within the function `as.factor()` to make columns `sex` and `statarea` both factors. Once completed, the `str()` functions should both show that `sex` and `statarea` are factors!
-```{r make-factor, exercise=TRUE, exercise.eval=FALSE}
+```{r make-factor, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 exampledf$sex <-as.factor()
 exampledf$statarea <- as.factor()
 
@@ -167,7 +178,7 @@ str(exampledf$statarea)
 Using `plot()`, create a boxplot of `sex` by `length`. 
 Next, create a histogram of the lengths using `hist()`. 
 
-```{r basic-plot, exercise=TRUE, exercise.eval=FALSE}
+```{r basic-plot, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 exampledf$sex <- as.factor(exampledf$sex)
 exampledf$statarea <- as.factor(exampledf$statarea)
 exampledf
@@ -197,7 +208,7 @@ Pretend that there is a file named "managementsurveys_2019.csv" in the folder `d
 read.csv("data/managementsurveys_2019.csv")
 
 #Alternate Solution
-library(dplyr)
+library(tidyverse)
 read_csv("data/managementsurveys_2019.csv")
 ```
 

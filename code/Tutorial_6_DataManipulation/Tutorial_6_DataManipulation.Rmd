@@ -2,7 +2,7 @@
 title: "Tutorial 6 - Basic Data Manipulation"
 tutorial:
   id: "com.example.tutorials.datamanipulation"
-  version: 1.1.0
+  version: 1.1.2
 output: 
   learnr::tutorial:
     progressive: true
@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r data-import, echo=FALSE, message=FALSE, warning=FALSE}
-pinksalmonratio <- read_csv("https://raw.githubusercontent.com/justinpriest/R_Intro_AFS/main/data/OceanAK_PinkSalmonRatio_2000-2020.csv") %>%
+pinksalmonratio <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/OceanAK_PinkSalmonRatio_2000-2020.csv") %>%
 #pinksalmonratio <- read_csv(here::here("data/OceanAK_PinkSalmonRatio_2000-2020.csv")) %>%
   rename("catchdate" = "Catch Date",
          "statweek" = "Stat Week",

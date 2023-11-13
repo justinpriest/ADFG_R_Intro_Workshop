@@ -2,7 +2,7 @@
 title: "Tutorial 4 - Programming Basics 2"
 tutorial:
   id: "com.example.tutorials.basics2"
-  version: 1.0.0
+  version: 1.1.0
 output: 
   learnr::tutorial:
     progressive: true
@@ -22,10 +22,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Working with indices 
 
-### Exercise 1 {data-allow-skip=TRUE}
+*As with before, work through these exercises to learn more about the concepts just covered. There has been a lot we've covered so hopefully this will solidify it a little bit better.*  
 
-*Use this space to work through code to understand the concepts we've gone over. Go slow and try to get the correct answers. This is not graded and is not a race, use this space to familiarize yourself with how R works. Once you are finished, just close out of this before opening a new tutorial.*
-*This mini-console is running R, however clicking "Run Code" evaluates everything written in there; in RStudio, we run through it line-by-line.*
+*Reminder: clicking "Run Code" evaluates everything in the box. This is slightly different than in RStudio where we usually run things line by line.*
+
+
+### Exercise 1 {data-allow-skip=TRUE}
 
 Use square brackets `[ ]` to select the third element of `x` below.
 
