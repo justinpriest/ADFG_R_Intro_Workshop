@@ -45,7 +45,7 @@ Before each section we will take a small break.
 ### Day 2  
 09:00-09:30 - Welcome Back and Review  
 09:30-11:00 - 6: Data Manipulation   
-11:00-12:00 - 7: Amazing Charts in ggplot, Part 1
+11:00-12:00 - 7: Amazing Charts in ggplot, Part 1  
 12:00-13:30 - Lunch Break  
 13:30-14:30 - 7: Amazing Charts in ggplot, Part 2  
 14:30-15:00 - 8: The Extras  
