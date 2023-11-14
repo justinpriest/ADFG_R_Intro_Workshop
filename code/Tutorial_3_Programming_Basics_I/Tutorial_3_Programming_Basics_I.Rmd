@@ -2,7 +2,7 @@
 title: "Tutorial 3 - Programming Basics 1"
 tutorial:
   id: "com.example.tutorials.basics1"
-  version: 1.1.0
+  version: 1.1.1
 output: 
   learnr::tutorial:
     progressive: true
@@ -23,7 +23,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Exercise 1 {data-allow-skip=TRUE}
 
-*Use this space to work through code to understand the concepts we've gone over. Go slow and try to get the correct answers. This is not graded and is not a race, use this space to familiarize yourself with how R works. Once you are finished, just close out of this before opening a new tutorial.*
+*Use this space to work through code to understand the concepts we've gone over. Go slow and try to get the correct answers. This is not graded and is not a race, use this space to familiarize yourself with how R works.*  
+*If you don't finish this, that's totally fine! Come back and finish this later.*  
 *This mini-console is running R, however clicking "Run Code" evaluates everything written in there; in RStudio, we run through it line-by-line.*
 
 Modify the code below to create a vector of numbers from 1 to 5, then hit "Run Code" (or ctrl+enter):

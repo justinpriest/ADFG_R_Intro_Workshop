@@ -34,26 +34,26 @@ This course will be split over two days of about 8 hours each day.
 Before each section we will take a small break.  
 
 ### Day 1   
-09:00-09:30 - 1-Course Welcome  
-09:30-10:30 - 2-About R & RStudio  
-10:30-12:00 - 3-Programming Basics, Part 1  
+09:00-09:30 - 1: Course Welcome  
+09:30-10:30 - 2: About R & RStudio  
+10:30-12:00 - 3: Programming Basics, Part 1  
 12:00-13:30 - Lunch Break  
-13:30-15:00 - 4-Programming Basics, Part 2  
-15:00-16:30 - 5-Reading Real Data 
+13:30-15:00 - 4: Programming Basics, Part 2  
+15:00-16:30 - 5: Reading Real Data  
 16:30-17:00 - Review of Material  
 
 ### Day 2  
 09:00-09:30 - Welcome Back and Review  
-09:30-11:00 - 6-Data Manipulation   
-11:00-12:00 - 7-Amazing Charts in ggplot, Part 1
+09:30-11:00 - 6: Data Manipulation   
+11:00-12:00 - 7: Amazing Charts in ggplot, Part 1
 12:00-13:30 - Lunch Break  
-13:30-14:30 - 7-Amazing Charts in ggplot, Part 2  
-14:30-15:00 - 8-The Extras  
-15:00-16:30 - 9-The Project
-16:30-17:00 - 10-The Wrapup  
+13:30-14:30 - 7: Amazing Charts in ggplot, Part 2  
+14:30-15:00 - 8: The Extras  
+15:00-16:30 - 9: The Project  
+16:30-17:00 - 10: The Wrapup  
 
 ## Course Outcomes
-- Recognize basic codes / commands
+- Recognize basic codes / commands  
 - Know the how & why of what code does  
 - Use this knowledge in new situations to create a visualization  
 - Recall resources to use after the class   
