@@ -704,7 +704,7 @@ ggplot(data = penguins,
 *One more example. For these exercises, we'll use a dataframe I created for you called *`yearcounts` *which is the number of penguins sampled in each year by species. *
 
 Add `yearcounts` to the `head()` function to see what column names there are. 
-```{r lineplot-ex0, exercise=TRUE, exercise.eval=FALSE}
+```{r lineplot-ex0, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 head()
 
 
@@ -720,7 +720,7 @@ head(yearcounts)
 *Now that we see the column names let's make a plot! I pasted a template from a previous example to get us started!*  
 
 Fill in the aes() with the correctly named count variable and color by species. Change the line size to 1.5
-```{r lineplot-ex1, exercise=TRUE, exercise.eval=FALSE}
+```{r lineplot-ex1, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 ggplot(yearcounts, aes(x = year, y = , color = )) +
   geom_line(size = ) +
   scale_color_manual(values = c("darkorange","purple","cyan4")) +
@@ -746,7 +746,7 @@ ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
 *You can either set a sequence of numbers using * `c()` *or by using the sequence function, for example: *`seq(from=0, to=10, by=2)`*. Play around with this or just use c()*
 
 Add y-axis breaks at 0, 10, 20, 30, 40, and 50. Set y-axis limits to range from 0 to 55. Add the legend inside the plot at `c(0.85, 0.15)`.  
-```{r lineplot-ex2, exercise=TRUE, exercise.eval=FALSE}
+```{r lineplot-ex2, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 seq(from=0, to = 10, by = 2)
 
 ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
@@ -777,7 +777,7 @@ ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
 *I added the argument *`labels = round` to force show labels to be a whole number. 
 
 Set the `breaks` argument in the `scale_x_continuous()` function to only show a break during each year. 
-```{r lineplot-ex3, exercise=TRUE, exercise.eval=FALSE}
+```{r lineplot-ex3, exercise=TRUE, exercise.eval=FALSE, exercise.setup="data-import"}
 ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
   geom_line(size = 1.5) +
   scale_x_continuous(, labels = round) + 
@@ -808,7 +808,7 @@ ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
 ### Line Plot  - Completed!
 We did it! 
 
-```{r lineplot-review, exercise.eval=TRUE, message=FALSE, warning=FALSE}
+```{r lineplot-review, exercise.eval=TRUE, message=FALSE, warning=FALSE, exercise.setup="data-import"}
 ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
   geom_line(size = 1.5) +
   scale_x_continuous(breaks = c(2007, 2008, 2009), labels = round) + 
@@ -826,7 +826,7 @@ ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
 
 Run the code for the plot below. I can't tell you how many times I've made a plot that looked similar. Whenever you see something that looks like this, immediately realize that you have multiple points per x value. In this case, we have several points per year. (You probably need a grouping variable, or you need to summarize your data further). This is why it's helpful to build plots piece-by-piece like we've been doing today.  
 I forgot to add one tiny little detail. See if you can figure out what is missing. 
-```{r lineplot-troubleshoot, exercise=TRUE, exercise.eval=TRUE}
+```{r lineplot-troubleshoot, exercise=TRUE, exercise.eval=TRUE, exercise.setup="data-import"}
 ggplot(yearcounts, aes(x = year, y = totalcount)) +
   geom_line(size = 1.5) +
   scale_x_continuous(breaks = c(2007, 2008, 2009), labels = round) + 
