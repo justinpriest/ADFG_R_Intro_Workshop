@@ -806,9 +806,9 @@ ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
 
 
 ### Line Plot  - Completed!
-We did it! 
+We did it! Nothing to run here, just admire your amazing plot :)
 
-```{r lineplot-review, exercise.eval=TRUE, message=FALSE, warning=FALSE, exercise.setup="data-import"}
+```{r lineplot-review, exercise=TRUE, exercise.eval=TRUE, message=FALSE, warning=FALSE, exercise.setup="data-import"}
 ggplot(yearcounts, aes(x = year, y = totalcount, color = species)) +
   geom_line(size = 1.5) +
   scale_x_continuous(breaks = c(2007, 2008, 2009), labels = round) + 
