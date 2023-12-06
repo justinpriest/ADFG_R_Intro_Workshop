@@ -7,6 +7,88 @@
 ##### BASIC DATA MANIPULATION #####
 
 library(tidyverse)
+library(janitor)
+
+
+### ---------------- new section here, still working on commenting!
+
+# reading a messy real-life ASL dataset!
+sockeye_raw <- read_csv("data/sockeyeASL.csv")  # might replace this with github link
+
+# inspecting the data  
+str(sockeye_raw)
+
+# Impressions:
+# - column names could be improved
+# - probably don't need to keep all columns for this analysis
+# - need to table Species and Sample Type to see how many values exist
+# - need to tabulate Sex and AGE 
+# - need to choose a length variable and plot it to check for wonky values
+
+
+# creating a cleaned dataset!
+# strategy: add one piece at a time to the pipeline, 
+# then run the summaries below it, adding summaries as needed
+sockeye <- sockeye_raw %>% 
+  clean_names %>%
+  select(age, sex, length_me_fork) %>%
+  rename(length=length_me_fork) %>%
+  filter(sex %in% c("F","M")) %>%
+  filter(!(age %in% c("E4","E5"))) %>%
+  filter(length > 300)
+
+str(sockeye)
+# table(sockeye$species, useNA = "ifany")        # actually these aren't needed
+# table(sockeye$sample_type, useNA = "ifany")    # can get the same info from View()
+table(sockeye$age, sockeye$sex, useNA = "ifany")
+plot(sockeye$length)
+
+
+# First ASL summary table: all samples pooled
+sockeye %>%
+  summarise(n=n(),                        # sample size
+            mean_ln=mean(length),         # mean length
+            sd_ln=sd(length),             # SD of length
+            se_ln=sd(length)/sqrt(n()))   # SE of mean length
+# NOTE: we could have taken out the steps to filter sex and age!!
+
+
+# Second ASL summary table: separated by sex
+# Note: most of this is literally copy-pasted from the first!
+# New additions are annotated
+sockeye %>%
+  group_by(sex) %>%          # now grouping by sex before summarising
+  summarise(n=n(), 
+            mean_ln=mean(length), 
+            sd_ln=sd(length), 
+            se_ln=sd(length)/sqrt(n()))  %>%
+  ungroup %>%                      # ungrouping to make sure proportions work
+  mutate(p_hat=n/sum(n)) %>%       # adding a column: proportion
+  mutate(se_p_hat=sqrt(p_hat*(1-p_hat)/(sum(n)-1)))  # adding a column: SE of prop
+# NOTE: if we had taken out the steps to filter sex and age, 
+# we could add the sex filter here!!
+
+
+
+# Third ASL summary table: separated by sex and age
+# Almost all of this is copy-pasted from the second!
+# Only one new addition!
+sockeye %>%
+  group_by(sex, age) %>%     # now grouping by sex and age, the rest is the same
+  summarise(n=n(), 
+            mean_ln=mean(length), 
+            sd_ln=sd(length), 
+            se_ln=sd(length)/sqrt(n()))  %>%
+  ungroup %>%
+  mutate(p_hat=n/sum(n)) %>%
+  mutate(se_p_hat=sqrt(p_hat*(1-p_hat)/(sum(n)-1)))
+# NOTE: if we had taken out the steps to filter sex and age, 
+# we could add the both back here!!
+
+
+
+
+### ---------------- previous code follows:
 
 
 # This section will rely heavily on using the package "dplyr" 
