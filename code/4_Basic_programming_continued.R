@@ -22,30 +22,61 @@ x1[-4]
 
 
 # Indices with 2+ dimensions!
-# first defining a matrix
-matrix1 <- matrix(1:12, nrow=4, ncol=3)
-matrix1
+# data.frames and matrices follow the same rules with square brackets []
+catchdata <- data.frame(station = c(1, 1, 2, 2, 3, 3),                            
+                        catch = c(12, 23, 44, 65, 34, 49),                        
+                        hours = c(1, 2, 2, 3, 1, 1.5),                        
+                        weather = c("sun", "sun", "rain", "rain", "rain", "flood"))
+catchdata
+catchdata[1, ]   # row 1
+catchdata[, 1]   # column 1
+catchdata[1, 1]  # row 1, column 1
 
-matrix1[1, ]  # row 1
-matrix1[, 1]  # column 1
-matrix1[1, 3]  # row 1, column 3
-matrix1[c(1,3), ] # rows 1 and 3
+# but data.frames also allow subsetting by column name with $
+catchdata$catch  # or selecting catch by name - THIS IS MORE ROBUST TO DATA CHANGES
 
-matrix1[1, 1] <- 999
-matrix1
+catchdata$catch[1]           # selecting a single element from one column
+catchdata$catch[1] <- 999    # storing a new value!
+catchdata
+
+# you can also define new columns with $
+catchdata$CPUE <- catchdata$catch / catchdata$hours
+catchdata
 
 
-# you might need double brackets [[]] when dealing with lists
-list1 <- list(matrix1, 42, c("raindrops on roses", "whiskers on kittens"))
+## -----------------------------
+
+# an example of extracting something from a list!
+# here is a 2-sample t-test of two vectors
+x1 <- c(1, 4, 2, 3, 5)
+x2 <- c(7, 6, 9, 6, 8, 7)
+t.test(x1, x2)   # printing the test results
+
+# what is actually returned?
+test_results <- t.test(x1, x2)
+str(test_results)    # str() prints the structure of any object
+
+# extracting the p-value directly
+test_results$p.value
+
+# extracting the CI for the difference
+test_results$conf.int
+
+
+
+
+
+# another list example if it's useful...
+list1 <- list(catchdata, 42, c("raindrops on roses", "whiskers on kittens"))
 list1
-list1[[3]]
+list1[[3]]   # double brackets for subsetting
 
 # the str() function shows the structure of any object
 str(list1)
 
 
 # or, if list elements have names, you can also use $ to extract things with names
-list1 <- list(amazingData=matrix1, 
+list1 <- list(catchdata=catchdata, 
               meaningOfLife=42, 
               myFavoriteThings=c("raindrops on roses", "whiskers on kittens"))
 list1
@@ -57,13 +88,49 @@ str(list1)
 
 
 
-# Most often, you'll be working with data.frames...
+
+## --------------------------------
+
+## Some fun with logicals!
+day <- c(1, 2, 3, 1, 2, 3)
+operator <- c("A", "A", "A", "B", "B", "B")
+reading <- c(5, 1, 2, 6, NA, 9)
+
+operator
+operator[operator=="A"]  # the subset of operator where operator is "A"
+reading
+reading[operator=="A"]  # this is a bit more interesting...
+
+reading[!is.na(reading)]  # the subset where reading is not NA
+
+# sticking all together into a data.frame
+operator_data <- data.frame(day, operator, reading)
+operator_data
+
+operator_data[operator_data$day==1, ]  # ROWS where day==1
+operator_data[operator_data$day==1 | operator_data$day==2, ]  # ROWS where day==1 or 2
+operator_data[operator_data$day==1 & operator_data$day==2, ]  # ROWS where day==1 and 2
+operator_data[operator_data$day %in% 1:2, ]  # %in% saves some typing!
+
+operator_data[!is.na(operator_data$reading), ]  # ROWS where the reading is not NA
+
+# btw this is what str() does with a data.frame
+str(operator_data)
+
+# also useful is summary()
+summary(operator_data)
+
+
+
+
+
+# some more fun with data.frames & logicals ...
 df1 <- data.frame(day = c(1, 2, 3, 1, 2, 3),
                   operator = c("A", "A", "A", "B", "B", "B"),
                   reading = c(5, 1, 2, 6, 999, 9))
 
 summary(df1)  # summary() summarizes all columns using the appropriate methods!
-str(df1)  
+str(df1)
 names(df1)  # names() just prints names
 
 df1$day  # extracting the day column by name
@@ -117,6 +184,24 @@ df1_fix5$reading[df1_fix5$reading == 999] <- NA
 ## discussion: all of these will work, but #4 is probably the best.  Why?
 ## - most robust to reordering of the dataset
 ## - guaranteed to be the right value (eliminates human error from mis-counting indices)
+
+
+
+
+
+
+
+## -----------------
+# load some fake data, same as before
+day <- c(1, 2, 3, 1, 2, 3)
+operator <- c("A", "A", "A", "B", "B", "B")
+reading <- c(5, 1, 2, 6, NA, 9)
+
+# the ifelse operator: logical check, vector or value if TRUE, vector or value if FALSE
+ifelse(operator=="A", "Arthur", "Beverly")  # single values for TRUE and FALSE
+ifelse(operator=="A", reading, 999)  # vector for TRUE 
+ifelse(operator=="A", 999, reading)  # vector for FALSE 
+
 
 
 # Other ways of sticking things together

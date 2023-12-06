@@ -76,6 +76,8 @@ vector1 * vector2
 c(1, 2, 3, 4) + c(10, 20, 30)   # when the longer length is not a multiple of the shorter
 c(1, 2, 3, 4, 5, 6) + c(10, 20, 30)   # when the longer length IS a multiple of the shorter
 
+## ---------------------------------------
+
 
 # The : character can be used to create a regular sequence
 x <- 1:10
@@ -90,15 +92,26 @@ seq(from=10, to=100, by=10)
 seq(from=234, to= 3485, length.out=17)  # these are basically random numbers, but R does it!
 
 
-# You've probably noticed that the Console keeps printing numbers in square
-# brackets [1] on the left of output.  
-# You can also use square brackets to return subsets of output!
-# We will discuss this more later.
-fibonacci
-fibonacci[4]
-fibonacci[1:4]
+# You can get help for functions using the ? operator, or help() function
+# They both do the same thing
+?seq
 
-fibonacci[1] <- 999  # can also use square brackets [ ] to assign values
+# R expects a certain order of arguments for each function, by default
+seq(from=10, to=100, by=10)
+seq(10, 100, 10)  # if you use arguments in order, it knows what you mean
+seq(to=100, by=10, from=10)  # but you can also specify which is which and use them out of order
+
+
+# NA is a placeholder for an unknown quantity
+x1 <- c(1:10, NA)   # this combines 1 through 10 with an NA
+x1
+x1 + 10  # R can't add 10 to the NA
+sum(x1)  # R doesn't know what the total is, because there is an unknown
+sum(x1, na.rm=TRUE)  # But we can remove the NA and sum the rest
+sum(1:10)
+
+## --------------------------------------
+
 
 
 # You can store text as well as numbers.
@@ -118,12 +131,6 @@ maturity_factor[5] <- "Geezer"     # R will NOT do this!
 
 
 
-# There are two ways to get help on a function via code, and they do the same thing.
-help("rep")
-?rep
-
-# Note that you can also search for a function name in the search bar in the help 
-# pane, with the same result.
 
 
 

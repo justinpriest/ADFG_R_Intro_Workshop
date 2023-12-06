@@ -3,6 +3,27 @@ title: "Vocabulary Cheatsheet"
 output: word_document
 ---
 
+## Section 2
+
+* **RStudio** runs **R (aka R Project)** in the background
+  - You can run R Project by itself, but RStudio is nicer to work with and we recommend it
+* **Panes** in RStudio:
+  - **Script Editor** (probably top left): Where you can write code before evaluating it
+  - **Console** (probably bottom left): Where code is evaluated and output is seen
+  - **Environment** (probably top right): Where you can view variables/objects in R's memory
+  - **Plot/Help** (probably bottom right)
+* Highly recommended setting: 
+  - Settings > Tools > General Options
+  - Then change "Save worksace to .RData on exit" to **Never**
+* **RStudio Projects** (**.Rproj** files) are recommended because they:
+  - help organize files associated with a specific work project
+  - facilitate data import by automatically setting the working directory
+* The **"Run"** button or **ctrl+enter** will send to the Console and evaluate:
+  - Whatever line the cursor is on (in the Script Editor pane), or
+  - Whatever is highlighted, which can be part of a line or multiple lines at once
+
+\pagebreak
+
 ## Section 3
 
 -   **\<-** stores results to a variable or object
