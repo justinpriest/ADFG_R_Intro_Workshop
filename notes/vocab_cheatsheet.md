@@ -113,7 +113,7 @@ output: word_document
 
         x %\>% group_by(species) %\>%
 
-        summarise(mn_length=mean(length), sd_length=sd(length))
+        summarise(n=n(), mn_length=mean(length), sd_length=sd(length))
 
     -   **pivot_longer()** and **pivot_wider()** go between wide and long format data
 -   some useful summary functions from base R
