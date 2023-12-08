@@ -6,13 +6,32 @@
 #####         SCRIPT 6        #####
 ##### BASIC DATA MANIPULATION #####
 
-library(tidyverse)
-library(janitor)
+# This section will rely heavily on using the package "dplyr" 
+# You can do everything that we'll cover using just base R but it's often more cumbersome
+# We'll cover more about dplyr and the tidyverse later
+
+
+## WHY MODIFY DATA IN R ##
+
+# When first starting out, it is very tempting to fix everything in Excel, then import it in R
+# This is certainly acceptable when you're new and gets you to start analysis earlier. 
+# However, it makes things longer if you'll ever have to add new data and re-do all the same changes
+# For example, if data always comes out of a database in a certain format and with different column names
+# If you wanted to re-perform analysis when more data is available, doing these changes in R can save time
+
+
+
+library(tidyverse)  # the dplyr package is part of the tidyverse
+library(janitor)    # we'll use the janitor package as well
 
 
 ### ---------------- new section here, still working on commenting!
 
-# reading a messy real-life ASL dataset!
+
+# Here we will read a messy ASL dataset, do some data cleaning, and produce
+# ASL tables!
+
+# reading the dataset
 sockeye_raw <- read_csv("data/sockeyeASL.csv")  # might replace this with github link
 
 # inspecting the data  
@@ -30,12 +49,12 @@ str(sockeye_raw)
 # strategy: add one piece at a time to the pipeline, 
 # then run the summaries below it, adding summaries as needed
 sockeye <- sockeye_raw %>% 
-  clean_names %>%
-  select(age, sex, length_me_fork) %>%
-  rename(length=length_me_fork) %>%
-  filter(sex %in% c("F","M")) %>%
-  filter(!(age %in% c("E4","E5"))) %>%
-  filter(length > 300)
+  clean_names %>%                          # standardize column names
+  select(age, sex, length_me_fork, unique_sample_id) %>%  # select columns we need
+  rename(length=length_me_fork) %>%        # simplify one column name
+  filter(sex %in% c("F","M")) %>%          # remove bogus values for sex
+  filter(!(age %in% c("E4","E5"))) %>%     # remove bogus values for age
+  filter(length > 300)                     # remove bogus values for length
 
 str(sockeye)
 # table(sockeye$species, useNA = "ifany")        # actually these aren't needed
@@ -84,6 +103,20 @@ sockeye %>%
   mutate(se_p_hat=sqrt(p_hat*(1-p_hat)/(sum(n)-1)))
 # NOTE: if we had taken out the steps to filter sex and age, 
 # we could add the both back here!!
+
+
+
+# We can also incorporate origin data!
+sockeyeOrigin <- read_csv("data/sockeyeOrigin.csv")
+sockeyeOrigin
+
+# this will pull in the origin information from the second data.frame!
+sockeye_withOrigin <- sockeye %>% 
+  left_join(sockeyeOrigin) 
+sockeye_withOrigin
+
+# at this point, we could do all the same summaries, but using origin info!!
+
 
 
 
