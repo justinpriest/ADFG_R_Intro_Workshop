@@ -3,7 +3,7 @@ title: "Vocabulary Cheatsheet"
 output: word_document
 ---
 
-## Section 2
+## Section 2 - About R and RStudio
 
 * **RStudio** runs **R (aka R Project)** in the background
   - You can run R Project by itself, but RStudio is nicer to work with and we recommend it
@@ -24,7 +24,7 @@ output: word_document
 
 \pagebreak
 
-## Section 3
+## Section 3 - Programming Basics I
 
 -   **\<-** stores results to a variable or object
 -   **c()** combines a set of numbers (or other input) into a vector
@@ -50,7 +50,7 @@ output: word_document
 
 \pagebreak
 
-## Section 4
+## Section 4 - Programming Basics II
 
 -   for **vectors** (data in order)
     -   MyVector**[49]** selects the 49th element of MyVector
@@ -86,7 +86,41 @@ output: word_document
 
 \pagebreak
 
-## Section 6
+## Section 5 - Reading Real Data
+
+- We recommend a **separate folder for each work project**, with subfolders for:
+  - data
+  - code (or "analysis")
+  - output
+  - etc, depending on project
+- A **directory** is a location on your computer (which folder/subfolder)
+- **getwd()** prints the folder that R is currently set to
+  - its cousin **setwd()** sets R to a folder you specify, but you will not need this if you use RStudio Projects
+- **file.choose()** prints the full location of a file!
+- With RStudio Projects (.Rproj file) we can use **relative file paths**
+  - full: C:/Users/jtpriest/ADFG_R_Intro_Workshop/code/2_First_script.R
+  - relative: code/2_First_script.R
+- Data should be:
+  - **Machine Readable**: don't use color/formatting to convey info
+  - **Unsummarized and Raw**: try not to edit it before importing into R
+  - **Untabled**: use "long" format (lots of rows)
+    - to see if you're using long format, think "where would a comment go?"
+  - **Tidy**:
+    - Every column is a variable
+    - Every row is an observation
+    - Every cell is a single value
+- **read_csv()** reads a .csv file.  **read.csv() is in the tidyverse set of packages**.  If the file is in a subfolder, use one of:
+  - read_csv("folderlocation**/**filename.csv")
+  - read_csv("folderlocation**\\\\**filename.csv")
+- Don't use the RStudio Import Wizard!  No one will know what you chose.
+- **View()** views a data.frame
+- **str()** prints the full structure of a data.frame
+- **summary()** prints a summary of all rows of a data.frame
+
+
+\pagebreak
+
+## Section 6 - Data Manipulation with tidyverse
 
 -   The pipe operator **%\>%**
     -   **function1(x)** can be rewritten as **x %\>% function1**
