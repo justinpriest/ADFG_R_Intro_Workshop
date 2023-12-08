@@ -30,12 +30,18 @@ str(sockeye_raw)
 # strategy: add one piece at a time to the pipeline, 
 # then run the summaries below it, adding summaries as needed
 sockeye <- sockeye_raw %>% 
-  clean_names %>%
+  clean_names() %>%
   select(age, sex, length_me_fork) %>%
-  rename(length=length_me_fork) %>%
-  filter(sex %in% c("F","M")) %>%
-  filter(!(age %in% c("E4","E5"))) %>%
-  filter(length > 300)
+  rename(length = length_me_fork) %>%
+  filter(sex %in% c("F", "M"),
+         !(age %in% c("E4", "E5")),
+         length > 300)
+# What did the lines above do?
+#  - Start with the raw dataset
+#  - apply function clean_names() from the janitor package (this makes column names standard)
+#  - Keep ("select") only columns age, sex, and length_me_fork
+#  - Rename length_me_fork to just length
+#  - filter to keep only M/F, exclude ages E4 & E5, keep lengths above 300 mm
 
 str(sockeye)
 # table(sockeye$species, useNA = "ifany")        # actually these aren't needed
@@ -46,10 +52,10 @@ plot(sockeye$length)
 
 # First ASL summary table: all samples pooled
 sockeye %>%
-  summarise(n=n(),                        # sample size
-            mean_ln=mean(length),         # mean length
-            sd_ln=sd(length),             # SD of length
-            se_ln=sd(length)/sqrt(n()))   # SE of mean length
+  summarise(n = n(),                        # sample size
+            mean_ln = mean(length),         # mean length
+            sd_ln = sd(length),             # SD of length
+            se_ln = sd(length) / sqrt(n()))   # SE of mean length
 # NOTE: we could have taken out the steps to filter sex and age!!
 
 
