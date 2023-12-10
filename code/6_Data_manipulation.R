@@ -25,6 +25,24 @@ str(sockeye_raw)
 # - need to tabulate Sex and AGE 
 # - need to choose a length variable and plot it to check for wonky values
 
+### JTP FEEDBACK ###
+# I'd remove relying on janitor (source of problems last class, both installation and understanding)
+#   Could clean this up in the Excel file itself to make names easier
+# Need to introduce the concept of the pipe first. 
+#   Adam suggested iteratively naming things e.g., sockeye1, sockeye2, so that
+#   using the pipe makes things cleaner. 
+# Keep the math to an absolute minimum 
+#   GOOD: sd(length) / sqrt(n())    HARD: sqrt(p_hat * (1 - p_hat) / (sum(n) - 1))
+# Make sure to add whitespace around operators for reading ease (Highlight, then Ctrl+Shift+A)
+# Personally, I'd skip table() (table table?) or just use an example w/o any arguments
+#   This is b/c useNA = "ifany" seems to come out of left field and table isn't 
+#   necessary for data manipulation 
+# Rather than removing E4 and E5 (I don't know what those are intuitively), you could
+#   filter to *keep* ages 1, 2, 3. Then use the ! example to remove lengths <300 
+#   Could benefit from == use case as well
+# Skip plotting for outliers, this section has a lot already
+
+
 
 # creating a cleaned dataset!
 # strategy: add one piece at a time to the pipeline, 
@@ -65,14 +83,14 @@ sockeye %>%
 # New additions are annotated
 sockeye %>%
   group_by(sex) %>%          # now grouping by sex before summarising
-  summarise(n=n(), 
-            mean_ln=mean(length), 
-            sd_ln=sd(length), 
-            se_ln=sd(length)/sqrt(n()))  %>%
-  ungroup %>%                      # ungrouping to make sure proportions work
-  mutate(p_hat=n/sum(n)) %>%       # adding a column: proportion
-  mutate(se_p_hat=sqrt(p_hat*(1-p_hat)/(sum(n)-1)))  # adding a column: SE of prop
-# NOTE: if we had taken out the steps to filter sex and age, 
+  summarise(n = n(), 
+            mean_ln = mean(length), 
+            sd_ln = sd(length),
+            se_ln = sd(length) / sqrt(n()))  %>% 
+  ungroup() %>%                       # ungrouping to make sure proportions work
+  mutate(p_hat = n / sum(n)) %>%       # adding a column: proportion
+  mutate(se_p_hat = sqrt(p_hat * (1 - p_hat) / (sum(n) - 1)))  # adding a column: SE of prop
+# NOTE: if we had taken out the steps to filter sex and age,
 # we could add the sex filter here!!
 
 
@@ -82,13 +100,13 @@ sockeye %>%
 # Only one new addition!
 sockeye %>%
   group_by(sex, age) %>%     # now grouping by sex and age, the rest is the same
-  summarise(n=n(), 
-            mean_ln=mean(length), 
-            sd_ln=sd(length), 
-            se_ln=sd(length)/sqrt(n()))  %>%
-  ungroup %>%
-  mutate(p_hat=n/sum(n)) %>%
-  mutate(se_p_hat=sqrt(p_hat*(1-p_hat)/(sum(n)-1)))
+  summarise(n = n(),
+            mean_ln = mean(length),
+            sd_ln = sd(length),
+            se_ln = sd(length) / sqrt(n()))  %>%
+  ungroup() %>%
+  mutate(p_hat = n / sum(n)) %>%
+  mutate(se_p_hat = sqrt(p_hat * (1 - p_hat) / (sum(n) - 1)))
 # NOTE: if we had taken out the steps to filter sex and age, 
 # we could add the both back here!!
 
