@@ -43,6 +43,7 @@ sockeye <- sockeye_raw %>%
 #  - Rename length_me_fork to just length
 #  - filter to keep only M/F, exclude ages E4 & E5, keep lengths above 300 mm
 
+
 str(sockeye)
 # table(sockeye$species, useNA = "ifany")        # actually these aren't needed
 # table(sockeye$sample_type, useNA = "ifany")    # can get the same info from View()
