@@ -49,23 +49,6 @@ str(sockeye_raw)
 # - need to tabulate Sex and AGE 
 # - need to choose a length variable and plot it to check for wonky values
 
-### JTP FEEDBACK ###
-# I'd remove relying on janitor (source of problems last class, both installation and understanding)
-#   Could clean this up in the Excel file itself to make names easier
-# Need to introduce the concept of the pipe first. 
-#   Adam suggested iteratively naming things e.g., sockeye1, sockeye2, so that
-#   using the pipe makes things cleaner. 
-# Keep the math to an absolute minimum 
-#   GOOD: sd(length) / sqrt(n())    HARD: sqrt(p_hat * (1 - p_hat) / (sum(n) - 1))
-# Make sure to add whitespace around operators for reading ease (Highlight, then Ctrl+Shift+A)
-# Personally, I'd skip table() (table table?) or just use an example w/o any arguments
-#   This is b/c useNA = "ifany" seems to come out of left field and table isn't 
-#   necessary for data manipulation 
-# Rather than removing E4 and E5 (I don't know what those are intuitively), you could
-#   filter to *keep* ages 1, 2, 3. Then use the ! example to remove lengths <300 
-#   Could benefit from == use case as well
-# Skip plotting for outliers, this section has a lot already
-
 
 
 # creating a cleaned dataset!
