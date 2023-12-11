@@ -5,13 +5,13 @@ output: word_document
 
 ## Section 2 - About R and RStudio
 
-* **RStudio** runs **R (aka R Project)** in the background
-  - You can run R Project by itself, but RStudio is nicer to work with and we recommend it
+* **RStudio** runs **R** in the background
+  - You can run R by itself, but RStudio is nicer to work with and we highly recommend it
 * **Panes** in RStudio:
-  - **Script Editor** (probably top left): Where you can write code before evaluating it
-  - **Console** (probably bottom left): Where code is evaluated and output is seen
-  - **Environment** (probably top right): Where you can view variables/objects in R's memory
-  - **Plot/Help** (probably bottom right)
+  - **Script Editor** (default top left): Where you can write code before evaluating it
+  - **Console** (default bottom left): Where code is evaluated and output is seen
+  - **Environment** (default top right): Where you can view variables/objects in R's memory
+  - **Plot/Help** (default bottom right)
 * Highly recommended setting: 
   - Settings > Tools > General Options
   - Then change "Save worksace to .RData on exit" to **Never**
@@ -80,17 +80,17 @@ output: word_document
     -   ifelse(LogicalStatement, WhatIfTRUE, WhatIfFALSE)
         -   ifelse(length \> 400, "Big fish", "Small fish") \# can use single values
         -   ifelse(units == "kg", weight, weight/2.2) \# can use vectors
--   **install.packages("tidyverse")** installs the tidyverse package for the first time (run this ONCE)
--   **library(tidyverse)** loads the tidyverse package when you need it
-
 
 \pagebreak
 
 ## Section 5 - Reading Real Data
 
+-   A package is a group of new functions to extend your power! 
+    -   **install.packages("tidyverse")** installs the tidyverse package for the first time (run this ONCE)
+    -   **library(tidyverse)** loads the tidyverse package when you need it (each time you open the file)
 - We recommend a **separate folder for each work project**, with subfolders for:
   - data
-  - code (or "analysis")
+  - code 
   - output
   - etc, depending on project
 - A **directory** is a location on your computer (which folder/subfolder)
@@ -98,8 +98,8 @@ output: word_document
   - its cousin **setwd()** sets R to a folder you specify, but you will not need this if you use RStudio Projects
 - **file.choose()** prints the full location of a file!
 - With RStudio Projects (.Rproj file) we can use **relative file paths**
-  - full: C:/Users/jtpriest/ADFG_R_Intro_Workshop/code/2_First_script.R
-  - relative: code/2_First_script.R
+  - full path: C:/Users/jtpriest/ADFG_R_Intro_Workshop/code/2_First_script.R
+  - relative path: code/2_First_script.R
 - Data should be:
   - **Machine Readable**: don't use color/formatting to convey info
   - **Unsummarized and Raw**: try not to edit it before importing into R
@@ -109,12 +109,11 @@ output: word_document
     - Every column is a variable
     - Every row is an observation
     - Every cell is a single value
-- **read_csv()** reads a .csv file.  **read.csv() is in the tidyverse set of packages**.  If the file is in a subfolder, use one of:
-  - read_csv("folderlocation**/**filename.csv")
-  - read_csv("folderlocation**\\\\**filename.csv")
+- **read_csv()** "reads"" (AKA imports) a .csv file.  **read_csv() is in the tidyverse set of packages**.  If the file is in a subfolder, use one of:
+  - `read_csv("folderlocation/filename.csv")`
+  - `read_csv("folderlocation\\filename.csv")`
 - Don't use the RStudio Import Wizard!  No one will know what you chose.
-- **View()** views a data.frame
-- **str()** prints the full structure of a data.frame
+- **View()** views a data.frame by opening in a new tab 
 - **summary()** prints a summary of all rows of a data.frame
 
 
@@ -123,31 +122,27 @@ output: word_document
 ## Section 6 - Data Manipulation with tidyverse
 
 -   The pipe operator **%\>%**
-    -   **function1(x)** can be rewritten as **x %\>% function1**
+    -   **function1(x)** can be rewritten as **x %\>% function1()**
     -   **function1(x, args1)** can be rewritten as **x %\>% function1(args1)**
 -   Core tidyverse verbs:
-    -   **select()** keep certain columns
+    -   **select()** keep certain columns  
+        `x %>% select(column1, column2)`
 
-        x %\>% select(column1, column2)
+    -   **filter()** keep certain rows  
+        `x %>% filter(year==2023, species=="Chinook")`
 
-    -   **filter()** keep certain rows
+    -   **mutate()** transform a column, or create a new one  
+        `x %>% mutate(CPUE = catch/hours)`
 
-        x %\>% filter(year==2023 & species=="Chinook")
+    -   **rename()** rename columns  
+        `x %>% rename(NewCol1=OldCol1, NewCol2=OldCol2)`
 
-    -   **mutate()** transform a column, or create a new one
-
-        x %\>% mutate(CPUE = catch/hours)
-
-    -   **rename()** rename columns
-
-        x %\>% rename(NewCol1=OldCol1, NewCol2=OldCol2)
 -   some more useful tidyverse verbs:
     -   **left_join()** join two data.frames with a matched column
-    -   **group_by() %\>% summarise()** create a summary
-
-        x %\>% group_by(species) %\>%
-
-        summarise(n=n(), mn_length=mean(length), sd_length=sd(length))
+    -   **group_by() %\>% summarise()** create a summary  
+        `x %>% group_by(species) %>%`  
+        `summarise(n = n(),`   
+                   `mn_length = mean(length), sd_length = sd(length))`
 
     -   **pivot_longer()** and **pivot_wider()** go between wide and long format data
 -   some useful summary functions from base R
@@ -165,3 +160,50 @@ output: word_document
         -   **snakecase::to_any_case()** standardizes a char vector to any case
     -   **tolower()** and **toupper()** takes a char vector to all lower (upper) case
         -   These are in base R
+
+
+
+\pagebreak
+
+## Section 7 - Amazing Charts with ggplot2
+
+-   R includes the function **plot()** which helps for quick plotting
+    -   `plot(mydataframe$xcolumn, mydataframe$ycolumn)`
+-   One of the tidyverse packages (**ggplot2**) makes advanced plots very easy
+-   Each ggplot contains 3 core functions: 
+    -   **ggplot()** - set the data & aesthetics (see next bullet)
+    -   **aes()** - usually _inside_ the ggplot function. Set the x column, y column, color variable (if wanted), and other dynamic (varying) items 
+    -   **geom_()** - family of functions to set what kind of plot (e.g., `geom_point()` would make a scatterplot; `geom_line()` would make a line plot)
+-   Each ggplot line is connected with the **+** symbol:
+    -   `ggplot(data = mydataframe, aes(x = xcolumn, y = ycolumn)) +`   \
+    `geom_point()`
+-   The `scale_` family of functions are optional to modify your plot. Dozens of choices!
+    -   `scale_y_continuous(breaks = c(5, 8, 10, 13, 15))` would manually set breaks (ticks) on the y-axis at 5, 8, 13, and 15
+    -   `scale_color_manual(values = c("red", "lightblue"))` would manually set color for two items 
+-   Dynamic vs static: items inside aes() are variables (changeable), outside are static
+    -   `geom_point(color = "red")` sets all points to red
+    -   `aes(x=xcol, y=ycol, color=species)` varies color by  species column
+-   **labs()** can set axis labels, title, etc.
+    -   `labs(x = "My x axis label", title = "Amazing plot title")`
+-   Customize appearance elements with **theme()** arguments or pre-set themes
+    -   Several options include `theme_minimal()` or `theme_bw()`
+    -   The theme elements can be tricky; don't memorize, google them! 
+-   **Fill** vs **Color**: use the arguments of fill and color correctly
+    -   You **fill** in an area (e.g., bar column area or inside of boxplot),
+    -   You **color** in a point or line (e.g., scatterplot point or bar outline)
+-   **Facets** are a way to have several plots side by side varying by one variable
+    -   `facet_wrap(~variable)` (usually better visually) or `facet_grid(~variable)`
+    -   Can facet by two variables, for example: `facet_wrap(variable1 ~ variable2)`
+-   ggplots are saved with **ggsave()** but first the plot must be saved to the environment
+    -   `mysavedplot <- ggplot(data = mydataframe, aes(x = xcolumn, y = ycolumn)) +`   \
+    `geom_point()`  \
+    `ggsave(plot = mysavedplot, filename = "output/filesavename.png")`
+    -   Other arguments specify size, resolution, etc (dpi, width, height, units)
+-   Remember that you have to be internally consistent! 
+    -   Can't manually set two colors if plot is expecting three
+    -   Need to use categorical names if a category is expected
+    -   
+
+
+
+
