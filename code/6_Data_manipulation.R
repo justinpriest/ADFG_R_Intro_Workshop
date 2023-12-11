@@ -6,14 +6,38 @@
 #####         SCRIPT 6        #####
 ##### BASIC DATA MANIPULATION #####
 
+
+# This section will rely heavily on using the package "dplyr" 
+# You can do everything that we'll cover using just base R but it's often more cumbersome
+# We'll cover more about dplyr and the tidyverse later
+
+
+## WHY MODIFY DATA IN R ##
+
+# When first starting out, it is very tempting to fix everything in Excel, then import it in R
+# This is certainly acceptable when you're new and gets you to start analysis earlier. 
+# However, it makes things longer if you'll ever have to add new data and re-do all the same changes
+# For example, if data always comes out of a database in a certain format and with different column names
+# If you wanted to re-perform analysis when more data is available, doing these changes in R can save time
+
+
+
+## THE PIPE ##
+# One shortcut that comes with dplyr is the pipe operator. This is written as %>%
+# The pipe passes the results of the object/function on the left to the function on the right
+# This sounds complicated but makes code much more readable, and less repetitive
+
 library(tidyverse)
-library(janitor)
 
 
-### ---------------- new section here, still working on commenting!
 
 # reading a messy real-life ASL dataset!
-sockeye_raw <- read_csv("data/sockeyeASL.csv")  # might replace this with github link
+sockeye_raw <- read_csv("data/sockeyeASL.csv")  
+
+# if you have problems importing the above file, uncomment and run the line below:
+# sockeye_raw <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/sockeyeASL.csv")
+
+
 
 # inspecting the data  
 str(sockeye_raw)
@@ -48,25 +72,23 @@ str(sockeye_raw)
 # strategy: add one piece at a time to the pipeline, 
 # then run the summaries below it, adding summaries as needed
 sockeye <- sockeye_raw %>% 
-  clean_names() %>%
-  select(age, sex, length_me_fork) %>%
+  select(age, sex, length_me_fork, unique_sample_id) %>%
   rename(length = length_me_fork) %>%
-  filter(sex %in% c("F", "M"),
-         !(age %in% c("E4", "E5")),
-         length > 300)
+  filter(length > 300,
+         sex %in% c("F", "M"),
+         !(age %in% c("E4", "E5")))
+
 # What did the lines above do?
 #  - Start with the raw dataset
 #  - apply function clean_names() from the janitor package (this makes column names standard)
-#  - Keep ("select") only columns age, sex, and length_me_fork
+#  - Keep ("select") only columns age, sex, length_me_fork, and unique_sample_id
 #  - Rename length_me_fork to just length
-#  - filter to keep only M/F, exclude ages E4 & E5, keep lengths above 300 mm
+#  - filter to keep lengths above 300 mm, keep only M/F, exclude ages E4 & E5 
 
 
 str(sockeye)
-# table(sockeye$species, useNA = "ifany")        # actually these aren't needed
-# table(sockeye$sample_type, useNA = "ifany")    # can get the same info from View()
-table(sockeye$age, sockeye$sex, useNA = "ifany")
 plot(sockeye$length)
+table(sockeye$age, sockeye$sex, useNA = "ifany")
 
 
 # First ASL summary table: all samples pooled
@@ -111,24 +133,26 @@ sockeye %>%
 # we could add the both back here!!
 
 
+# Linking to data from an external table:
+# Origin information from otolith samples!
+
+# first reading these:
+sockeyeOrigin <- read_csv("data/sockeyeOrigin.csv")
+
+# if you have problems importing the above file, uncomment and run the line below:
+# sockeye_raw <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/sockeyeOrigin.csv")
+
+# joining the two files!  Note that they both have a column named "unique_sample_id"
+sockeye_with_origin <- sockeye %>% 
+  left_join(sockeyeOrigin)
 
 
-### ---------------- previous code follows:
 
 
-# This section will rely heavily on using the package "dplyr" 
-# You can do everything that we'll cover using just base R but it's often more cumbersome
-# We'll cover more about dplyr and the tidyverse later
 
 
-## WHY MODIFY DATA IN R ##
 
-# When first starting out, it is very tempting to fix everything in Excel, then import it in R
-# This is certainly acceptable when you're new and gets you to start analysis earlier. 
-# However, it makes things longer if you'll ever have to add new data and re-do all the same changes
-# For example, if data always comes out of a database in a certain format and with different column names
-# If you wanted to re-perform analysis when more data is available, doing these changes in R can save time
-
+### ---------------- Additional dplyr / tidyverse practice!
 
 
 ## THE PIPE ##
