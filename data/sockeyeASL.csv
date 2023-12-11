@@ -1,4 +1,4 @@
-"","Species","Sample Type","Unique Sample ID","Sample Number","# Otoliths Collected","Sex","Length ME-fork","Length ME-Afin","AGE"
+"","species","sample_type","unique_sample_id","sample_number","number_otoliths_collected","sex","length_me_fork","length_me_afin","age"
 "1","Sockeye","Grab","19DO101A1","19DO101",2,"F",553,433,"1.3"
 "2","Sockeye","Grab","19DO101A2","19DO101",2,"M",545,421,"E4"
 "3","Sockeye","Grab","19DO101A3","19DO101",2,"F",543,423,"E4"
