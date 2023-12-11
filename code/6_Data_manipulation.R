@@ -6,10 +6,15 @@
 #####         SCRIPT 6        #####
 ##### BASIC DATA MANIPULATION #####
 
+# This script will walk you through the basics of data manipulation in R. 
+# There are two examples to teach the same concepts: 
+#   - Part 1 using sockeye ASL data
+#   - Part 2 using groundfish length data
 
-# This section will rely heavily on using the package "dplyr" 
+
+# This section will rely heavily on using the package "dplyr" in the tidyverse group of packages
 # You can do everything that we'll cover using just base R but it's often more cumbersome
-# We'll cover more about dplyr and the tidyverse later
+library(tidyverse)
 
 
 ## WHY MODIFY DATA IN R ##
@@ -22,21 +27,14 @@
 
 
 
-## THE PIPE ##
-# One shortcut that comes with dplyr is the pipe operator. This is written as %>%
-# The pipe passes the results of the object/function on the left to the function on the right
-# This sounds complicated but makes code much more readable, and less repetitive
 
-library(tidyverse)
-
-
+#### PART 1 - SOCKEYE ASL ####
 
 # reading a messy real-life ASL dataset!
 sockeye_raw <- read_csv("data/sockeyeASL.csv")  
 
 # if you have problems importing the above file, uncomment and run the line below:
 # sockeye_raw <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/sockeyeASL.csv")
-
 
 
 # inspecting the data  
@@ -51,9 +49,17 @@ str(sockeye_raw)
 
 
 
-# creating a cleaned dataset!
+## THE PIPE ##
+# One shortcut that comes with dplyr is the pipe operator. This is written as %>%
+# The pipe passes the results of the object/function on the left to the function on the right
+# This sounds complicated but makes code much more readable, and less repetitive
+
+
+
+# Let's create a cleaned dataset!
 # strategy: add one piece at a time to the pipeline, 
 # then run the summaries below it, adding summaries as needed
+# The pipe will "pass" the object on the left as the data argument to the right
 sockeye <- sockeye_raw %>% 
   select(age, sex, length_me_fork, unique_sample_id) %>%
   rename(length = length_me_fork) %>%
@@ -69,19 +75,27 @@ sockeye <- sockeye_raw %>%
 #  - filter to keep lengths above 300 mm, keep only M/F, exclude ages E4 & E5 
 
 
+# Let's look at this again to inspect what we did
 str(sockeye)
 plot(sockeye$length)
 table(sockeye$age, sockeye$sex, useNA = "ifany")
+# Great! Our data looks a lot better!
 
+
+# Now let's summarize our data to get  better understanding
+#   - We can use the function summarise() to make this for us! 
 
 # First ASL summary table: all samples pooled
 sockeye %>%
-  summarise(n = n(),                        # sample size
-            mean_ln = mean(length),         # mean length
-            sd_ln = sd(length),             # SD of length
+  summarise(n = n(),                          # sample size
+            mean_ln = mean(length),           # mean length
+            sd_ln = sd(length),               # SD of length
             se_ln = sd(length) / sqrt(n()))   # SE of mean length
-# NOTE: we could have taken out the steps to filter sex and age!!
+# Interesting results. But let's break apart by a group...
 
+
+# The next function is group_by() combined with summarise()
+# This makes almost a pivot table summary of our data! 
 
 # Second ASL summary table: separated by sex
 # Note: most of this is literally copy-pasted from the first!
@@ -92,7 +106,7 @@ sockeye %>%
             mean_ln = mean(length), 
             sd_ln = sd(length),
             se_ln = sd(length) / sqrt(n()))  %>% 
-  ungroup() %>%                       # ungrouping to make sure proportions work
+  ungroup() %>%                        # ungrouping to make sure proportions work
   mutate(p_hat = n / sum(n)) %>%       # adding a column: proportion
   mutate(se_p_hat = sqrt(p_hat * (1 - p_hat) / (sum(n) - 1)))  # adding a column: SE of prop
 # NOTE: if we had taken out the steps to filter sex and age,
@@ -128,15 +142,15 @@ sockeyeOrigin <- read_csv("data/sockeyeOrigin.csv")
 # joining the two files!  Note that they both have a column named "unique_sample_id"
 sockeye_with_origin <- sockeye %>% 
   left_join(sockeyeOrigin)
+sockeye_with_origin
+# Would ya look at that?! We have some amazing data here! 
 
 
 
 
 
-
-
-### ---------------- Additional dplyr / tidyverse practice!
-
+#### PART 2 - GROUNDFISH ####
+# This part will walk through similar concepts as above to solidify everything. 
 
 ## THE PIPE ##
 # One shortcut that comes with dplyr is the pipe operator. This is written as %>%
@@ -156,7 +170,6 @@ groundfish <- filter(groundfish, Species == "Sablefish")
 # Here's the same results but with the pipe
 # groundfish <- read_csv("data/OceanAK_GroundfishSpecimens_2000-2020.csv") %>% # Read in file from folder "data"
 groundfish <- read_csv("https://raw.githubusercontent.com/justinpriest/ADFG_R_Intro_Workshop/main/data/OceanAK_GroundfishSpecimens_2000-2020.csv") %>% # Read in file from folder "data"
-
   rename("length_mm" = "Length Millimeters", 
          "weight_kg" = "Weight Kilograms") %>%
   dplyr::select(Year, Species, Sex, Age, length_mm, weight_kg) %>%
@@ -183,9 +196,8 @@ groundfish$Species %>% filter(Species == "Sablefish")
 groundfish %>% rename("Species_common" = "Species")
 
 # Another useful function allows you to keep or drop columns, using select()
-# Because of a very rare (but highly frustrating) interaction, I always use dplyr::select()
-groundfish %>% dplyr::select(Species, Age, length_mm) # Keep only the columns listed
-groundfish %>% dplyr::select(-weight_kg) # Drop the columns listed, keep everything else
+groundfish %>% select(Species, Age, length_mm) # Keep only the columns listed
+groundfish %>% select(-weight_kg) # Drop the columns listed, keep everything else
 
 
 
@@ -227,7 +239,6 @@ groundfish
 groundfish %>% mutate(grams_per_mm = (weight_kg * 1000) / length_mm)
 
 
-
 # A slightly more complex approach can be to use an if else statement to conditionally set a value
 groundfish <- groundfish %>% 
   mutate(biggie_smalls = ifelse(length_mm >= 600, "Big fish", "Small fish"))
@@ -247,16 +258,25 @@ View(groundfish)
 
 ## REPLACE A VALUE ##
 # Commonly, we'll need to replace a character value with something else
+# This is done using the function case_match() (case_when() is even more powerful!)
+# case_match() using slightly different syntax than we've seen so far:
+#  - The first argument is which column to look in
+#  - Secondly, it looks for what to match on left side of tilde and 
+#     replaces it with what we've written on the right side
+#  - Lastly, if it can't find the phrase on the left side, default to something
 
-#### recode now says "lifecycle superseded"
-# groundfish %>% 
-#   mutate(biggie_smalls = recode(biggie_smalls, "Small fish" = "small and medium sized"))
 groundfish %>% 
-  mutate(biggie_smalls = case_match(biggie_smalls, "Small fish" ~ "small and medium sized",
+  mutate(biggie_smalls = case_match(biggie_smalls, 
+                                    "Small fish" ~ "small and medium sized",
                                     .default=biggie_smalls))
+# The above looks in column biggie_smalls for cells labeled "Small fish" and
+#  replaces that with "small and medium sized". If it doesn't find a cell with
+#  "Small fish", leave it alone and keep the orginal values in that column. 
+
 groundfish %>% 
   mutate(biggie_smalls = ifelse(biggie_smalls == "Small fish", "small and medium sized", biggie_smalls))
-# groundfish %>% mutate(Sex = recode(Sex, "Female" = "F", "Male" = "M"))
+# This is very similar behavior to an ifelse() statement
+
 groundfish %>% mutate(Sex = case_match(Sex, "Female" ~ "F", "Male" ~ "M", .default=Sex))
 groundfish
 
