@@ -1,0 +1,502 @@
+Note: This spreadsheet may include values that are preliminary or unreviewed.,,,,,,,
+Activity Start Date,Activity Start Time,Monitoring Location Name,Monitoring Location Latitude,Monitoring Location Longitude,Characteristic Name,Result Value,Result Unit
+5/23/2016,6:00:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,30.5,NTU
+5/24/2016,4:16:00 PM,Boulder Creek,65.56783,-144.88885,Specific conductance,55,uS/cm
+5/24/2016,4:16:00 PM,Boulder Creek,65.56783,-144.88885,pH,6.64,None
+5/24/2016,4:16:00 PM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),15.8,mg/l
+5/24/2016,4:16:00 PM,Boulder Creek,65.56783,-144.88885,Turbidity,140,NTU
+5/24/2016,4:16:00 PM,Boulder Creek,65.56783,-144.88885,"Temperature, water",4.64,deg C
+5/25/2016,10:25:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,76,uS/cm
+5/25/2016,10:25:00 AM,Crooked Creek at BLM,65.57363,-144.80286,pH,6.59,None
+5/25/2016,10:25:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),15,mg/l
+5/25/2016,10:25:00 AM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",4.02,deg C
+5/25/2016,10:25:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,16,NTU
+5/25/2016,12:09:00 PM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",6.04,deg C
+5/25/2016,12:09:00 PM,Ketchem Creek,65.50849,-144.69472,Specific conductance,50,uS/cm
+5/25/2016,12:09:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,21,NTU
+5/25/2016,12:09:00 PM,Ketchem Creek,65.50849,-144.69472,pH,6.7,None
+5/25/2016,12:09:00 PM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),12.4,mg/l
+5/25/2016,2:30:00 PM,Bedrock Creek,65.55677,-145.09042,pH,5.03,None
+5/25/2016,2:30:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,18,uS/cm
+5/25/2016,2:30:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),13.52,mg/l
+5/25/2016,2:30:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",4.97,deg C
+5/25/2016,2:30:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,2,NTU
+5/25/2016,5:03:00 PM,Boulder Creek,65.56783,-144.88885,Turbidity,194,NTU
+5/25/2016,5:03:00 PM,Boulder Creek,65.56783,-144.88885,"Temperature, water",5.26,deg C
+5/25/2016,5:03:00 PM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),13.05,mg/l
+5/25/2016,5:03:00 PM,Boulder Creek,65.56783,-144.88885,pH,6.94,None
+5/25/2016,5:03:00 PM,Boulder Creek,65.56783,-144.88885,Specific conductance,65,uS/cm
+5/26/2016,9:07:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,9.89,NTU
+5/26/2016,12:54:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,114,uS/cm
+5/26/2016,12:54:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,10,NTU
+5/26/2016,12:54:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",4.72,deg C
+5/26/2016,12:54:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),13.18,mg/l
+5/26/2016,12:54:00 PM,Deadwood Creek,65.53982,-144.76285,pH,7.32,None
+5/26/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",4.07,deg C
+5/26/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),14.23,mg/l
+5/26/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,80,uS/cm
+5/26/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,6.77,None
+6/6/2016,1:23:00 PM,Ketchem Creek,65.50849,-144.69472,pH,4.86,None
+6/6/2016,1:23:00 PM,Ketchem Creek,65.50849,-144.69472,Specific conductance,74,uS/cm
+6/6/2016,1:23:00 PM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),10.78,mg/l
+6/6/2016,1:23:00 PM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,8.2,mg/l
+6/6/2016,1:23:00 PM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",9.11,deg C
+6/6/2016,1:23:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,9.32,NTU
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,pH,4.43,None
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),13.14,mg/l
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,143,uS/cm
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,19.5,mg/l
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",6.01,deg C
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,11.2,NTU
+6/6/2016,2:55:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,11.5,NTU
+6/6/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),12.36,mg/l
+6/6/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,6.02,None
+6/6/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",7.41,deg C
+6/6/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,118,mg/l
+6/6/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,77,uS/cm
+6/6/2016,4:04:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,62.3,NTU
+6/7/2016,8:53:00 AM,Boulder Creek,65.56783,-144.88885,Specific conductance,62,uS/cm
+6/7/2016,8:53:00 AM,Boulder Creek,65.56783,-144.88885,pH,6.78,None
+6/7/2016,8:53:00 AM,Boulder Creek,65.56783,-144.88885,"Temperature, water",3.06,deg C
+6/7/2016,8:53:00 AM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),14.87,mg/l
+6/7/2016,8:53:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,49.9,NTU
+6/7/2016,12:10:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,1.45,NTU
+6/7/2016,12:10:00 PM,Bedrock Creek,65.55677,-145.09042,pH,2.16,None
+6/7/2016,12:10:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,18,uS/cm
+6/7/2016,12:10:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),14.3,mg/l
+6/7/2016,12:10:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",3.36,deg C
+6/7/2016,2:00:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,3.95,NTU
+6/7/2016,2:00:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,16.7,mg/l
+6/7/2016,2:15:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,3.1,NTU
+6/7/2016,2:15:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,5.11,mg/l
+6/7/2016,2:15:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),13.95,mg/l
+6/7/2016,2:15:00 PM,Mammoth Creek,65.55088,-145.17574,Specific conductance,81,uS/cm
+6/7/2016,2:15:00 PM,Mammoth Creek,65.55088,-145.17574,pH,5.95,None
+6/7/2016,2:15:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",6.32,deg C
+6/7/2016,3:05:00 PM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,2.27,mg/l
+6/7/2016,3:05:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,2.42,mg/l
+6/7/2016,3:05:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",5.78,deg C
+6/7/2016,3:05:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,1.74,NTU
+6/7/2016,3:05:00 PM,Bonanza Creek,65.55425,-145.32305,pH,4.05,None
+6/7/2016,3:05:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,88,uS/cm
+6/7/2016,3:05:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),14.87,mg/l
+6/7/2016,3:19:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.82,NTU
+6/7/2016,3:19:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),13.74,mg/l
+6/7/2016,3:19:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,3.22,None
+6/7/2016,3:19:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,9.6,mg/l
+6/7/2016,3:19:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,88,uS/cm
+6/7/2016,3:19:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",6.77,deg C
+6/21/2016,2:07:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,7.13,NTU
+6/21/2016,2:07:00 PM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",12.02,deg C
+6/21/2016,2:07:00 PM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,1.76,mg/l
+6/21/2016,2:07:00 PM,Ketchem Creek,65.50849,-144.69472,pH,5.24,None
+6/21/2016,2:07:00 PM,Ketchem Creek,65.50849,-144.69472,Specific conductance,165,uS/cm
+6/21/2016,2:07:00 PM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),9.3,mg/l
+6/21/2016,4:00:00 PM,Middle Ketchem Creek,65.48251,-144.74538,Turbidity,3.02,NTU
+6/21/2016,4:24:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),11.3,mg/l
+6/21/2016,4:24:00 PM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,1.11,mg/l
+6/21/2016,4:24:00 PM,Deadwood Creek,65.53982,-144.76285,pH,7.46,None
+6/21/2016,4:24:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,5.72,NTU
+6/21/2016,4:24:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",9.93,deg C
+6/21/2016,4:24:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,2.15,uS/cm
+6/21/2016,5:11:00 PM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",10.91,deg C
+6/21/2016,5:11:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,2.22,mg/l
+6/21/2016,5:11:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,3.21,NTU
+6/21/2016,5:11:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,132,uS/cm
+6/21/2016,5:11:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),11.52,mg/l
+6/21/2016,5:11:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,7.17,None
+6/22/2016,1:31:00 PM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),12.51,mg/l
+6/22/2016,1:31:00 PM,Boulder Creek,65.56783,-144.88885,pH,7.26,None
+6/22/2016,1:31:00 PM,Boulder Creek,65.56783,-144.88885,Total suspended solids,2.33,mg/l
+6/22/2016,1:31:00 PM,Boulder Creek,65.56783,-144.88885,Specific conductance,126,uS/cm
+6/22/2016,1:31:00 PM,Boulder Creek,65.56783,-144.88885,Turbidity,11.4,NTU
+6/22/2016,1:31:00 PM,Boulder Creek,65.56783,-144.88885,"Temperature, water",7.15,deg C
+6/22/2016,3:42:00 PM,Bedrock Creek,65.55677,-145.09042,pH,4.49,None
+6/22/2016,3:42:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",7.29,deg C
+6/22/2016,3:42:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,31,uS/cm
+6/22/2016,3:42:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,0.43,NTU
+6/22/2016,3:42:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),11.83,mg/l
+6/22/2016,3:42:00 PM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,1.01,mg/l
+6/22/2016,4:12:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Specific conductance,153,uS/cm
+6/22/2016,4:12:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,"Temperature, water",9.95,deg C
+6/22/2016,4:12:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Dissolved oxygen (DO),11.1,mg/l
+6/22/2016,4:12:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,pH,7.46,None
+6/22/2016,4:12:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,0.89,NTU
+6/22/2016,4:12:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,1.03,mg/l
+6/22/2016,4:37:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,1.03,mg/l
+6/22/2016,4:47:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,1.03,NTU
+6/22/2016,4:47:00 PM,Mammoth Creek,65.55088,-145.17574,pH,7.9,None
+6/22/2016,4:47:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",10.53,deg C
+6/22/2016,4:47:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),11.4,mg/l
+6/22/2016,4:47:00 PM,Mammoth Creek,65.55088,-145.17574,Specific conductance,148,uS/cm
+6/22/2016,5:13:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,1.04,mg/l
+6/22/2016,5:15:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",10.67,deg C
+6/22/2016,5:15:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.73,NTU
+6/22/2016,5:15:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,164,uS/cm
+6/22/2016,5:15:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),11.45,mg/l
+6/22/2016,5:16:00 PM,Bonanza Creek,65.55425,-145.32305,pH,7.42,None
+6/22/2016,5:30:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,1.06,mg/l
+6/22/2016,5:33:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.71,NTU
+6/22/2016,5:33:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",11.26,deg C
+6/22/2016,5:33:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),11.4,mg/l
+6/22/2016,5:33:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,7.39,None
+6/22/2016,5:33:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,195,uS/cm
+7/6/2016,1:50:00 PM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",9,deg C
+7/6/2016,1:50:00 PM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,76.3,mg/l
+7/6/2016,1:50:00 PM,Ketchem Creek,65.50849,-144.69472,Specific conductance,44,uS/cm
+7/6/2016,1:50:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,50.7,NTU
+7/6/2016,1:50:00 PM,Ketchem Creek,65.50849,-144.69472,pH,6.53,None
+7/6/2016,1:50:00 PM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),11.31,mg/l
+7/6/2016,3:40:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,187,NTU
+7/6/2016,3:40:00 PM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,123,mg/l
+7/6/2016,3:40:00 PM,Deadwood Creek,65.53982,-144.76285,pH,7.42,None
+7/6/2016,3:40:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,187,uS/cm
+7/6/2016,3:40:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",10.89,deg C
+7/6/2016,3:40:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),10.7,mg/l
+7/6/2016,4:16:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,7.3,None
+7/6/2016,4:16:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,132,uS/cm
+7/6/2016,4:16:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,11.6,NTU
+7/6/2016,4:16:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,25.3,mg/l
+7/6/2016,4:16:00 PM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",11.69,deg C
+7/6/2016,4:16:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),19.96,mg/l
+7/7/2016,8:44:00 AM,Boulder Creek,65.56783,-144.88885,pH,7.5,None
+7/7/2016,8:44:00 AM,Boulder Creek,65.56783,-144.88885,Specific conductance,93,uS/cm
+7/7/2016,8:44:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,26.6,NTU
+7/7/2016,8:44:00 AM,Boulder Creek,65.56783,-144.88885,Total suspended solids,68,mg/l
+7/7/2016,8:44:00 AM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),12.01,mg/l
+7/7/2016,8:44:00 AM,Boulder Creek,65.56783,-144.88885,"Temperature, water",6.56,deg C
+7/7/2016,10:52:00 AM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",4.1,deg C
+7/7/2016,10:52:00 AM,Bedrock Creek,65.55677,-145.09042,Specific conductance,22,uS/cm
+7/7/2016,10:52:00 AM,Bedrock Creek,65.55677,-145.09042,pH,3.68,None
+7/7/2016,10:52:00 AM,Bedrock Creek,65.55677,-145.09042,Turbidity,16.2,NTU
+7/7/2016,10:52:00 AM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,36.6,mg/l
+7/7/2016,10:52:00 AM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),14.19,mg/l
+7/7/2016,11:11:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,22,mg/l
+7/7/2016,11:11:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,"Temperature, water",6.83,deg C
+7/7/2016,11:11:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Dissolved oxygen (DO),13.48,mg/l
+7/7/2016,11:11:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Specific conductance,74,uS/cm
+7/7/2016,11:11:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,pH,7.4,None
+7/7/2016,11:11:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,9.1,NTU
+7/7/2016,11:29:00 AM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),11.1,mg/l
+7/7/2016,11:29:00 AM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",10.07,deg C
+7/7/2016,11:29:00 AM,Mammoth Creek,65.55088,-145.17574,Specific conductance,139,uS/cm
+7/7/2016,11:29:00 AM,Mammoth Creek,65.55088,-145.17574,pH,7.63,None
+7/7/2016,11:29:00 AM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,1.39,mg/l
+7/7/2016,11:29:00 AM,Mammoth Creek,65.55088,-145.17574,Turbidity,2.1,NTU
+7/7/2016,12:02:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,1,NTU
+7/7/2016,12:02:00 PM,Bonanza Creek,65.55425,-145.32305,pH,5.58,None
+7/7/2016,12:02:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),12.7,mg/l
+7/7/2016,12:02:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",8.95,deg C
+7/7/2016,12:02:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,138,uS/cm
+7/7/2016,12:02:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,1.65,mg/l
+7/7/2016,12:11:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.3,NTU
+7/7/2016,12:11:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),11.71,mg/l
+7/7/2016,12:11:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,1.3,mg/l
+7/7/2016,12:11:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,7.14,None
+7/7/2016,12:11:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,140,uS/cm
+7/7/2016,12:11:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",10.41,deg C
+7/19/2016,5:50:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,162,uS/cm
+7/19/2016,5:50:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),16.62,mg/l
+7/19/2016,5:50:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",11.2,deg C
+7/19/2016,5:50:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,19,NTU
+7/19/2016,5:50:00 PM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,42,mg/l
+7/19/2016,5:50:00 PM,Deadwood Creek,65.53982,-144.76285,pH,7.08,None
+7/19/2016,7:02:00 PM,Ketchem Creek,65.50849,-144.69472,pH,6.63,None
+7/19/2016,7:02:00 PM,Ketchem Creek,65.50849,-144.69472,Specific conductance,92,uS/cm
+7/19/2016,7:02:00 PM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",12.96,deg C
+7/19/2016,7:02:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,8.8,NTU
+7/19/2016,7:02:00 PM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),16.23,mg/l
+7/19/2016,7:50:00 PM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,5,mg/l
+7/20/2016,9:30:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,17.2,NTU
+7/20/2016,9:30:00 AM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),12.04,mg/l
+7/20/2016,9:30:00 AM,Boulder Creek,65.56783,-144.88885,Specific conductance,89,uS/cm
+7/20/2016,9:30:00 AM,Boulder Creek,65.56783,-144.88885,pH,5.21,None
+7/20/2016,9:30:00 AM,Boulder Creek,65.56783,-144.88885,"Temperature, water",7.07,deg C
+7/20/2016,9:50:00 AM,Boulder Creek,65.56783,-144.88885,Total suspended solids,32.1,mg/l
+7/20/2016,7:00:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),11.9,mg/l
+7/20/2016,7:00:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,5.15,None
+7/20/2016,7:00:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.75,NTU
+7/20/2016,7:00:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",10.93,deg C
+7/20/2016,7:00:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,131,uS/cm
+7/20/2016,7:20:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,144,uS/cm
+7/20/2016,7:20:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.89,NTU
+7/20/2016,7:20:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),11.81,mg/l
+7/20/2016,7:20:00 PM,Bonanza Creek,65.55425,-145.32305,pH,6.14,None
+7/20/2016,7:20:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",9.39,deg C
+7/20/2016,8:00:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",9.17,deg C
+7/20/2016,8:00:00 PM,Mammoth Creek,65.55088,-145.17574,pH,6.22,None
+7/20/2016,8:00:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,23.3,NTU
+7/20/2016,8:00:00 PM,Mammoth Creek,65.55088,-145.17574,Specific conductance,107,uS/cm
+7/20/2016,8:00:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),11.16,mg/l
+7/20/2016,8:30:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Dissolved oxygen (DO),11.24,mg/l
+7/20/2016,8:30:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,pH,6.4,None
+7/20/2016,8:30:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,"Temperature, water",8.91,deg C
+7/20/2016,8:30:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Specific conductance,89,uS/cm
+7/20/2016,8:30:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,11,NTU
+7/20/2016,8:56:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,8.67,NTU
+7/21/2016,8:50:00 AM,Crooked Creek at BLM,65.57363,-144.80286,pH,5.28,None
+7/21/2016,8:50:00 AM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",9.04,deg C
+7/21/2016,8:50:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),12.22,mg/l
+7/21/2016,8:50:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,108,uS/cm
+7/21/2016,8:50:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,11.2,NTU
+7/21/2016,9:00:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,17,mg/l
+7/21/2016,10:24:00 AM,Upper Ketchem Creek,65.46334,-144.75496,Turbidity,5.8,NTU
+7/21/2016,10:51:00 AM,Ketchem Creek,65.50849,-144.69472,Turbidity,8.4,NTU
+7/21/2016,12:09:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,9.9,NTU
+7/21/2016,12:09:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,21.4,mg/l
+7/21/2016,12:15:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",5.21,None
+7/21/2016,12:15:00 PM,Bedrock Creek,65.55677,-145.09042,pH,2.95,None
+7/21/2016,12:15:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,25,uS/cm
+7/21/2016,12:15:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),13.83,mg/l
+7/21/2016,12:15:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,19.2,NTU
+7/21/2016,12:56:00 PM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,37.1,mg/l
+7/21/2016,1:20:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,23.4,mg/l
+7/21/2016,1:20:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,11.3,NTU
+7/21/2016,1:41:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,18.8,mg/l
+7/21/2016,1:45:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,11.5,NTU
+7/21/2016,1:47:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,12.6,mg/l
+7/21/2016,1:50:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,10,NTU
+7/26/2016,12:00:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),10.5,mg/l
+7/26/2016,12:00:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",10.15,deg C
+7/26/2016,12:00:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,134,uS/cm
+7/26/2016,12:00:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,3.34,None
+7/26/2016,12:00:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.5,NTU
+7/26/2016,8:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,17.6,mg/l
+7/26/2016,12:48:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,3.04,mg/l
+7/26/2016,1:06:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,151,uS/cm
+7/26/2016,1:06:00 PM,Bonanza Creek,65.55425,-145.32305,pH,6.45,None
+7/26/2016,1:06:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,1.5,NTU
+7/26/2016,1:06:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",9.1,deg C
+7/26/2016,1:06:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),11.2,mg/l
+7/26/2016,1:10:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,2.47,mg/l
+7/26/2016,1:50:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,12.2,NTU
+7/26/2016,1:50:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",10.1,deg C
+7/26/2016,1:50:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,8.25,mg/l
+7/26/2016,1:50:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),10.64,mg/l
+7/26/2016,1:50:00 PM,Mammoth Creek,65.55088,-145.17574,pH,7.06,None
+7/26/2016,1:50:00 PM,Mammoth Creek,65.55088,-145.17574,Specific conductance,117,uS/cm
+7/26/2016,2:20:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,99.3,uS/cm
+7/26/2016,2:20:00 PM,Bedrock Creek,65.55677,-145.09042,pH,4.95,None
+7/26/2016,2:20:00 PM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,22.9,mg/l
+7/26/2016,2:20:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),12.71,mg/l
+7/26/2016,2:20:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",4.92,deg C
+7/26/2016,2:20:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,7.5,NTU
+7/26/2016,2:55:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,pH,6.94,None
+7/26/2016,2:55:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,"Temperature, water",8.23,deg C
+7/26/2016,2:55:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Specific conductance,85,uS/cm
+7/26/2016,2:55:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Dissolved oxygen (DO),11.61,mg/l
+7/26/2016,2:55:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,18.4,mg/l
+7/26/2016,2:55:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,7.7,NTU
+7/26/2016,4:37:00 PM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,60.3,mg/l
+7/26/2016,4:50:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",9.72,deg C
+7/26/2016,4:50:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),11.3,mg/l
+7/26/2016,4:50:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,147,uS/cm
+7/26/2016,4:50:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,35,NTU
+7/26/2016,4:50:00 PM,Deadwood Creek,65.53982,-144.76285,pH,7.69,None
+7/26/2016,4:50:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,29.7,NTU
+7/26/2016,5:25:00 PM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,14.6,mg/l
+7/27/2016,8:45:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,8.9,NTU
+7/27/2016,9:15:00 AM,Boulder Creek,65.56783,-144.88885,Total suspended solids,51.6,mg/l
+7/27/2016,9:15:00 AM,Boulder Creek,65.56783,-144.88885,Total suspended solids,31.7,mg/l
+7/27/2016,9:25:00 AM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),12.24,mg/l
+7/27/2016,9:25:00 AM,Boulder Creek,65.56783,-144.88885,"Temperature, water",6.82,deg C
+7/27/2016,9:25:00 AM,Boulder Creek,65.56783,-144.88885,pH,6.61,None
+7/27/2016,9:25:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,18.2,NTU
+7/27/2016,9:25:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,17.8,NTU
+7/27/2016,9:25:00 AM,Boulder Creek,65.56783,-144.88885,Specific conductance,88,uS/cm
+7/27/2016,11:13:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,8.2,NTU
+7/27/2016,11:21:00 AM,Bedrock Creek,65.55677,-145.09042,Turbidity,11.5,NTU
+7/27/2016,11:21:00 AM,Bedrock Creek,65.55677,-145.09042,Turbidity,10.6,NTU
+7/27/2016,11:31:00 AM,Mammoth Creek,65.55088,-145.17574,Turbidity,7.7,NTU
+7/27/2016,11:58:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.3,NTU
+7/27/2016,12:01:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,1.6,NTU
+8/16/2016,1:15:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",10.39,deg C
+8/16/2016,1:15:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,171,uS/cm
+8/16/2016,1:15:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,5.93,None
+8/16/2016,1:15:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.65,NTU
+8/16/2016,1:15:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),10.58,mg/l
+8/16/2016,1:40:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),10.83,mg/l
+8/16/2016,1:40:00 PM,Bonanza Creek,65.55425,-145.32305,pH,6.61,None
+8/16/2016,1:40:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",9.86,deg C
+8/16/2016,1:40:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,180,uS/cm
+8/16/2016,1:40:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.8,NTU
+8/16/2016,2:30:00 PM,Mammoth Creek,65.55088,-145.17574,pH,7.11,None
+8/16/2016,2:30:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,3.9,NTU
+8/16/2016,2:30:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",10.49,deg C
+8/16/2016,2:30:00 PM,Mammoth Creek,65.55088,-145.17574,Specific conductance,134,uS/cm
+8/16/2016,2:30:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),11.15,mg/l
+8/16/2016,3:07:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,3.69,NTU
+8/16/2016,3:15:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Dissolved oxygen (DO),11.09,mg/l
+8/16/2016,3:15:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,2.51,NTU
+8/16/2016,3:15:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,pH,6.78,None
+8/16/2016,3:15:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Specific conductance,156,uS/cm
+8/16/2016,3:15:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,"Temperature, water",10.97,deg C
+8/16/2016,4:05:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,2.89,NTU
+8/17/2016,9:25:00 AM,Ketchem Creek,65.50849,-144.69472,pH,6.48,None
+8/17/2016,9:25:00 AM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,5,mg/l
+8/17/2016,9:25:00 AM,Ketchem Creek,65.50849,-144.69472,Turbidity,12.9,NTU
+8/17/2016,9:25:00 AM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),12.13,mg/l
+8/17/2016,9:25:00 AM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",10.76,deg C
+8/17/2016,9:25:00 AM,Ketchem Creek,65.50849,-144.69472,Specific conductance,82,uS/cm
+8/17/2016,10:15:00 AM,Middle Ketchem Creek,65.48251,-144.74538,Turbidity,3.21,NTU
+8/17/2016,11:00:00 AM,Deadwood Creek,65.53982,-144.76285,Specific conductance,188,uS/cm
+8/17/2016,11:00:00 AM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,5.64,mg/l
+8/17/2016,11:00:00 AM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",9.64,deg C
+8/17/2016,11:00:00 AM,Deadwood Creek,65.53982,-144.76285,pH,7.01,None
+8/17/2016,11:00:00 AM,Deadwood Creek,65.53982,-144.76285,Turbidity,11.1,NTU
+8/17/2016,11:00:00 AM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),12.2,mg/l
+8/17/2016,11:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),11.37,mg/l
+8/17/2016,11:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,135,uS/cm
+8/17/2016,11:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,3.39,NTU
+8/17/2016,11:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,2.28,mg/l
+8/17/2016,11:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",10.7,deg C
+8/17/2016,11:30:00 AM,Crooked Creek at BLM,65.57363,-144.80286,pH,6.89,None
+8/17/2016,4:21:00 PM,Mastadon Creek,65.50565,-145.22741,Turbidity,23.7,NTU
+8/17/2016,4:21:00 PM,Independence Creek,65.50526,-145.22625,Turbidity,1.31,NTU
+8/17/2016,4:53:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.02,NTU
+8/17/2016,4:53:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,1.18,mg/l
+8/17/2016,5:00:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.77,NTU
+8/17/2016,5:00:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,1,mg/l
+8/17/2016,5:28:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,3.26,NTU
+8/17/2016,5:28:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,1.72,mg/l
+8/17/2016,5:40:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,3.09,NTU
+8/17/2016,5:40:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,3.09,NTU
+8/17/2016,5:40:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,2.1,mg/l
+8/17/2016,6:10:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",9.52,deg C
+8/17/2016,6:10:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),10.11,mg/l
+8/17/2016,6:10:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,31,uS/cm
+8/17/2016,6:10:00 PM,Bedrock Creek,65.55677,-145.09042,pH,4.13,None
+8/17/2016,6:10:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,2.1,NTU
+8/17/2016,6:10:00 PM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,2.86,mg/l
+8/18/2016,9:25:00 AM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,3.44,NTU
+8/18/2016,10:49:00 AM,Boulder Creek,65.56783,-144.88885,Total suspended solids,7.4,mg/l
+8/18/2016,10:49:00 AM,Boulder Creek,65.56783,-144.88885,"Temperature, water",7.26,deg C
+8/18/2016,10:49:00 AM,Boulder Creek,65.56783,-144.88885,Specific conductance,106,uS/cm
+8/18/2016,10:49:00 AM,Boulder Creek,65.56783,-144.88885,pH,6.8,None
+8/18/2016,10:49:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,6.98,NTU
+8/18/2016,10:49:00 AM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),13.36,mg/l
+8/24/2016,10:50:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.03,NTU
+8/24/2016,11:00:00 AM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.55,NTU
+8/24/2016,11:35:00 AM,Mastadon Creek,65.50565,-145.22741,Turbidity,3.05,NTU
+8/24/2016,11:35:00 AM,Independence Creek,65.50526,-145.22625,Turbidity,3.05,NTU
+8/24/2016,11:55:00 AM,Mammoth Creek,65.55088,-145.17574,Turbidity,1.63,NTU
+8/24/2016,12:29:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,1.38,NTU
+8/24/2016,12:37:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,1.1,NTU
+8/30/2016,12:26:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,174,uS/cm
+8/30/2016,12:26:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),11.45,mg/l
+8/30/2016,12:26:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",8.17,deg C
+8/30/2016,12:26:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Specific conductance,6.35,None
+8/30/2016,12:26:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.48,NTU
+8/30/2016,12:48:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",8.17,deg C
+8/30/2016,12:48:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),11.44,mg/l
+8/30/2016,12:48:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.63,NTU
+8/30/2016,12:48:00 PM,Bonanza Creek,65.55425,-145.32305,Specific conductance,192,uS/cm
+8/30/2016,12:48:00 PM,Bonanza Creek,65.55425,-145.32305,pH,6.97,None
+8/30/2016,1:35:00 PM,Independence Creek,65.50526,-145.22625,Turbidity,9.35,NTU
+8/30/2016,1:55:00 PM,Mastadon Creek,65.50565,-145.22741,Turbidity,9.35,NTU
+8/30/2016,1:55:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,2.4,NTU
+8/30/2016,1:55:00 PM,Mammoth Creek,65.55088,-145.17574,pH,7.29,None
+8/30/2016,1:55:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",9.11,deg C
+8/30/2016,1:55:00 PM,Mammoth Creek,65.55088,-145.17574,Specific conductance,135,uS/cm
+8/30/2016,1:55:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),11.59,mg/l
+8/30/2016,2:20:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,2.18,NTU
+8/30/2016,2:20:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,"Temperature, water",8.38,deg C
+8/30/2016,2:20:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Specific conductance,135,uS/cm
+8/30/2016,2:20:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,pH,6.87,None
+8/30/2016,2:20:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Dissolved oxygen (DO),11.81,mg/l
+8/30/2016,2:40:00 PM,Bedrock Creek,65.55677,-145.09042,Turbidity,1.99,NTU
+8/30/2016,2:40:00 PM,Bedrock Creek,65.55677,-145.09042,Specific conductance,44,uS/cm
+8/30/2016,2:40:00 PM,Bedrock Creek,65.55677,-145.09042,pH,5.08,None
+8/30/2016,2:40:00 PM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),12.79,mg/l
+8/30/2016,2:40:00 PM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",5.79,deg C
+8/30/2016,3:34:00 PM,Ketchem Creek,65.50849,-144.69472,pH,6.92,None
+8/30/2016,3:34:00 PM,Ketchem Creek,65.50849,-144.69472,Turbidity,8.25,NTU
+8/30/2016,3:34:00 PM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",9.7,deg C
+8/30/2016,3:34:00 PM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),11.44,mg/l
+8/30/2016,3:34:00 PM,Ketchem Creek,65.50849,-144.69472,Specific conductance,73,uS/cm
+8/30/2016,4:18:00 PM,Middle Ketchem Creek,65.48251,-144.74538,Turbidity,3.24,NTU
+8/30/2016,4:49:00 PM,Deadwood Creek,65.53982,-144.76285,Turbidity,11.5,NTU
+8/30/2016,4:49:00 PM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),12.2,mg/l
+8/30/2016,4:49:00 PM,Deadwood Creek,65.53982,-144.76285,pH,7.08,None
+8/30/2016,4:49:00 PM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",8.78,deg C
+8/30/2016,4:49:00 PM,Deadwood Creek,65.53982,-144.76285,Specific conductance,171,uS/cm
+8/30/2016,5:08:00 PM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,11.6,mg/l
+8/30/2016,5:23:00 PM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,4.62,mg/l
+8/30/2016,5:38:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,3.65,mg/l
+8/30/2016,5:43:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),11.67,mg/l
+8/30/2016,5:43:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,4.37,NTU
+8/30/2016,5:43:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,6.38,None
+8/30/2016,5:43:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Specific conductance,134,uS/cm
+8/30/2016,5:43:00 PM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",10.1,deg C
+8/31/2016,10:31:00 AM,Boulder Creek,65.56783,-144.88885,"Temperature, water",4.27,deg C
+8/31/2016,10:31:00 AM,Boulder Creek,65.56783,-144.88885,Specific conductance,94,uS/cm
+8/31/2016,10:31:00 AM,Boulder Creek,65.56783,-144.88885,Turbidity,11.8,NTU
+8/31/2016,10:31:00 AM,Boulder Creek,65.56783,-144.88885,pH,7.6,None
+8/31/2016,10:31:00 AM,Boulder Creek,65.56783,-144.88885,Dissolved oxygen (DO),13.16,mg/l
+8/31/2016,11:43:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,2.13,NTU
+8/31/2016,11:43:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,1.62,mg/l
+8/31/2016,11:50:00 AM,Bedrock Creek,65.55677,-145.09042,Turbidity,1.28,NTU
+8/31/2016,11:50:00 AM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,1.58,mg/l
+8/31/2016,12:01:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,12.9,NTU
+8/31/2016,12:01:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,13.7,mg/l
+8/31/2016,12:30:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.25,NTU
+8/31/2016,12:30:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,1.09,mg/l
+8/31/2016,12:40:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,1.03,mg/l
+8/31/2016,12:40:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.68,NTU
+8/31/2016,2:24:00 PM,Boulder Creek,65.56783,-144.88885,Total suspended solids,7.09,mg/l
+9/13/2016,1:20:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,3.42,NTU
+9/13/2016,1:20:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",5.31,deg C
+9/13/2016,1:20:00 PM,Bonanza Creek,65.55425,-145.32305,pH,5.09,None
+9/13/2016,1:20:00 PM,Bonanza Creek,65.55425,-145.32305,pH,101,uS/cm
+9/13/2016,1:20:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),12.78,mg/l
+9/13/2016,4:00:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,2.47,NTU
+9/13/2016,4:17:00 PM,Crooked Creek at BLM,65.57363,-144.80286,"Temperature, water",7.26,deg C
+9/13/2016,4:17:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Dissolved oxygen (DO),12.01,mg/l
+9/13/2016,4:17:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,7.1,None
+9/13/2016,4:17:00 PM,Crooked Creek at BLM,65.57363,-144.80286,pH,133,uS/cm
+9/14/2016,9:00:00 AM,Ketchem Creek,65.50849,-144.69472,Total suspended solids,2.6,mg/l
+9/14/2016,10:00:00 AM,Deadwood Creek,65.53982,-144.76285,Total suspended solids,53.9,mg/l
+9/14/2016,10:06:00 AM,Ketchem Creek,65.50849,-144.69472,"Temperature, water",4.04,deg C
+9/14/2016,10:06:00 AM,Ketchem Creek,65.50849,-144.69472,Dissolved oxygen (DO),14.42,mg/l
+9/14/2016,10:06:00 AM,Ketchem Creek,65.50849,-144.69472,pH,58,uS/cm
+9/14/2016,10:06:00 AM,Ketchem Creek,65.50849,-144.69472,Turbidity,4.92,NTU
+9/14/2016,10:06:00 AM,Ketchem Creek,65.50849,-144.69472,pH,6.99,None
+9/14/2016,10:37:00 AM,Deadwood Creek,65.53982,-144.76285,Dissolved oxygen (DO),13.74,mg/l
+9/14/2016,10:37:00 AM,Deadwood Creek,65.53982,-144.76285,pH,7.54,None
+9/14/2016,10:37:00 AM,Deadwood Creek,65.53982,-144.76285,pH,148,uS/cm
+9/14/2016,10:37:00 AM,Deadwood Creek,65.53982,-144.76285,Turbidity,21.7,NTU
+9/14/2016,10:37:00 AM,Deadwood Creek,65.53982,-144.76285,"Temperature, water",4.41,deg C
+9/14/2016,11:30:00 AM,Bedrock Creek,65.55677,-145.09042,pH,47,uS/cm
+9/14/2016,11:30:00 AM,Bedrock Creek,65.55677,-145.09042,pH,5.49,None
+9/14/2016,11:30:00 AM,Bedrock Creek,65.55677,-145.09042,Dissolved oxygen (DO),14.87,mg/l
+9/14/2016,11:30:00 AM,Bedrock Creek,65.55677,-145.09042,"Temperature, water",2.63,deg C
+9/14/2016,11:30:00 AM,Bedrock Creek,65.55677,-145.09042,Turbidity,1.27,NTU
+9/14/2016,1:40:00 PM,Boulder Creek,65.56783,-144.88885,Turbidity,7.63,NTU
+9/14/2016,1:40:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Total suspended solids,2.89,mg/l
+9/14/2016,1:40:00 PM,Crooked Creek at BLM,65.57363,-144.80286,Turbidity,2.84,NTU
+9/14/2016,2:35:00 PM,Boulder Creek,65.56783,-144.88885,Total suspended solids,10.2,mg/l
+9/14/2016,3:00:00 PM,Mammoth Creek,65.55088,-145.17574,Turbidity,6.48,NTU
+9/14/2016,3:00:00 PM,Mammoth Creek,65.55088,-145.17574,Total suspended solids,51.1,mg/l
+9/14/2016,3:00:00 PM,Mammoth Creek,65.55088,-145.17574,pH,129,uS/cm
+9/14/2016,3:00:00 PM,Mammoth Creek,65.55088,-145.17574,pH,7.48,None
+9/14/2016,3:00:00 PM,Mammoth Creek,65.55088,-145.17574,"Temperature, water",5.74,deg C
+9/14/2016,3:00:00 PM,Mammoth Creek,65.55088,-145.17574,Dissolved oxygen (DO),12.55,mg/l
+9/14/2016,3:40:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Total suspended solids,2.84,mg/l
+9/14/2016,3:45:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,"Temperature, water",5.44,deg C
+9/14/2016,3:45:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,4.84,NTU
+9/14/2016,3:45:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,6.8,None
+9/14/2016,3:45:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,pH,173,uS/cm
+9/14/2016,3:45:00 PM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Dissolved oxygen (DO),12.68,mg/l
+9/14/2016,4:00:00 PM,Bonanza Creek,65.55425,-145.32305,Total suspended solids,1.06,mg/l
+9/14/2016,4:03:00 PM,Bonanza Creek,65.55425,-145.32305,"Temperature, water",5.48,deg C
+9/14/2016,4:03:00 PM,Bonanza Creek,65.55425,-145.32305,Dissolved oxygen (DO),12.94,mg/l
+9/14/2016,4:03:00 PM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.68,NTU
+9/14/2016,4:03:00 PM,Bonanza Creek,65.55425,-145.32305,pH,102.1,uS/cm
+9/14/2016,4:03:00 PM,Bonanza Creek,65.55425,-145.32305,pH,7.12,None
+9/14/2016,4:42:00 PM,Crooked Creek (below Bedrock),65.56158,-145.0924,Total suspended solids,1.9,mg/l
+9/14/2016,4:50:00 PM,Bedrock Creek,65.55677,-145.09042,Total suspended solids,1.01,mg/l
+9/15/2016,12:26:00 AM,Porcupine Creek (above Bonanza),65.55971,-145.31584,Turbidity,3.94,NTU
+9/15/2016,8:50:00 AM,Crooked Creek (below Bedrock),65.56158,-145.0924,Turbidity,1.6,NTU
+9/15/2016,8:52:00 AM,Bedrock Creek,65.55677,-145.09042,Turbidity,1.08,NTU
+9/15/2016,9:02:00 AM,Mammoth Creek,65.55088,-145.17574,Turbidity,2.47,NTU
+9/15/2016,9:10:00 AM,Bonanza Creek,65.55425,-145.32305,Turbidity,0.6,NTU
