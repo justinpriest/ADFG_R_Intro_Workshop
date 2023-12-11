@@ -7,6 +7,16 @@
 
 # Difficulty: Easy / Moderate 
 
+# This script is to demonstrate some of the power of R.
+# Below, we use real world data that we'll import and clean up.
+# Next, we'll plot our data in several ways to visualize it.
+
+
+### BACKGROUND:
+# This dataset was provided by the Alaska Department of Environmental Conservation
+# Annual measurements of water quality are taken at many locations to 
+#  assess 
+
 
 library(tidyverse)
 library(lubridate)
@@ -29,10 +39,11 @@ waterquality2016 <- read_csv("data/DEC_waterquality_2016.csv", skip = 1) %>% # T
 waterquality2016 %>%
   filter(measurementtype == "Turbidity") %>%
   ggplot(aes(x = sampledate, y = value, color = location)) +
-  geom_line() #+ facet_wrap(~location) # remove the comment to plot a "facet"
+  geom_line() + 
+  labs(y = "Turbidity") #+ facet_wrap(~location) # remove the comment to plot a "facet"
 
 
-# Summarize the turbidy by month at Boulder Creek
+# Summarize the turbidity by month at Boulder Creek
 waterquality2016 %>%
   filter(measurementtype == "Turbidity",
          location == "Boulder Creek") %>%
